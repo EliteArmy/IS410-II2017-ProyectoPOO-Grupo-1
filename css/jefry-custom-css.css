@@ -1,0 +1,74 @@
+/*If the padding property has two values:
+
+padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px*/
+
+#parrafo2{
+	border:1px #ffffff solid; 
+	padding: 20px 200px;
+	margin:10px;
+}
+ 
+#caja-correo{
+	width: 300px; height: 35px;
+}
+
+#caja-busqueda{
+	width: 500px; height: 30px;
+}
+
+#titulo-principal{
+	color:#007FAD;
+	padding-top: 50px;
+  	padding-bottom: 20px;
+}
+
+.lista-no-enumerdada{
+	list-style: none;
+}
+
+.footer-fondo-pantalla-total{
+	background-color: #293339;
+	color: #fff;
+	padding: 32px;
+}
+
+.footer-fondo-pantalla2{ 	
+	padding: 32px;
+	color: #9BA2A6;
+	background: #37454D;
+}
+
+.nav{
+	font-size:17px;
+	color: #FFFFFF;
+	
+}
+
+.nav li:hover > ul{
+	display:block;
+}
+
+h1 {
+	color: #0073CF;
+	font-size: 32px;
+}
+
+.navbar-default{
+	background-color: #FFFFFF;
+}
+
+.footer .white-logo {
+    display: block;
+    margin: 0 auto;
+    height: 32px;
+    width: 102px;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+  min-height: 10px;
+}
