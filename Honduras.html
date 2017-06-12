@@ -49,13 +49,14 @@
 		<center>	
 			<!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
 				<div class="barra-texto btn-group btn-group-lg" align="center">	
-					<form class="form-inline col-lg-6">
-						<!--<table class="table table-primary">
+					<form class="form-inline col-lg-6 barra">
+						<!--<table>
 						<input class="form-control horus__querytext" id="caja-pais" type="searching" name="seleccionar-pais" value="Honduras">
 						<button type="submit" class="btn btn-primary">Buscar</button><br><br>-->
-						<div class="input-group-lg barra">
-  							<input type="text" class="form-control" value="Honduras" aria-describedby="basic-addon2">
-  							<span class="btn btn-primary btn-lg" id="basic-addon2">Buscar</span>
+					<table>	
+						<div class="input-group-lg">
+  							<input class="caja-texto" type="text" class="form-control" value="Honduras" aria-describedby="basic-addon2">
+  							<span class="btn-primary boton" id="basic-addon2">Buscar</span>
 							<br><br>
 						<input class="form-control " type="date" name="txt-fecha" value="Seleccione">
 						<input class="form-control" type="date" name="txt-fecha" value="Seleccione">
@@ -66,173 +67,174 @@
 				            <option value="4">Multiple</option>
          				 </select>
          				 </div>
-         				 </table>
+         			</table>
 					</form>
 				</div>
 		</center>
 	</div>
 </section>
 <br>
+
+	<div class="map-access col-lg-4">
+		<button class="btn btn-default ">Ver mapa</button>
+	</div>
+	<div class="col-lg-4">
+		<select class="btn btn-lg btn-ordenar" name="slc-ordenar" id="slc-ordenar">
+			<option value="1">Ordenar por popularidad</option>
+			<option value="2">Priorizar la valoración</option>
+			<option value="3">Priorizar el precio</option>
+			<option value="4">Ordenar solo por puntuación</option>
+			<option value="5">Ordenar solo por precio</option>
+		</select>
+	</div>
+	<div class="col-lg-4">
+		<button class="btn btn-lg btn-compartir">Comparte</button>
+	</div>
 <br>
 <br>
-<br>
-<div class="map-access input-group-lg">
-	<button class="btn btn-default ">Ver mapa</button>
-	</div>
-	<div class="btn-ordenar">
-	<select class="btn btn-lg" name="slc-ordenar" id="slc-ordenar">
-		<option value="1">Ordenar por popularidad</option>
-		<option value="2">Priorizar la valoración</option>
-		<option value="3">Priorizar el precio</option>
-		<option value="4">Ordenar solo por puntuación</option>
-		<option value="5">Ordenar solo por precio</option>
-	</select>
-	<button class="select-icon">Comparte</button>
-	</select>
-	</div>
-</div>
+
+<hr>
+
+<footer>
+      <div class="footer-fondo-pantalla-total row">
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <div >
+              <strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Tegucigalpa, Francisco Morazán, Honduras
+              <br>
+            </div>
+            <div>
+              <br>
+                <div class="list-group">
+                  <a target="blank" href="https://www.facebook.com/"> <i class="fa fa-facebook-square fa-2x"> </i></a>
+                  <a target="blank" href="https://twitter.com/"> <i class="fa fa-twitter fa-2x"></i> </a></li>
+                  <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a></li>
+                  <a target="blank" href="https://plus.google.com/"><i class="fa fa-google-plus-officia fa-2x"></i> </a></li>
+                  <a target="blank" href="https://www.youtube.com/user/"><i class="fa fa-youtube fa-2x"></i> </a></li>
+                  <a target="blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                  <a target="blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="col-xs-6">
+              <select class="form-control" id="seleccionar-pais" name="seleccionar-pais">
+                <option value="na" selected="">Select Country</option>
+                <option value="aa">العالم العربي</option>
+                <option value="ar">Argentina</option>
+                <option value="au">Australia</option>
+                <option value="bg">България</option>
+                <option value="be">België</option>
+                <option value="br">Brasil</option>
+                <option value="ca">Canada</option>
+                <option value="cz">Česko</option>
+                <option value="cl">Chile</option>
+                <option value="co">Colombia</option>
+                <option value="dk">Danmark</option>
+                <option value="de">Deutschland</option>
+                <option value="ec">Ecuador</option>
+                <option value="gr">Ελλάδα</option>
+                <option value="es">España</option>
+                <option value="fr">France</option>
+                <option value="kr">한국</option>
+                <option value="hr">Hrvatska</option>
+                <option value="in">India</option>
+                <option value="id">Indonesia</option>
+                <option value="ie">Ireland</option>
+                <option value="it">Italia</option>
+                <option value="hu">Magyarország</option>
+                <option value="my">Malaysia</option>
+                <option value="mx">México</option>
+                <option value="nl">Nederland</option>
+                <option value="nz">New Zealand</option>
+                <option value="no">Norge</option>
+                <option value="at">Österreich</option>
+                <option value="pe">Perú</option>
+                <option value="ph">Philippines</option>
+                <option value="pl">Polska</option>
+                <option value="pt">Portugal</option>
+                <option value="th">ประเทศไทย</option>
+                <option value="jp">日本</option>
+                <option value="ro">România</option>
+                <option value="ru">Россия</option>
+                <option value="ch">Schweiz</option>
+                <option value="sg">Singapore</option>
+                <option value="si">Slovenija</option>
+                <option value="sk">Slovensko</option>
+                <option value="za">South Africa</option>
+                <option value="rs">Srbija</option>
+                <option value="fi">Suomi</option>
+                <option value="se">Sverige</option>
+                <option value="tw">台灣</option>
+                <option value="tr">Türkiye</option>
+                <option value="ae">UAE</option>
+                <option value="uk">United Kingdom</option>
+                <option value="uy">Uruguay</option>
+                <option value="us">USA</option>
+                <option value="vn">Việt Nam</option>
+                <option value="hk">香港</option>
+                <option value="il">ישראל</option>
+                <option value="cn">中国</option>
+              </select>
+            </div>  
+          </div>
+      
+        </div>  
+
+        <div class="row marketing">
+          <div class="col-lg-4">
+            <ul class="lista-no-enumerdada">
+              <li >Company</li>
+              <li>Careers</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Support Center</li>
+              <li>Investor Relations</li>
+              <li> Expedia</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <ul class="lista-no-enumerdada">
+              <li>Mobile apps - searching on the go</li>
+              <li>Hotel Manager - for hoteliers</li>
+              <li>Hotel Manager - for hoteliers</li>
+              <li>Room5</li>
+              <li>Affiliate Program</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <ul class="lista-no-enumerdada">
+              <li>Terms and Conditions</li>
+              <li>Legal Information</li>
+              <li>Privacy Policy</li>
+              <li>Site Map</li>
+              <li>Cookie policy</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+     <div class="footer-fondo-pantalla2">
+        <center>
+          <img src="img/logo_optimised_white.png"> 
+          <br>
+          <span class="footer__copyright-text">Copyright 2017 NotTrivago | Todos los derechos reservados.</span>
+        </center>
+      </div>
+
+    </footer>
 
 
-
-	<hr>
-
-		<div class="row marketing">
-			
-			<div class="col-lg-6">
-				<div >
-					<strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Francisco Morazán, Tegucigalpa, Honduras
-					<br>
-				</div>
-
-				<div>
-					<ul class="lista-no-enumerdada">
-					<br>
-						<li>
-							<a target="blank" href="https://www.facebook.com/"> Facebook</a></li>
-						<li>
-							<a target="blank" href="https://twitter.com/"> Twitter </a></li>
-						<li>
-							<a target="blank" href="https://instagram.com/"> Instagram </a></li>
-						<li>
-							<a target="blank" href="https://plus.google.com/"> Google Plus </a></li>
-						<li>
-							<a target="blank" href="https://www.youtube.com/user/"> Youtube </a></li>
-						<li>
-							<a target="blank" href="https://www.pinterest.com/"> Pinterest </a></li>
-						<li>
-							<a target="blank" href="https://www.linkedin.com/"> Linkedin </a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-6">
-				<div class="col-xs-6">
-					<select class="form-control" id="seleccionar-pais" name="seleccionar-pais">
-						<option value="na" selected="">Select Country</option>
-						<option value="aa">العالم العربي</option>
-						<option value="ar">Argentina</option>
-						<option value="au">Australia</option>
-						<option value="bg">България</option>
-						<option value="be">België</option>
-						<option value="br">Brasil</option>
-						<option value="ca">Canada</option>
-						<option value="cz">Česko</option>
-						<option value="cl">Chile</option>
-						<option value="co">Colombia</option>
-						<option value="dk">Danmark</option>
-						<option value="de">Deutschland</option>
-						<option value="ec">Ecuador</option>
-						<option value="gr">Ελλάδα</option>
-						<option value="es">España</option>
-						<option value="fr">France</option>
-						<option value="kr">한국</option>
-						<option value="hr">Hrvatska</option>
-						<option value="in">India</option>
-						<option value="id">Indonesia</option>
-						<option value="ie">Ireland</option>
-						<option value="it">Italia</option>
-						<option value="hu">Magyarország</option>
-						<option value="my">Malaysia</option>
-						<option value="mx">México</option>
-						<option value="nl">Nederland</option>
-						<option value="nz">New Zealand</option>
-						<option value="no">Norge</option>
-						<option value="at">Österreich</option>
-						<option value="pe">Perú</option>
-						<option value="ph">Philippines</option>
-						<option value="pl">Polska</option>
-						<option value="pt">Portugal</option>
-						<option value="th">ประเทศไทย</option>
-						<option value="jp">日本</option>
-						<option value="ro">România</option>
-						<option value="ru">Россия</option>
-						<option value="ch">Schweiz</option>
-						<option value="sg">Singapore</option>
-						<option value="si">Slovenija</option>
-						<option value="sk">Slovensko</option>
-						<option value="za">South Africa</option>
-						<option value="rs">Srbija</option>
-						<option value="fi">Suomi</option>
-						<option value="se">Sverige</option>
-						<option value="tw">台灣</option>
-						<option value="tr">Türkiye</option>
-						<option value="ae">UAE</option>
-						<option value="uk">United Kingdom</option>
-						<option value="uy">Uruguay</option>
-						<option value="us">USA</option>
-						<option value="vn">Việt Nam</option>
-						<option value="hk">香港</option>
-						<option value="il">ישראל</option>
-						<option value="cn">中国</option>
-					</select>
-				</div>	
-			</div>
-	
-		</div>	
-
-		<div class="row marketing">
-			<div class="col-lg-4">
-				<ul class="lista-no-enumerdada">
-					<li >Company</li>
-					<li>Careers</li>
-					<li>Jobs</li>
-					<li>Press</li>
-					<li>Support Center</li>
-					<li>Investor Relations</li>
-					<li> Expedia</li>
-				</ul>
-			</div>
-
-			<div class="col-lg-4">
-				<ul class="lista-no-enumerdada">
-					<li>Mobile apps - searching on the go</li>
-					<li>Hotel Manager - for hoteliers</li>
-					<li>Hotel Manager - for hoteliers</li>
-					<li>Room5</li>
-					<li>Affiliate Program</li>
-				</ul>
-			</div>
-
-			<div class="col-lg-4">
-				<ul class="lista-no-enumerdada">
-					<li>Terms and Conditions</li>
-					<li>Legal Information</li>
-					<li>Privacy Policy</li>
-					<li>Site Map</li>
-					<li>Cookie policy</li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="footer-fondo-pantalla2">
-		<center><h2 class="h2">Not Trivago</h2></center>
-		<center>Copyright 2017 trivago | All rights reserved.</center> 
-	</div>
-
-</footer>
-
-</body>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
