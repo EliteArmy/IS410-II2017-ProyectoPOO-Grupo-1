@@ -1,0 +1,62 @@
+body {
+  padding-bottom: 20px;
+}
+
+
+
+.hero__content {
+    padding: 0 16px;
+}
+
+.barra-texto {
+		width: 2800px;
+		box-sizing: 50em;
+}
+
+.barra {
+    background-color: #37454d;
+    border-color: #37454d;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #333;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #fff;
+    border-color: #333;
+}
+
+.footer-fondo-pantalla-total{
+	background-color: #293339;
+	color: #fff;
+	padding: 32px;
+}
+
+.footer-fondo-pantalla2{ 	
+	padding-bottom: 32px;
+	padding-top: 20px;
+	color: #9BA2A6;
+	background: #37454D;
+}
+
+.h2{
+	color: #fff;
+	font-family: Arial;
+}
+
+.lista-no-enumerdada{
+	list-style: none;
+}
+
+.btn-ordenar{
+	border-color: #333;
+	background-position: 50%;
+	background-position-x: right 12px
+}
