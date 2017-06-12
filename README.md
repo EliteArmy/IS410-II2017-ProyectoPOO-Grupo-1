@@ -2,7 +2,7 @@
 
 ## Integrantes:
 
-+ Nicolle Valladares (__"nicollevalladares"__)
++ Andrea Nicolle Valladares (__"nicollevalladares"__)
 + Denis Adonis Henriquez ("__denisadonis__")
 + Julio Ariel Guardado ("__EliteArmy__")
 + Jefry ("__DeathKira__")
