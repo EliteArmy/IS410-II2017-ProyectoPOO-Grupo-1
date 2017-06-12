@@ -699,7 +699,6 @@ horizontal-tb
 }
 
 .envoltura-caja-registro-social{
-	background-color:white;
 	box-sizing:border-box;
 	color:rgb(55, 69, 77);
 	display:flex;
@@ -714,7 +713,6 @@ horizontal-tb
 }
 
 .envoltura-caja-registro-manual{
-	background-color:white;
 	box-sizing:border-box;
 	color:rgb(55, 69, 77);
 	display:flex;
