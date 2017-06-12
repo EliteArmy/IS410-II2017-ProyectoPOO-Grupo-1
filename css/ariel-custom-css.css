@@ -1,0 +1,758 @@
+/*
+	The padding shorthand property sets all the padding properties 
+	in one declaration. This property can have from one to four values.
+	• padding: 10px 5px;
+	top and bottom padding are 10px
+	right and left padding are 5px
+	Default value:0 -  Inherited: no
+	values: lenght, %, intial, inherit;
+
+	The property replaces the list-item marker with an image.
+	• list-style-image none;
+	Default value: none - Inherited: yes
+	values: url, none, initial, inherit
+
+	The box-sizing property is used to tell the browser what the sizing 
+	properties (width and height) should include.
+	• box-sizing: border-box; 
+	Default value: content-box - Inherited:	no
+	Values: border-box = The width and height properties (and min/max properties) 
+	includes content, padding and border, but not the margin
+	
+	The text-align property specifies the horizontal alignment of text in an element.
+	• text-align: left;
+	Default value: left if direction is ltr, and right if direction is rtl - Inherited: yes
+	Values: left, right, center, justify, initial
+
+	The width property sets the width of an element.
+	• width: 500px;
+	Note: The width property does not include padding, borders, or margins; it 
+	sets the width of the area inside the padding, border, and margin of the element!
+	Note: The min-width and max-width properties override width.
+	Default value: auto - Inherited: no
+	values: auto length, %: Defines the width in percent of the containing block;
+
+	The height property sets the height of an element.
+	• height: 100px;
+	Note: The height property does not include padding, borders, or margins; it 
+	sets the height of the area inside the padding, border, and margin of the element!
+	Default value: auto - Inherited: no
+	Values: auto: The browser calculates the height.;
+
+
+*/
+
+#caja-busqueda{
+	width: 500px; height: 30px;
+}
+
+#titulo-principal{
+	color:#007FAD;
+	padding-top: 50px;
+  	padding-bottom: 20px;
+}
+ 
+ .envoltura-parrafo-principal{ 
+     margin: 0px 120px;
+ }
+ 
+ .margen-parrafo-principal{ 
+ 	padding: 15px;
+    margin: 0px 240px;
+ }
+ 
+ .margen-parrafo{
+ 	border:1px #D0D3D5 solid; 
+ 	padding: 15px;
+    margin-top: 15px;
+ 
+    font-size: 12px;
+    line-height: 16px;
+ }
+ 
+ .subtitulo-parrafo{
+ 	font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+ }
+
+.lista-no-enumerdada{
+	list-style: none;
+}
+
+.footer-fondo-pantalla-total{
+	background-color: #293339;
+	color: #fff;
+	padding: 32px;
+}
+
+.footer-fondo-pantalla2{ 	
+	padding: 32px;
+	color: #9BA2A6;
+	background: #37454D;
+}
+
+.nav{
+	font-size:17px;
+}
+
+.nav li:hover > ul{
+	display:block;
+}
+
+.cuerpo-html{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	direction:ltr;
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	line-height:20px;
+	/*max-width:100%;*/
+	/*min-width:320px;*/
+	overflow-y:scroll;
+	/*unicode-bidi:isolate;*/
+
+}
+
+.cuerpo-toda-pagina{
+	background-color:rgb(235, 236, 237);
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:flex;
+	flex-direction:column;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	line-height:20px;
+	margin:0;
+	/*max-width:100%;*/
+	min-height:287px;
+	min-width:320px;
+
+}
+
+.envoltura-barra-navegacion-top{
+	background-color:rgb(255, 255, 255);
+	box-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:flex;
+	flex-basis:auto;
+	flex-grow:0;
+	flex-shrink:1;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	height:64px;
+	justify-content:flex-end;
+	line-height:20px;
+	position:relative;
+	/*width:1349px;*/
+}
+
+.barra-boton-top{
+	align-items:flex-start;
+	background-color:rgb(255, 255, 255);
+	
+	border-bottom-color:rgb(235, 236, 237);
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	border-bottom-style:solid;
+	border-bottom-width:0px;
+	
+	border-image-outset:0px;
+	border-image-repeat:stretch;
+	border-image-slice:100%;
+	border-image-source:none;
+	border-image-width:1;
+	
+	border-left-color:rgb(235, 236, 237);
+	border-left-style:solid;
+	border-left-width:0px;
+	
+	border-right-color:rgb(235, 236, 237);
+	border-right-style:solid;
+	border-right-width:1px;
+	
+	border-top-color:rgb(235, 236, 237);
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-top-style:solid;
+	border-top-width:0px;
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	cursor:pointer;
+	display:none;
+	float:left;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant-caps:normal;
+	font-variant-ligatures:normal;
+	font-variant-numeric:normal;
+	font-weight:normal;
+	
+	height:100%;
+	letter-spacing:normal;
+	line-height:17.5px;
+	
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:auto;
+	margin-top:0px;
+	
+	min-width:128px;
+	outline-color:rgb(55, 69, 77);
+	outline-style:none;
+	outline-width:0px;
+	overflow-x:visible;
+	overflow-y:visible;
+	
+	padding-bottom:0px;
+	padding-left:16px;
+	padding-right:16px;
+	padding-top:0px;
+	position:relative;
+	
+	text-align:center;
+	text-indent:0px;
+	text-rendering:auto;
+	word-spacing:0px;
+	writing-mode:horizontal-tb;
+}
+
+.barra-link-top{
+	align-self:center;
+	background-color:rgba(0, 0, 0, 0);
+	bottom:0px;
+	box-sizing:border-box;
+	color:rgb(0, 127, 173);
+	cursor:auto;
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	height:64px;
+	left:0px;
+	line-height:20px;
+	margin-bottom:0px;
+	margin-left:607.5px;
+	margin-right:607.5px;
+	margin-top:0px;
+	outline-width:0px;
+	padding-bottom:14px;
+	padding-left:16px;
+	padding-right:16px;
+	padding-top:18px;
+	position:absolute;right:0px;
+	text-decoration-color:
+	rgb(0, 127, 173);
+	text-decoration-line:none;
+	text-decoration-style:solid;
+	top:0px;
+	/*width:134px;*/
+}
+
+.barra-notificacion-top{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	line-height:20px;
+	/*width:1349px;*/
+}
+
+.barra-boton-envoltorio-top{
+	align-items:center;
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	cursor:pointer;
+	display:flex;
+	flex-direction:row;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant-caps:normal;
+	font-variant-ligatures:normal;
+	font-variant-numeric:normal;
+	font-weight:normal;
+	
+	justify-content:center;
+	letter-spacing:normal;
+	line-height:24px;
+	text-align:center;
+	text-indent:0px;
+	text-rendering:auto;
+	text-shadow:none;
+	text-transform:none;
+	/*width:100%;*/
+	word-spacing:0px;
+	writing-mode:horizontal-tb
+}
+
+.barra-boton-icono-top{
+	background-position-x:50%;
+	background-position-y:50%;
+	background-size:contain;
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	cursor:pointer;
+	display:block;
+	float:none;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant-caps:normal;
+	font-variant-ligatures:normal;
+	font-variant-numeric:normal;
+	font-weight:normal;
+	height:24px;
+	letter-spacing:normal;
+	line-height:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:8px;
+	margin-top:0px;
+	position:relative;
+	text-align:center;
+	text-indent:0px;
+	text-rendering:auto;
+	text-shadow:none;
+	text-transform:none;
+	/*width:24px;*/
+	word-spacing:0px;
+	writing-mode:horizontal-tb
+}
+
+.envoltura-barra-navegacion-principal{
+	background-color: rgb(55, 69, 77);
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	display: block;
+	flex-basis: 252px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	left: auto;
+	line-height: 20px;
+	/*max-width: 100%;*/
+	position: static;
+}
+
+.envoltura-barra-navegacion{
+	background-color: rgb(55, 69, 77);
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	display: block;
+	float: left;
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 16px;
+	height: 478px;
+	line-height: 20px; /*Interlineado, Inherited: yes*/
+	padding: 0px;
+	position: static;
+	top: auto;
+	/*width:252px;*/
+}
+
+.barra-lista-navegacion{
+	/*-- ul --*/
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	display: block;
+	font-family: Arial, Helvetica, Sans, Sans-Serif, "Sans Serif";
+    font-size: 16px;
+    line-height: 20px;
+    padding-top : 32px;
+    padding-bottom: 32px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+
+	/*The list-style-type specifies the type of list-item marker in a list.
+	Default value: disc, Inherited: yes*/
+    list-style-type: none;
+}
+
+.barra-lista{
+	/* -- il -- */
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	
+	/* The display property specifies the type of box used for an HTML element. 
+	Let the element behave like a <li> element */
+	display: list-item;
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 16px;
+	line-height: 20px; /*Interlineado, Inherited: yes*/
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.lista{
+	box-sizing: border-box;
+	color: rgb(205, 208, 210);
+	
+	cursor: auto; /*specifies the type of cursor to be displayed when pointing on an element.*/
+	display: block; /*block; Displays an element as a block element (like <p>)*/
+	
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 16px;
+	
+	line-height: 20px; /*Interlineado, Inherited: yes*/
+	
+	margin: 0px;
+
+	padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 12px;
+	
+	text-align: left;
+}
+
+.body-dashboard{
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	display: flex;
+
+	flex-basis: auto;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-shrink: 0;
+
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+
+	line-height:20px;
+	min-height:223px
+}
+
+.contenido-cuenta{
+	box-sizing:border-box;
+	background: #EBECED;
+	
+	color:rgb(55, 69, 77);
+	display:block;
+	
+	flex-basis:0%;
+	flex-grow:1;
+	flex-shrink:1;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	
+	line-height:20px;
+	/*width:1097px;*/
+
+}
+
+.envoltura-cuenta{
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	display:block;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	
+	line-height:20px;
+	
+	margin-bottom:16px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:16px;
+	/*max-width:1114px;*/
+	
+	padding-bottom:0px;
+	padding-left:16px;
+	padding-right:16px;
+	padding-top:0px;
+}
+
+.titulo-cuenta{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display: block;
+	
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 20px;
+	
+	line-height:25px;
+	
+	margin: 0px;
+	padding-bottom:20px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:4px;
+}
+
+.cuerpo-cuenta{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	
+	line-height:20px;
+	position:relative;
+}
+
+.fondo-tarjeta{
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-color:rgb(255, 255, 255);
+	background-image:none;
+	background-origin:padding-box;
+	background-size:auto;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	box-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	height:165px;
+	line-height:20px;
+	margin-bottom:32px;
+	max-height:165px;
+	/*max-width:100%;*/
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+
+.fondo-tarjeta-envoltura{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	line-height:20px;
+	position:relative;
+}
+
+.fondo-tarjeta-imagen{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	height:100px;
+	line-height:20px;
+	position:relative;
+}
+
+.fondo-tarjeta-imagen-final{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	line-height:20px;
+	max-height:100px;
+	/*max-width:100%;*/
+	overflow-x:hidden;
+	overflow-y:hidden;
+	position:relative;
+}
+
+.fondo-tarjeta-perfil{
+	bottom:-50px;
+	box-sizing:
+	border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	height:113px;
+	left:532.5px;
+	line-height:20px;
+	position:absolute;
+}
+
+.fondo-tarjeta-titulo{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+	font-weight:bold;
+	height:17px;
+	line-height:17.5px;
+	margin-bottom:16px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:16px;
+	padding-left:16px;
+	padding-right:16px;
+	text-align:left;
+	/*width:426px*/
+}
+
+.fondo-tarjeta-titulo2{
+
+	background-color:rgba(0, 0, 0, 0);
+	box-sizing:border-box;
+	color:rgb(0, 127, 173);
+	cursor:auto;
+	display:inline;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+	font-weight:normal;
+	height:auto;
+	line-height:17.5px;
+	/*outline-width:0px;*/
+	text-align:left;
+	text-decoration-color:rgb(0, 127, 173);
+	text-decoration-line:none;
+	text-decoration-skip:objects;
+	text-decoration-style:
+	solid;
+}
+	
+.fondo-tarjeta-final{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	height:16px;
+	line-height:20px;
+	max-height:0px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	padding-bottom:16px;
+}
+
+.resumen-cuenta{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	line-height:20px;
+	margin-bottom:32px;
+}
+
+.titulo-resumen-cuenta{
+	box-sizing:border-box;
+	color:rgb(105, 115, 121);
+	display:inline-block;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	font-weight:normal;
+	line-height:20px;
+	
+	margin-bottom:20px;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+.tabla-resumen-cuenta{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:flex;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+
+	line-height:20px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+.sub-tabla-resumen{
+	
+	box-sizing: border-box;
+	color:rgb(55, 69, 77);
+	display:flex;
+	flex-direction:column;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+
+	line-height:20px;
+	padding-bottom:0px;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:0px;
+	/*width:540.5px;*/
+}
+
+.sub-tabla-resumen-hija{
+	
+	background-clip: border-box; /*The background-clip property specifies the painting area of the background.*/
+	background-color: rgb(255, 255, 255);
+	background-size: auto; /*Default value: auto. The background-image contains its width and height*/
+	
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+	box-shadow: rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+	
+	/*<div> elements should have padding and border included in the element's total width and height*/
+	box-sizing: border-box;
+	color: rgb(55, 69, 77);
+	display: block;
+	
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 0;
+	
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 16px;
+	line-height: 20px;
+	
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 16px;
+	
+	text-align:center;
+}
+
+.sub-tabla-titulo{
+	box-sizing: border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	font-weight:bold;
+
+	line-height:20px; /* Interlineado, Inherited: yes*/
+	
+	margin-bottom:8px;
+	margin-top:0px;
+	text-align:left
+}
+
+.sub-tabla-infomacion{
+	box-sizing: border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+
+	line-height:14px;
+
+	margin-bottom:16px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:16px;
+
+	text-align:left;
+}
