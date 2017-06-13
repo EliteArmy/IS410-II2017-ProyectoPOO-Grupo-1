@@ -1,271 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="Coffee Icon" href="img/trivago.png">
+    <title>NotTrivago.com</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jefry-custom-css.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  </head>
 
-<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="Coffee Icon" href="img/trivago.png">
-
-	<title>NotTrivago.com</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jefry-custom-css.css">
-
-</head>
-
-<body>
-
-
-<nav class="navbar navbar-default" id="barra-menu">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle"></button>
-		<a class="navbar-brand" href="#">NotTrivago</a>		
-	</div>
-
-	<div class="collapse navbar-collapse navbar-ex1-collapse">
-		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-			<li><a href="#">USD</a></li>
-			<li><a href="#">ES</a></li>
-			<li class="dropdown">
-        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          	Mi Perfil <b class="caret"></b>
-        	</a>
-        		<ul class="dropdown-menu">
-          			<li><a href="#">Iniciar Sesion</a></li>
-          			<li><a href="sign-in">Regístrate</a></li>
-          		</ul>
-          	</li>
-        </ul>
-	</div>
-
-</nav> 
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <center style="font-size: 28px; font-weight:bold; margin-left: 440px;">
+                <ul>
+                  <a href="#"><span style="color: #293339;">Not</span><span style="color: #0073CF;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span></a>
+                </ul>
+              </center>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse"> 
+           <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+              <li><a href="#">USD</a></li>
+              <li><a href="#">ES</a></li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Mi Perfil <b class="caret"></b>
+              </a>
+           <ul class="dropdown-menu">
+                <li><a href="#">Iniciar Sesion</a></li>
+                <li><a href="sign-in">Regístrate</a></li>
+           </ul>
+              </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 
-<section>
-	<div>
-		<center>	
-			<h1 id="titulo-principal">Find your ideal hotel <br>
-			for the best price
-			</h1>
-			<!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
-			<form class="form-inline"> 
-				<input id="caja-busqueda" type="text" class="form-control" placeholder="e.g Honduras">
-				<button type="submit" class="btn btn-default">Search</button>
-			</form>
-		</center>
-	</div>
-</section>
+    <div class="container">
+      <section>
+        <div>
+          <center>  
+            <h1 id="titulo-principal">Encuentra tu hotel ideal <br>
+            al mejor precio
+            </h1>
+            <!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
+            <form class="form-inline"> 
+              <input id="caja-busqueda" type="Search" width="4" class="form-control" placeholder="Ej.: Honduras">
+              <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+          </center>
+        </div>
+      </section>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    </div> <!-- /container -->
 
-<div class="envoltura-parrafo-principal">
-	<div class="margen-parrafo-principal">
-		<div class="margen-parrafo">
-			<h5>Top Cities</h5>
-		</div>
+    <footer>
+      <div class="footer-fondo-pantalla-total row">
+        <div class="row marketing">
+          <div class="col-lg-6">
+            <div >
+              <strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Tegucigalpa, Francisco Morazán, Honduras
+              <br>
+            </div>
+             
+          <div>
+              <br>
+                <div class="list-group">
+                  <a target="blank" href="https://www.facebook.com/"> <i class="fa fa-facebook-square fa-2x"> </i></a>
+                  <a target="blank" href="https://twitter.com/"> <i class="fa fa-twitter fa-2x"></i> </a></li>
+                  <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a></li>
+                  <a target="blank" href="https://plus.google.com/"><i class="fa fa-google-plus-officia fa-2x"></i> </a></li>
+                  <a target="blank" href="https://www.youtube.com/user/"><i class="fa fa-youtube fa-2x"></i> </a></li>
+                  <a target="blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                  <a target="blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                </div>
+            </div>
+          </div>
+         
+          <div class="col-lg-6">
+            <div class="col-xs-6">
+              <select class="form-control" id="seleccionar-pais" name="seleccionar-pais">
+                <option value="na" selected="">Select Country</option> 
+                <option value="aa">العالم العربي</option>
+                <option value="ar">Argentina</option>
+                <option value="au">Australia</option>
+                <option value="bg">България</option>
+                <option value="be">België</option>
+                <option value="br">Brasil</option>
+                <option value="ca">Canada</option>
+                <option value="cz">Česko</option>
+                <option value="cl">Chile</option>
+                <option value="co">Colombia</option>
+                <option value="dk">Danmark</option>
+                <option value="de">Deutschland</option>
+                <option value="ec">Ecuador</option>
+                <option value="gr">Ελλάδα</option>
+                <option value="es">España</option>
+                <option value="fr">France</option>
+                <option value="kr">한국</option>
+                <option value="hr">Hrvatska</option>
+                <option value="in">India</option>
+                <option value="id">Indonesia</option>
+                <option value="ie">Ireland</option>
+                <option value="it">Italia</option>
+                <option value="hu">Magyarország</option>
+                <option value="my">Malaysia</option>
+                <option value="mx">México</option>
+                <option value="nl">Nederland</option>
+                <option value="nz">New Zealand</option>
+                <option value="no">Norge</option>
+                <option value="at">Österreich</option>
+                <option value="pe">Perú</option>
+                <option value="ph">Philippines</option>
+                <option value="pl">Polska</option>
+                <option value="pt">Portugal</option>
+                <option value="th">ประเทศไทย</option>
+                <option value="jp">日本</option>
+                <option value="ro">România</option>
+                <option value="ru">Россия</option>
+                <option value="ch">Schweiz</option>
+                <option value="sg">Singapore</option>
+                <option value="si">Slovenija</option>
+                <option value="sk">Slovensko</option>
+                <option value="za">South Africa</option>
+                <option value="rs">Srbija</option>
+                <option value="fi">Suomi</option>
+                <option value="se">Sverige</option>
+                <option value="tw">台灣</option>
+                <option value="tr">Türkiye</option>
+                <option value="ae">UAE</option>
+                <option value="uk">United Kingdom</option>
+                <option value="uy">Uruguay</option>
+                <option value="us">USA</option>
+                <option value="vn">Việt Nam</option>
+                <option value="hk">香港</option>
+                <option value="il">ישראל</option>
+                <option value="cn">中国</option>
+              </select>
+            </div>  
+          </div>
+        </div>  
 
-		<div class="margen-parrafo">
+        <div class="row marketing">
+          <div class="col-lg-4">
+            <ul class="lista-no-enumerdada">
+              <li >Company</li>
+              <li>Careers</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Support Center</li>
+              <li>Investor Relations</li>
+              <li> Expedia</li>
+            </ul>
+          </div>
 
-			<h5 class="subtitulo-parrafo">Trivago's global hotel search</h5>
-			<br>
+          <div class="col-lg-4">
+            <ul class="lista-no-enumerdada">
+              <li>Mobile apps - searching on the go</li>
+              <li>Hotel Manager - for hoteliers</li>
+              <li>Hotel Manager - for hoteliers</li>
+              <li>Room5</li>
+              <li>Affiliate Program</li>
+            </ul>
+          </div>
 
-			trivago’s hotel search allows users to compare hotel prices in just a few clicks from more than <strong>200</strong> booking sites for 1.3 million hotels in over 190 countries. With 1.4 billion visits annually to our site, travelers regularly use the hotel comparison to compare deals in the same city. Get information for trips to cities like Las Vegas or Orlando and you can find the right hotel on trivago quickly and easily. New York City and its surrounding area are great for trips that are a week or longer with the numerous hotels available. 
-			<br>
+          <div class="col-lg-4">
+            <ul class="lista-no-enumerdada">
+              <li>Terms and Conditions</li>
+              <li>Legal Information</li>
+              <li>Privacy Policy</li>
+              <li>Site Map</li>
+              <li>Cookie policy</li>
+            </ul>
+          </div>
+        </div>
 
-			<h5 class="subtitulo-parrafo">Find cheap hotels on trivago</h5>
+      </div>
 
-			With trivago you can easily <strong>find your ideal hotel at the lowest rate</strong>. Simply enter where you want to go and your desired travel dates, and let our hotel search engine compare accommodation prices for you. To refine your search results, simply filter by price, distance (e.g. from the beach), star category, facilities and more. From budget hostels to luxury suites, trivago makes it easy to book online. You can search from a large variety of rooms and locations across the USA, like San Francisco and Chicago to popular cities and holiday destinations abroad! 
-			<br>
+     <div class="footer-fondo-pantalla2">
+        <center>
+          <img src="img/logo_optimised_white.png"> 
+          <br>
+          <span class="footer__copyright-text">Copyright 2017 NotTrivago | Todos los derechos reservados.</span>
+        </center>
+      </div>
 
-			<h5 class="subtitulo-parrafo">Hotel reviews help you find your ideal hotel</h5>
+    </footer>
 
-			Over 175 million aggregated hotel ratings and more than 19 million images allow you to find out more about where you're traveling. To get an extended overview of a hotel property, trivago shows the average rating and extensive reviews from other booking sites, e.g. Hotels.com, Expedia, Agoda, leading hotels, etc. trivago makes it easy for you to find information about your trip to Miami Beach, including the ideal hotel for you. 
-			<br>
 
-			<h5 class="subtitulo-parrafo">How to book</h5>
-
-			trivago is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites. This means that while users decide on trivago which hotel best suits their needs, the booking process itself is completed through the booking sites (which are linked to our website). By clicking on the “view deal” button, you will be forwarded onto a booking site where you can complete the reservation for the hotel deal found on trivago. 
-			<br> <br>
-
-			Let trivago help you to find the best price from over 200 booking sites!
-
-		</div>
-
-		<div class="margen-parrafo">
-			<h5>More Top Cities</h5>
-		</div>
-
-		<div class="margen-parrafo">
-			<h5>Trivago Internacional</h5>
-		</div>
-	</div>	
-</div>
-
-<footer>
-
-	<div class="footer-fondo-pantalla-total row">
-		
-		<div>
-			<div class="row marketing">
-				
-				<div class="col-lg-6">
-					<br>
-					Want to receive exclusive hotel offers? Subscribe to our newsletter!
-				</div>
-				
-				<div>	
-					<form class="form-inline col-lg-6">
-						<br>
-						<input class="form-control" id="caja-correo" type="text" name="correo-electronico" placeholder="Correo Electronico">
-						<button type="submit" class="btn btn-default">Subscribe</button>
-					</form>
-					<br>
-				</div>
-
-			</div>
-		</div>
-
-		<hr>
-
-		<div class="row marketing">
-			
-			<div class="col-lg-6">
-				<div >
-					<strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Francisco Morazán, Tegucigalpa, Honduras
-					<br>
-				</div>
-
-				<div>
-					<ul class="lista-no-enumerdada">
-					<br>
-						<li>
-							<a target="blank" href="https://www.facebook.com/"> Facebook</a></li>
-						<li>
-							<a target="blank" href="https://twitter.com/"> Twitter </a></li>
-						<li>
-							<a target="blank" href="https://instagram.com/"> Instagram </a></li>
-						<li>
-							<a target="blank" href="https://plus.google.com/"> Google Plus </a></li>
-						<li>
-							<a target="blank" href="https://www.youtube.com/user/"> Youtube </a></li>
-						<li>
-							<a target="blank" href="https://www.pinterest.com/"> Pinterest </a></li>
-						<li>
-							<a target="blank" href="https://www.linkedin.com/"> Linkedin </a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-6">
-				<div class="col-xs-6">
-					<select class="form-control" id="seleccionar-pais" name="seleccionar-pais">
-						<option value="na" selected="">Select Country</option>
-						<option value="aa">العالم العربي</option>
-						<option value="ar">Argentina</option>
-						<option value="au">Australia</option>
-						<option value="bg">България</option>
-						<option value="be">België</option>
-						<option value="br">Brasil</option>
-						<option value="ca">Canada</option>
-						<option value="cz">Česko</option>
-						<option value="cl">Chile</option>
-						<option value="co">Colombia</option>
-						<option value="dk">Danmark</option>
-						<option value="de">Deutschland</option>
-						<option value="ec">Ecuador</option>
-						<option value="gr">Ελλάδα</option>
-						<option value="es">España</option>
-						<option value="fr">France</option>
-						<option value="kr">한국</option>
-						<option value="hr">Hrvatska</option>
-						<option value="in">India</option>
-						<option value="id">Indonesia</option>
-						<option value="ie">Ireland</option>
-						<option value="it">Italia</option>
-						<option value="hu">Magyarország</option>
-						<option value="my">Malaysia</option>
-						<option value="mx">México</option>
-						<option value="nl">Nederland</option>
-						<option value="nz">New Zealand</option>
-						<option value="no">Norge</option>
-						<option value="at">Österreich</option>
-						<option value="pe">Perú</option>
-						<option value="ph">Philippines</option>
-						<option value="pl">Polska</option>
-						<option value="pt">Portugal</option>
-						<option value="th">ประเทศไทย</option>
-						<option value="jp">日本</option>
-						<option value="ro">România</option>
-						<option value="ru">Россия</option>
-						<option value="ch">Schweiz</option>
-						<option value="sg">Singapore</option>
-						<option value="si">Slovenija</option>
-						<option value="sk">Slovensko</option>
-						<option value="za">South Africa</option>
-						<option value="rs">Srbija</option>
-						<option value="fi">Suomi</option>
-						<option value="se">Sverige</option>
-						<option value="tw">台灣</option>
-						<option value="tr">Türkiye</option>
-						<option value="ae">UAE</option>
-						<option value="uk">United Kingdom</option>
-						<option value="uy">Uruguay</option>
-						<option value="us">USA</option>
-						<option value="vn">Việt Nam</option>
-						<option value="hk">香港</option>
-						<option value="il">ישראל</option>
-						<option value="cn">中国</option>
-					</select>
-				</div>	
-			</div>
-	
-		</div>	
-
-		<div class="row marketing">
-			<div class="col-lg-4">
-				<ul class="lista-no-enumerdada">
-					<li >Company</li>
-					<li>Careers</li>
-					<li>Jobs</li>
-					<li>Press</li>
-					<li>Support Center</li>
-					<li>Investor Relations</li>
-					<li> Expedia</li>
-				</ul>
-			</div>
-
-			<div class="col-lg-4">
-				<ul class="lista-no-enumerdada">
-					<li>Mobile apps - searching on the go</li>
-					<li>Hotel Manager - for hoteliers</li>
-					<li>Hotel Manager - for hoteliers</li>
-					<li>Room5</li>
-					<li>Affiliate Program</li>
-				</ul>
-			</div>
-
-			<div class="col-lg-4">
-				<ul class="lista-no-enumerdada">
-					<li>Terms and Conditions</li>
-					<li>Legal Information</li>
-					<li>Privacy Policy</li>
-					<li>Site Map</li>
-					<li>Cookie policy</li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="footer-fondo-pantalla2">
-		<center>Copyright 2017 trivago | All rights reserved.</center> 
-	</div>
-
-</footer>
-
-</body>
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
-
-
