@@ -6,9 +6,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="icon" href="img/logo.png">
+	<link rel="icon" href="img/trivago.png">
 
-	<title>NotTrivago.com</title>
+	<title>Hoteles en Honduras-78%</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/nicolle-custom.css">
@@ -53,23 +53,28 @@
 						<!--<table>
 						<input class="form-control horus__querytext" id="caja-pais" type="searching" name="seleccionar-pais" value="Honduras">
 						<button type="submit" class="btn btn-primary">Buscar</button><br><br>-->
-					<table>	
+			
 						<div class="input-group-lg">
+            <table>
   							<input class="caja-texto" type="text" class="form-control" value="Honduras" aria-describedby="basic-addon2">
   							<span class="btn-primary boton" id="basic-addon2">Buscar</span>
-							<br><br>
+            </table>
+							<br>
+            <table>
 						<button class="btn btn-default sincronizar"><input class="form-control borde" type="date" name="txt-fecha" value="Seleccione">
 						</button>
 						<button class="btn btn-default sincronizar"><input class="form-control borde" type="date" name="txt-fecha" value="Seleccione">
 						</button>
-						<button class="btn btn-default sincronizar"><select class="form-control borde" name="slc-habitacion" id="slc-habitacion">
+						<select class="btn btn-hab borde" name="slc-habitacion" id="slc-habitacion" >
             				<option value="1">Individual</option>
 				            <option value="2">Doble</option>
 				            <option value="3">Familiar</option>
 				            <option value="4">Multiple</option>
          				 </select></button>
-         				 </div>
-         			</table>
+            </div>
+            </table>
+
+         	
 					</form>
 				</div>
 		</center>
@@ -77,10 +82,19 @@
 </section>
 <br>
 
-	<div class="map-access col-lg-4">
-		<button class="btn btn-default">Ver mapa</button>
+	<div class="col-lg-2 caja-filtros">
+     <picture>
+          <img src="img/map-access.jpg" class="fondo-mapa">
+     </picture>
+		<button class="btn btn-default btn-mapa">Ver Mapa</button>
 	</div>
-	<div class="col-lg-4">
+  <div class="col-lg-2">
+      <h5>
+          <span id="nume-hoteles" class="h5">288</span> de 788 hoteles 
+      </h5>
+  </div>
+
+  <div class="col-lg-6">
 		<select class="btn btn-lg btn-ordenar " name="slc-ordenar" id="slc-ordenar">
 			<option value="1">Ordenar por popularidad</option>
 			<option value="2">Priorizar la valoración</option>
@@ -88,13 +102,12 @@
 			<option value="4">Ordenar solo por puntuación</option>
 			<option value="5">Ordenar solo por precio</option>
 		</select>
-	</div>
-	<div class="col-lg-4">
 		<button class="btn btn-lg btn-compartir">Comparte</button>
 	</div>
-<br>
-<br>
 
+<br>
+<br>
+<br><br><br>
 <hr>
 
 <footer>
