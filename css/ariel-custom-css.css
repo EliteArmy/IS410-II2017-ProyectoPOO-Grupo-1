@@ -67,14 +67,14 @@ header, nav, section, aside, article, figure, footer {
 
 .envoltura-barra-navegacion-top{
 	background-color: rgb(255, 255, 255);
-	color: rgb(255, 255, 255);
-	/*box-shadow: rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;*/
+	/*color: rgb(255, 255, 255);*/
+	box-shadow: rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
 	/*box-sizing: border-box;*/
 	/*display: block;*/
 	/*flex-basis: auto;
 	flex-grow: 0;
 	flex-shrink: 1;*/
-	/*height: 64px;*/
+	height: 64px;
 	/*justify-content: flex-end;*/
 	/*position: relative;*/
 	/*width:1349px;*/
@@ -179,7 +179,7 @@ header, nav, section, aside, article, figure, footer {
 .titulo-cuenta{
 	box-sizing:border-box;
 	display: block;
-	
+	color: #37454D;
 	font-size: 20px;
 	line-height:25px;
 	
@@ -343,7 +343,7 @@ header, nav, section, aside, article, figure, footer {
 	flex-shrink: 0;
 	
 	left: auto;
-	/*max-width: 100%;*/
+	max-width: 100%;
 	/*position: static;*/
 }
 
