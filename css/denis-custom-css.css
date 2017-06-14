@@ -4,66 +4,43 @@ padding: 25px 50px;
 top and bottom paddings are 25px
 right and left paddings are 50px*/
 
-#parrafo2{
-	border:1px #ffffff solid; 
-	padding: 20px 200px;
-	margin:10px;
-}
- 
-#caja-correo{
-	width: 300px; height: 35px;
+aside {
+	border: 1px solid;
+	background-color:  snow;
+	border-radius: 30px;
 }
 
-#caja-busqueda{
-	width: 500px; height: 30px;
+.header {
+	text-align: center;
+	border-bottom: 2px solid grey;
+	margin-bottom: 20px;
 }
 
-#titulo-principal{
-	color:#007FAD;
-	padding-top: 50px;
-  	padding-bottom: 20px;
-}
-
-.envoltura-seccion-principal{
- 
- }
- 
- .envoltura-parrafo-principal{ 
-     margin: 0px 120px;
- }
- 
- .margen-parrafo-principal{ 
- 	padding: 15px;
-     margin: 0px 240px;
- }
- 
- .margen-parrafo{
- 	border:1px #D0D3D5 solid; 
- 	padding: 15px;
-     margin-top: 15px;
- 
-     font-size: 12px;
-     line-height: 16px;
- }
- 
- .subtitulo-parrafo{
- 	font-size: 14px;
-     line-height: 20px;
-     font-weight: 700;
- }
-
-.lista-no-enumerdada{
-	list-style: none;
-}
-
-.footer-fondo-pantalla-total{
+.footer {
+	margin-top: 20px;
+	text-align: center;
 	background-color: #293339;
-	color: #fff;
-	padding: 32px;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 5px;
 }
 
-.footer-fondo-pantalla2{ 	
-	padding: 32px;
-	color: #9BA2A6;
-	background: #37454D;
+.header h1 {
+	font-size: 40px;
+}
+.container {
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+
+.texto-izq {
+	text-align: left;
+}
+
+.texto-der {
+	text-align: right;
+}
+
+.texto-cen {
+	text-align: center;
 }
