@@ -1,4 +1,4 @@
-body {
+ody {
   padding-bottom: 20px;
   background-color: #ebeced;
 }
@@ -18,7 +18,7 @@ body {
 .caja-texto{
     border-radius: 2px 0 0 2px;
     font-size: 21px;
-    padding: 0 300px 0 10px;
+    padding: 0 370px 0 10px;
     text-align: left;
     height: 41px;
     border-style: none;
@@ -30,7 +30,7 @@ body {
 	height: 41px;
     margin:0;
     padding-top: 14px;
-    padding-right: 30px;
+    padding-right: 25px;
     padding-left: 30px;
     padding-bottom: 11px;
     font-size: 14px;
@@ -40,7 +40,6 @@ body {
     font-weight: 700;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
-    width: 140px;
   }
 
  .borde{
@@ -58,10 +57,9 @@ body {
     height: 42px;
     text-align: left;
     background-color: #fff;
-    border: none;
     font-size: 12px;
     line-height: 15px;
-    padding: 0 60px 0 10px;
+    padding: 0 40px 0 50px;
 }
 
 .barra-texto {
@@ -114,6 +112,13 @@ body {
 .btn-ordenar{
 	border-color: #333;
 	border-radius: 2px;
+    font-size: 14px;
+    max-width: 394px;
+    min-width: 204px;
+    margin-left: 12px;
+    padding-right: 40px;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
 }
 
 .btn-compartir{
@@ -121,4 +126,53 @@ body {
 	color: #333;
 	border-color: #333;
 	border-radius: 2px;
+    font-size: 14px;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
+}
+
+.btn-hab{
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 8px;
+    padding-left: 0;
+    height: 40px;
+    text-align: left;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: arial;
+    line-height: 15px;
+    padding: 0 80px 0 50px;    
+}
+
+.btn-mapa{
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+
+.h5{
+    font-weight: bold;
+}
+.fondo-mapa {
+    border-radius: 2px;
+    height:80px;
+    padding-bottom: 15px;
+
+}
+
+.caja-filtros {
+    box-shadow: 0 1px 4px rgba(100,51,57,.5);
+    background: #fff;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    height: 50px;
+     padding: 20px 70px 80px 20px;
+}
+
+.lista-filtros {
+    display: block;
+    color: #37454;
+
 }
