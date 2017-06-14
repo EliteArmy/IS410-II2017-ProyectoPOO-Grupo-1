@@ -12,8 +12,9 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/nicolle-custom.css">
+   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 </head>
-<body>
+<body class="body">
 <nav class="navbar navbar-default" id="barra-menu">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle"></button>
@@ -81,28 +82,110 @@
 	</div>
 </section>
 <br>
+<!--<div class="borde-caja">-->
+	<div class="col-lg-2 caja-mapa" style="background-image: url(img/map-access.jpg);" align="center" >
+  <table >
+    <button class="btn btn-default btn-mapa">Ver Mapa</button>
+<!--</div>-->
+ <br><br><br>
+<div class="lista-f borde-caja">
+<div class="filtros">
+  <section class="caja-filtros">
+    <div class="tabla-filtros">
+      <div class="top-filtros cambiodetabla apuntar">
+        Top Filtros
+      </div>
+      <div class="b-filtros cambiodetabla apuntar">
+        Filtros extra
+      </div>
+    </div>
+  <div>
+    <section class="tablas-grupo letra-filtros">
+        Estrellas
+          <div class="tabla-botones">
+            <button class="grupo-botones" title="Hoteles de 0/1 estrellas">
+              
+            </button>
+            <button class="grupo-botones espacio-botones" title="Hoteles de 2 estrellas">
+              
+            </button>
+            <button class="grupo-botones espacio-botones" title="Hoteles de 3 estrellas">
+              
+            </button>
+            <button class="grupo-botones espacio-botones" title="Hoteles de 4 estrellas">
+              
+            </button>
+            <button class="grupo-botones espacio-botones" title="Hoteles de 5 estrellas">
+              
+            </button>
+          </div>
+    </section>
+    <section class="tablas-grupo letra-filtros">
+        Puntuación
+          <div class="tabla-botones">
+            <button class="grupo-botones btn-danger" title="Deficiente">0+</button>
+            <button class="grupo-botones btn-warning espacio-botones" title="Ok">70+</button>
+            <button class="grupo-botones btn-bueno espacio-botones" title="Bueno">75+</button>
+            <button class="grupo-botones btn-muybueno espacio-botones" title="Muy Bueno">80+</button>
+            <button class="grupo-botones btn-exc espacio-botones" title="Excelente">85+</button>
+          </div>
+    </section>
 
-	<div class="col-lg-2 caja-filtros" style="background-image: url(img/map-access.jpg); width: 300px; height: 130px" align="center" >
-    <button class="btn btn-default btn-mapa" >Ver Mapa</button>
-	</div>
-  <div class="col-lg-2">
+  </div>
+  </section>
+</div>
+</div>
+</table>
+</div>
+
+ <div class="col-lg-2">
       <h5>
           <span id="nume-hoteles" class="h5">288</span> de 788 hoteles 
       </h5>
   </div>
 
-  <div class="col-lg-6">
-		<select class="btn btn-lg btn-ordenar " name="slc-ordenar" id="slc-ordenar">
-			<option value="1">Ordenar por popularidad</option>
-			<option value="2">Priorizar la valoración</option>
-			<option value="3">Priorizar el precio</option>
-			<option value="4">Ordenar solo por puntuación</option>
-			<option value="5">Ordenar solo por precio</option>
-		</select>
-		<button class="btn btn-lg btn-compartir">Comparte</button>
-	</div>
+  <div >
+    <select class="btn btn-lg btn-ordenar " name="slc-ordenar" id="slc-ordenar">
+      <option value="1">Ordenar por popularidad</option>
+      <option value="2">Priorizar la valoración</option>
+      <option value="3">Priorizar el precio</option>
+      <option value="4">Ordenar solo por puntuación</option>
+      <option value="5">Ordenar solo por precio</option>
+    </select>
+    <button class="btn btn-lg btn-compartir">Comparte</button>
+  </div>
 
 <br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
+<br>
+<br><br><br><br>
 <br>
 <br><br><br>
 <hr>
@@ -115,7 +198,7 @@
               <strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Tegucigalpa, Francisco Morazán, Honduras
               <br>
             </div>
-            <div>
+             <div>
               <br>
                 <div class="list-group">
                   <a target="blank" href="https://www.facebook.com/"> <i class="fa fa-facebook-square fa-2x"> </i></a>
@@ -129,68 +212,17 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <!--<div class="col-lg-6">
             <div class="col-xs-6">
-              <select class="form-control" id="seleccionar-pais" name="seleccionar-pais">
-                <option value="na" selected="">Select Country</option>
-                <option value="aa">العالم العربي</option>
-                <option value="ar">Argentina</option>
-                <option value="au">Australia</option>
-                <option value="bg">България</option>
-                <option value="be">België</option>
-                <option value="br">Brasil</option>
-                <option value="ca">Canada</option>
-                <option value="cz">Česko</option>
-                <option value="cl">Chile</option>
-                <option value="co">Colombia</option>
-                <option value="dk">Danmark</option>
-                <option value="de">Deutschland</option>
-                <option value="ec">Ecuador</option>
-                <option value="gr">Ελλάδα</option>
-                <option value="es">España</option>
-                <option value="fr">France</option>
-                <option value="kr">한국</option>
-                <option value="hr">Hrvatska</option>
-                <option value="in">India</option>
-                <option value="id">Indonesia</option>
-                <option value="ie">Ireland</option>
-                <option value="it">Italia</option>
-                <option value="hu">Magyarország</option>
-                <option value="my">Malaysia</option>
-                <option value="mx">México</option>
-                <option value="nl">Nederland</option>
-                <option value="nz">New Zealand</option>
-                <option value="no">Norge</option>
-                <option value="at">Österreich</option>
-                <option value="pe">Perú</option>
-                <option value="ph">Philippines</option>
-                <option value="pl">Polska</option>
-                <option value="pt">Portugal</option>
-                <option value="th">ประเทศไทย</option>
-                <option value="jp">日本</option>
-                <option value="ro">România</option>
-                <option value="ru">Россия</option>
-                <option value="ch">Schweiz</option>
-                <option value="sg">Singapore</option>
-                <option value="si">Slovenija</option>
-                <option value="sk">Slovensko</option>
-                <option value="za">South Africa</option>
-                <option value="rs">Srbija</option>
-                <option value="fi">Suomi</option>
-                <option value="se">Sverige</option>
-                <option value="tw">台灣</option>
-                <option value="tr">Türkiye</option>
-                <option value="ae">UAE</option>
-                <option value="uk">United Kingdom</option>
-                <option value="uy">Uruguay</option>
-                <option value="us">USA</option>
-                <option value="vn">Việt Nam</option>
-                <option value="hk">香港</option>
-                <option value="il">ישראל</option>
-                <option value="cn">中国</option>
-              </select>
+                <input class="btn correo" type="email" name="txt-correo" placeholder="Dirección de correo electrónico">
+                <button>Suscribirse</button>
             </div>  
-          </div>
+          </div>-->
+          <div>
+            <table>
+                <input class="btn correo" type="text" class="form-control" placeholder="Dirección de correo electrónico">
+                <span class="btn btn-suscribirse">Suscribirse</span>
+            </table>
       
         </div>  
 
