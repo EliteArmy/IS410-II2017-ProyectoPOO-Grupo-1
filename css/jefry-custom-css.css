@@ -72,3 +72,7 @@ h1 {
   margin-bottom: 19px;
   min-height: 10px;
 }
+
+a:focus, a:hover {
+    text-decoration: none;
+}
