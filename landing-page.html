@@ -15,50 +15,36 @@
 			<span style="color: #293339;">Not</span><span style="color: #0073CF;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span>
 		</h1>
 	</header>
-	<div class="container">
-
-		<section class = "col-md-8">
-			<header style="border: 1px solid; text-align: center">
-				<h3>¿Hotel? | NotTrivago</h3>
-			</header>
-			<p>NotTrivago busca entre cientos de páginas web y te muestra hoteles disponibles, así puedes estar seguro de encontrar tu hotel ideal, al mejor precio. ¿Hotel? NotTrivago.</p>
-			<div>
-				<img src="img/main-image.png" class="texto-cen">
+	
+	<div id="contenedor1" name="contenedor1">
+		<div class="container" style="border: solid 1px">
+			<div class="col-md-8" id="contenedor1-1">
+				Suscribete ahora y resive todas nuestras noticias y promociones
 			</div>
-		</section>
-
-		<aside class="col-md-4">
-			<header class="texto-cen">
-				<h3>Suscribete ahora</h3>
-				<p>y resive todos nuetras noticias</p>
-			</header>
-			<div>
+			<div class="col-md-4" id="formulario">
+				<h3>Suscribete Ahora</h3>
 				<form>
-					<div class="form-group">
-						<label for="txt-nombre">Nombre: *</label>
-						<input type="text" class="form-control" id="txt-nombre" placeholder="Ej. Juan">
-					</div>
-					<div class="form-group">
-						<label for="txt-apellido">Apellido: *</label>
-						<input type="text" id="txt-apellido" class="form-control" placeholder="Ej. Castillo">
-					</div>
-					<div class="form-group">
-						<label for="txt-ubicacion">Ubicación: *</label>
-						<input type="text" id="txt-ubicacion" class="form-control" placeholder="Ej. Miami">
-					</div>
-		  			<div class="form-group">
-    					<label for="txt-email">Email address: *</label>
-    					<input type="email" class="form-control" id="txt-email" placeholder="Email">
+					 <div class="form-group">
+    					<label for="txt-nombre">Nombre: *</label>
+    					<input type="text" class="form-control" id="txt-nombre" placeholder="Nombre">
   					</div>
-					<button type="submit" class="btn btn-success">Enviar</button>
-  				</form>
-  				<footer class="texto-cen">
-  					<p class="help-block">o visita nuestra pagina web para mas infomacion: <a href="index.html">www.nottrivago.com</a> </p>
-  				</footer>
+  					<div class="form-group">
+    					<label for="txt-apelido">Apellido: *</label>
+    					<input type="text" class="form-control" id="txt-apellido" placeholder="Apellido">
+  					</div>
+  					<div class="form-group">
+    					<label for="txt-ubicacion">Ubicación:</label>
+    					<input type="text" class="form-control" id="txt-ubicacion" placeholder="Ej. Miami">
+  					</div>
+  					<div class="form-group">
+    					<label for="txt-email">Email: *</label>
+    					<input type="email" class="form-control" id="txt-email" placeholder="Ej. example@mail.com">
+  					</div>
+  					<button type="submit" class="btn btn-success">Suscribirse</button>
+				</form>
+				<p class="block-help">Los campos marcados con asteriscos son obligatorios</p>
 			</div>
-		</aside>
+		</div>
 	</div>
-	<footer class="footer footer__copyright-text">
-		<p>Copyright 2017 NotTrivago | Todos los derechos reservados.</p>
-	</footer>
+		
 </body>
