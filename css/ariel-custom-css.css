@@ -57,7 +57,6 @@ body {
 	line-height: 20px; /*Inherited: Yes - Interlineado*/
 	margin: 0; /*Inherited: No*/
 	max-width: 100%; /*Inherited:No*/
-	min-width:320px;
 }
 
 header, nav, section, aside, article, figure, footer {
@@ -240,46 +239,56 @@ header, nav, section, aside, article, figure, footer {
 }
 
 .fondo-tarjeta{
-	background-attachment:scroll;
-	background-clip:border-box;
-	background-color:rgb(255, 255, 255);
-	background-image:none;
-	background-origin:padding-box;
-	background-size:auto;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(255, 255, 255);
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 	
-	border-bottom-left-radius:2px;
-	border-bottom-right-radius:2px;
-	border-top-left-radius:2px;
-	border-top-right-radius:2px;
-	
-	box-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
-	box-sizing:border-box;
-	display:block;
+	box-shadow: rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+	box-sizing: border-box;
+	display: block;
 
 	height:165px;
 
-	margin-bottom:32px;
-	max-height:165px;
+	margin-bottom: 32px;
+	max-height: 165px;
 	/*max-width:100%;*/
 	overflow-x:hidden;
 	overflow-y:hidden;
 }
 
+.gradiente{
+	background-image:linear-gradient(rgba(41, 51, 57, 0.9), transparent);
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	box-sizing:border-box;
+	display:block;
+	height:50px;
+	left:0px;
+	line-height:20px;
+	position:absolute;
+	top:0px;
+	width:1065px;
+}
+
 .fondo-tarjeta-envoltura{
 	box-sizing:border-box;
-	color:rgb(55, 69, 77);
 	display:block;
-	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
-	font-size:16px;
-	line-height:20px;
 	position:relative;
 }
 
 .fondo-tarjeta-titulo{
 	box-sizing:border-box;
-	color:rgb(55, 69, 77);
+
 	display:block;
-	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+
 	font-size:14px;
 	font-weight:bold;
 	height:17px;
@@ -295,6 +304,7 @@ header, nav, section, aside, article, figure, footer {
 }
 
 .fondo-tarjeta-imagen{
+
 	box-sizing:border-box;
 	display:block;
 	height:100px;
@@ -302,6 +312,7 @@ header, nav, section, aside, article, figure, footer {
 }
 
 .fondo-tarjeta-imagen-final{
+
 	box-sizing:border-box;
 	color:rgb(55, 69, 77);
 	display:block;
@@ -315,6 +326,7 @@ header, nav, section, aside, article, figure, footer {
 }
 
 .mensaje-bienvenida{
+
 	box-sizing:border-box;
 	color:rgb(255, 255, 255);
 	display:block;
@@ -344,6 +356,7 @@ header, nav, section, aside, article, figure, footer {
 	
 	left: auto;
 	max-width: 100%;
+	min-width: 200px;
 	/*position: static;*/
 }
 
@@ -376,3 +389,52 @@ header, nav, section, aside, article, figure, footer {
 	
 	text-align: left;
 }
+
+.arreglo-tamanio{
+	margin-top: -25px;
+}
+
+.boton-barra-menu{
+	background-color: rgb(255, 255, 255);
+	border-color: #EBECED;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: rgb(250, 251, 252);
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #EBECED;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #293339;
+    /*background-color: #37454D;*/
+    background-color: rgb(255, 255, 255);
+}
+
+
+.navbar-toggle {
+    position: relative;
+    float: left;
+    padding: 10px 10px;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.logo{
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	/*margin-left: 400px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-right: 0px;*/
+}
+
