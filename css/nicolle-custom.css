@@ -1,8 +1,86 @@
-body {
+.body {
   padding-bottom: 20px;
   background-color: #ebeced;
+  font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  direction: ltr;
+  font-size: 12px;
+  display: block;
 }
 
+#parrafo2{
+    border:1px #ffffff solid; 
+    padding: 20px 200px;
+    margin:10px;
+}
+ 
+#caja-correo{
+    width: 300px; height: 35px;
+}
+
+#caja-busqueda{
+    width: 500px; height: 30px;
+}
+
+#titulo-principal{
+    color:#007FAD;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.lista-no-enumerdada{
+    list-style: none;
+}
+
+.footer-fondo-pantalla-total{
+    background-color: #293339;
+    color: #fff;
+    padding: 32px;
+}
+
+.footer-fondo-pantalla2{    
+    padding: 32px;
+    color: #9BA2A6;
+    background: #37454D;
+}
+
+.nav{
+    font-size:17px;
+    color: #FFFFFF;
+    
+}
+
+.nav li:hover > ul{
+    display:block;
+}
+
+h1 {
+    color: #0073CF;
+    font-size: 32px;
+}
+
+.navbar-default{
+    background-color: #FFFFFF;
+}
+
+.footer .white-logo {
+    display: block;
+    margin: 0 auto;
+    height: 32px;
+    width: 102px;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+  min-height: 10px;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
 .navbar {
     position: relative;
     min-height: 5px;
@@ -18,7 +96,7 @@ body {
 .caja-texto{
     border-radius: 2px 0 0 2px;
     font-size: 21px;
-    padding: 0 300px 0 10px;
+    padding: 0 370px 0 10px;
     text-align: left;
     height: 41px;
     border-style: none;
@@ -30,7 +108,7 @@ body {
 	height: 41px;
     margin:0;
     padding-top: 14px;
-    padding-right: 30px;
+    padding-right: 25px;
     padding-left: 30px;
     padding-bottom: 11px;
     font-size: 14px;
@@ -40,7 +118,6 @@ body {
     font-weight: 700;
     border-bottom-right-radius: 2px;
     border-top-right-radius: 2px;
-    width: 140px;
   }
 
  .borde{
@@ -58,10 +135,9 @@ body {
     height: 42px;
     text-align: left;
     background-color: #fff;
-    border: none;
     font-size: 12px;
     line-height: 15px;
-    padding: 0 60px 0 10px;
+    padding: 0 40px 0 50px;
 }
 
 .barra-texto {
@@ -89,31 +165,21 @@ body {
     border-color: #333;
 }
 
-.footer-fondo-pantalla-total{
-	background-color: #293339;
-	color: #fff;
-	padding: 32px;
-}
-
-.footer-fondo-pantalla2{ 	
-	padding-bottom: 32px;
-	padding-top: 20px;
-	color: #9BA2A6;
-	background: #37454D;
-}
-
 .h2{
 	color: #fff;
 	font-family: Arial;
 }
 
-.lista-no-enumerdada{
-	list-style: none;
-}
-
 .btn-ordenar{
 	border-color: #333;
 	border-radius: 2px;
+    font-size: 14px;
+    max-width: 394px;
+    min-width: 204px;
+    margin-left: 350px;
+    padding-right: 40px;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
 }
 
 .btn-compartir{
@@ -121,4 +187,228 @@ body {
 	color: #333;
 	border-color: #333;
 	border-radius: 2px;
+    font-size: 14px;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
+}
+
+.btn-hab{
+    text-align: center;
+    border-radius: 2px;
+    margin-right: 8px;
+    padding-left: 0;
+    height: 40px;
+    text-align: left;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: arial;
+    line-height: 15px;
+    padding: 0 80px 0 50px;    
+}
+
+.btn-mapa{
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+}
+
+.h5{
+    font-weight: bold;
+}
+
+.fondo-mapa {
+    border-radius: 2px;
+    height:10px;
+    padding-bottom: 1px;
+    margin-left: 400px;
+}
+
+.caja-mapa {
+    box-shadow: 0 1px 4px rgba(100,51,57,.5);
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    height: 70px;
+    padding: 16px 1px 13px;
+    margin-left: 100px;
+    width: 250px;
+}
+
+.caja-filtros {
+    line-height: 15px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    display: block;
+}
+
+.lista-f {
+    width: 250px;
+    overflow: hidden;
+}
+
+.borde-caja {
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    background: #fff;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+
+.tabla-filtros {
+    background: #fff;
+    display: table;
+    height: 45px;
+    width: 250px;
+    line-height: 15px;
+}
+
+.top-filtros{
+    color: #37454d;
+    font-weight: 700;
+    padding-bottom: 1px;
+}
+
+.b-filtros{
+    color: #37454d;
+    font-weight: 400;
+}
+
+.cambiodetabla{
+    border: 1px 
+    solid #cdd0d2;
+    vertical-align: middle;
+    display: table-cell;
+    height: 4px;
+    text-align: center;
+    font-size: 14px;
+    border-width: 1px 0 1px 1px;
+}
+
+.apuntar {
+    cursor: pointer;
+}
+
+.filtros{
+    height: 652px;
+}
+
+.correo{
+    border-radius: 2px;
+    height: 35px;
+    padding-right: 90px;
+    text-align: left;
+}
+
+.btn-suscribirse{
+    background-color: #37454D;
+    font-weight: bold;
+}
+
+.tablas-grupo {
+    padding: 16px 16px 13px;
+    position: relative;
+    text-align: left;
+}
+
+.letra-filtros {
+    color: inherit;
+    margin: 0 0 14px;
+    line-height: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 14px;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.precios{
+    color: #007fad;
+    margin: 0 0 14px;
+    line-height: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.tabla-botones {
+    margin-bottom: 0;
+    width: 105%;
+}
+.boton-estrellas{
+    border-color: #F6AB3F;
+    opacity: 1;
+    border: 1px;
+    border-radius: 2px;
+    float: left;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.grupo-botones {
+    border-color: #F6AB3F;
+    opacity: 1;
+    border: 1px solid #697379;
+    border-radius: 2px;
+    float: left;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.espacio-botones{
+    margin-left: 9px;
+}
+
+.btn-danger{
+    background-color: #a3171a;
+}
+
+.btn-danger:hover{
+    background-color: #8D1416;
+}
+
+.btn-warning{
+    background-color: #e57a00;
+}
+
+.btn-warning:hover{
+    background-color: #CC6C00;
+}
+
+.btn-bueno{
+    background-color: #98bf6a;
+    color: #fff;
+}
+
+.btn-bueno:hover{
+    background-color: #8CB758;
+    color: #fff;
+}
+
+.btn-muybueno{
+    background-color: #72ac2f;
+    color: #fff;
+}
+
+.btn-muybueno:hover{
+    background-color: #65982A;
+    color: #fff;
+}
+
+.btn-exc{
+    background-color: #007400;
+    color: #fff;
+}
+
+.btn-exc:hover{
+    background-color: #005B00;
+    color: #fff;
 }
