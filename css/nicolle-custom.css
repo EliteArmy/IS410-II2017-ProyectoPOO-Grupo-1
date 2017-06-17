@@ -230,7 +230,9 @@ a:focus, a:hover {
     margin-bottom: 10px;
     border-radius: 2px;
     height: 70px;
-    padding: 15px 10px 13px 10px;
+    padding: 16px 1px 13px;
+    margin-left: 100px;
+    width: 250px;
 }
 
 .caja-filtros {
@@ -315,15 +317,42 @@ a:focus, a:hover {
     font-weight: 700;
     font-size: 12px;
     margin-bottom: 14px;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.precios{
+    color: #007fad;
+    margin: 0 0 14px;
+    line-height: 12px;
+    font-weight: 700;
+    font-size: 12px;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
 .tabla-botones {
     margin-bottom: 0;
     width: 105%;
 }
+.boton-estrellas{
+    border-color: #F6AB3F;
+    opacity: 1;
+    border: 1px;
+    border-radius: 2px;
+    float: left;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    border-radius: 2px;
+}
 
 .grupo-botones {
-    border-color: #f9c77f;
+    border-color: #F6AB3F;
     opacity: 1;
     border: 1px solid #697379;
     border-radius: 2px;
