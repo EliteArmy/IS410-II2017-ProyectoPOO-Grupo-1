@@ -117,8 +117,8 @@
             </button>
           </div>
     </section>
+    <hr class="hr">
     <section class="tablas-grupo letra-filtros">
-    <br>
         Puntuación
           <div class="tabla-botones">
           <br>
@@ -129,9 +129,8 @@
             <button class="grupo-botones btn-exc espacio-botones" title="Excelente">85+</button>
           </div>
     </section>
-    
+    <hr class="hr">
     <section class="tablas-grupo precios">
-    <br>
         Precio
          <div> 
             <div class="rango-precios">
@@ -146,17 +145,43 @@
               </div>
               <br>
               <div class="barra-precios">
-              <div class="rango"></div>
-                  <span class="boton-precios" style="left: 100%;"></span>
-                <div class="barra-pequeña" style="width: 100%;">
-                </div>
-              </div>
+              <input id="ex1" data-slider-id="ex1Slider" type="range" data-slider-min="0" data-slider-ax="483" data-slider-ster="1" data-slider-value="14"/>
             </div>  
             <div class="hoteles-disponibles">
-              <input type="checkbox">
+              <label><input type="checkbox" > Ver sólo hoteles disponibles</label>
             </div>
          </div>
     </section>
+    <hr class="hr">
+     <section class="tablas-grupo letra-filtros">
+        Lo más buscado
+          <div class="tabla-botones">
+          <br>
+            <button class="boton-estrellas" style="background-image: url(img/mascotas.png);" title="Mascotas permitidas" onclick="clickMascota();">  
+            </button>
+            <button class="boton-estrellas espacio-botones" style="background-image: url(img/playa.png);" title="Playa"> 
+            </button>
+            <button class="boton-estrellas espacio-botones" style="background-image: url(img/wifi.png);" title="Wi-Fi gratis">  
+            </button>
+            <button class="boton-estrellas espacio-botones" style="background-image: url(img/desayuno.png);" title="Desayuno">
+            </button>
+            <button class="boton-estrellas espacio-botones" style="background-image: url(img/alberca.png);" title="Alberca">
+            </button>
+          </div>
+    </section>
+    <hr class="hr">
+    <section class="tablas-grupo letra-filtros">
+        Buscar nombre de hotel
+        <br><br>
+        <div>
+          <input class="caja-hotel"  type="text" name="txt-hoteles" placeholder="Buscar nombre de hotel"><button class="btn btn-hotel glyphicon glyphicon-search"></button>
+        </div>    
+    </section>
+    <hr class="hr">
+    <section class="tablas-grupo letra-filtros">
+      <button class="btn btn-borrar">Borrar todos los filtros</button>
+    </section>
+
 
   </div>
   </section>
@@ -182,6 +207,12 @@
     </select>
     <button class="btn btn-lg btn-compartir">Comparte</button>
   </div>
+
+  <section class="lista-hoteles"> 
+      <li><!--listas-->
+        
+      </li>
+  </section>
 
 <br>
 <br>
