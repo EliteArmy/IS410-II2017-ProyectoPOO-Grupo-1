@@ -103,3 +103,10 @@ input[type="email"] {
 .col-lg-4{
   	padding-left: 0px;
 }
+
+#email-index{
+	height: 33px; 
+	width: 433px;
+	max-width: 100%;
+	color: #000;
+}
