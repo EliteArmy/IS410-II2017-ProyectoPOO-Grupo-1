@@ -13,7 +13,7 @@
 
   <body>
     <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top" style="height: 51px">
       <div class="container">
         <div class="navbar-header" >
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -30,13 +30,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse"> 
            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-              <li><a href="#">USD</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a>></li>
+              <li ><a style= "cursor: context-menu;" href="#">USD</a></li>
               <li><a href="#">ES</a></li>
               <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Mi Perfil <b class="caret"></b>
+
               </a>
+              
            <ul class="dropdown-menu">
                 <li><a href="#">Iniciar Sesion</a></li>
                 <li><a href="sign-in">Regístrate</a></li>
@@ -46,8 +48,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
-
+    <br><br><br><br><br><br>
     <div class="container">
       <section>
         <div>
@@ -57,7 +58,7 @@
             </h1>
             <!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
             <form class="form-inline"> 
-              <input id="caja-busqueda" type="Search" width="4" class="form-control" placeholder="Ej.: Honduras">
+              <input id="caja-busqueda" type="Search" style="height: 35px" class="form-control" placeholder="Ej.: Honduras">
               <button type="submit" class="btn btn-primary">Buscar</button>
             </form>
           </center>
@@ -70,30 +71,39 @@
 
     <footer>
       <div class="footer-fondo-pantalla-total row">
+        <br><br>
+        
         <div class="row marketing">
-          <div class="col-lg-6">
-            <div >
+          <div class = "col-lg-6" style="padding-left: 0px;">
+            <p>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!</p>
+          </div>
+          <form>
+                <input type="email" id="email-index" style="height: 33px; width: 433px;" placeholder="Dirección de correo electrónico">
+                <button type = "submit" class="btn">Suscribirse</button>
+              </form>
+          <hr>
+          <div class="col-lg-6" style="padding-left: 0px;">
+            <div  style ="width: 580px;">
               <strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Tegucigalpa, Francisco Morazán, Honduras
               <br>
             </div>
-             
           <div>
               <br>
                 <div class="list-group">
-                  <a target="blank" href="https://www.facebook.com/"> <i class="fa fa-facebook-square fa-2x"> </i></a>
-                  <a target="blank" href="https://twitter.com/"> <i class="fa fa-twitter fa-2x"></i> </a></li>
-                  <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a></li>
-                  <a target="blank" href="https://plus.google.com/"><i class="fa fa-google-plus-officia fa-2x"></i> </a></li>
-                  <a target="blank" href="https://www.youtube.com/user/"><i class="fa fa-youtube fa-2x"></i> </a></li>
-                  <a target="blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a></li>
-                  <a target="blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                  <a target="blank" href="https://www.facebook.com/"> <i class="fa fa-facebook-square fa-2x" style="color: white"></i></a>&nbsp;
+                  <a target="blank" href="https://twitter.com/"> <i class="fa fa-twitter fa-2x" style="color: white"></i></a></li>&nbsp;
+                  <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram fa-2x" style="color: white"></i></a></li>&nbsp;
+                  <a target="blank" href="https://plus.google.com/"><i class="fa fa-google-plus-official fa-2x" style="color: white"></i></a></li>&nbsp;
+                  <a target="blank" href="https://www.youtube.com/user/"><i class="fa fa-youtube-play fa-2x" style="color: white"></i></a></li>&nbsp;
+                  <a target="blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-2x" style="color: white"></i></a></li>&nbsp;
+                  <a target="blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x" style="color: white"></i></a></li>
                 </div>
             </div>
           </div>
          
           <div class="col-lg-6">
             <div class="col-xs-6">
-              <select class="form-control" id="seleccionar-pais" name="seleccionar-pais">
+              <select class="form-control" id="seleccionar-pais" name="seleccionar-pais" style="margin-left: 229px; width: 276px;">
                 <option value="na" selected="">Select Country</option> 
                 <option value="aa">العالم العربي</option>
                 <option value="ar">Argentina</option>
@@ -158,53 +168,44 @@
         <div class="row marketing">
           <div class="col-lg-4">
             <ul class="lista-no-enumerdada">
-              <li >Company</li>
-              <li>Careers</li>
-              <li>Jobs</li>
-              <li>Press</li>
-              <li>Support Center</li>
+              <li >Nosotros</li>
+              <li>Empleo</li>
+              <li>Ofertas de empleo</li>
+              <li>Prensa</li>
+              <li>Ayuda</li>
               <li>Investor Relations</li>
-              <li> Expedia</li>
+              <li>Expedia</li>
             </ul>
           </div>
 
           <div class="col-lg-4">
             <ul class="lista-no-enumerdada">
-              <li>Mobile apps - searching on the go</li>
-              <li>Hotel Manager - for hoteliers</li>
-              <li>Hotel Manager - for hoteliers</li>
-              <li>Room5</li>
-              <li>Affiliate Program</li>
+              <li>App de NotTrivago - donde quiera que estés</li>
+              <li>Hotel Manager - la plataforma para hoteleros</li>
             </ul>
           </div>
 
           <div class="col-lg-4">
             <ul class="lista-no-enumerdada">
-              <li>Terms and Conditions</li>
-              <li>Legal Information</li>
-              <li>Privacy Policy</li>
-              <li>Site Map</li>
-              <li>Cookie policy</li>
+              <li>Terminos de uso</li>
+              <li>Legal</li>
+              <li>Política de privacidad</li>
+              <li>Mapa del sitio</li>
+              <li>Política de cookies</li>
             </ul>
           </div>
         </div>
-
+        <br>
       </div>
-
-     <div class="footer-fondo-pantalla2">
-        <center>
-          <img src="img/logo_optimised_white.png"> 
-          <br>
-          <span class="footer__copyright-text">Copyright 2017 NotTrivago | Todos los derechos reservados.</span>
-        </center>
+      
+      <div class="footer-fondo-pantalla2">
+          <center>
+            <img src="img/logo_optimised_white.png"> 
+            <br>
+            <span class="footer__copyright-text">Copyright 2017 NotTrivago | Todos los derechos reservados.</span>
+          </center>
       </div>
-
     </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
