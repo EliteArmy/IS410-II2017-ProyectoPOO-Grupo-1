@@ -356,8 +356,16 @@ header, nav, section, aside, article, figure, footer {
 	
 	left: auto;
 	max-width: 100%;
-	min-width: 200px;
+	min-width: 200px; /*De no incluise la barra izquiera se vuelve muy angosta y las letras bajan*/
 	/*position: static;*/
+
+}
+
+.hidden-xs{
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .barra-principal-opciones{

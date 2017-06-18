@@ -33,6 +33,7 @@ body {
 .sidebar {
   display: none;
 }
+
 @media (min-width: 768px) {
   .sidebar {
     position: fixed;
@@ -101,17 +102,14 @@ body {
   .main {
     padding-right: 40px;
     padding-left: 40px;
+    
   }
 }
 .main .page-header {
   margin-top: 0;
 }
 
-
-/*
- * Placeholder dashboard ideas
- */
-
+/* Placeholder dashboard ideas */
 .placeholders {
   margin-bottom: 30px;
   text-align: center;
@@ -126,3 +124,78 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+
+/* Toggle Styles */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    /*overflow-y: auto;*/
+    /*background: #000;*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+@media(min-width:768px) {
+  
+  #wrapper {
+      padding-left: 0;
+  }
+
+  #wrapper.toggled {
+      padding-left: 250px;
+  }
+
+
+  #sidebar-wrapper {
+      width: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+  }
+
+  #page-content-wrapper {
+      padding: 20px;
+      position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+  }
+}
+
