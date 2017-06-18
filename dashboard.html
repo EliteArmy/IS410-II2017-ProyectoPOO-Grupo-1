@@ -19,38 +19,46 @@
 
 <body>
 
+<!-- Todo el Cuerpo de la pagina -->
 <div>
-    
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid envoltura-barra-navegacion-top">
-        
-        <div class="navbar-header">
-          <button type="button" class="boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> Menú
-            <span class="sr-only">Toggle navigation</span>
-            <!--<span class="icon-bar"></span>-->
-            <!--<span class="icon-bar"></span>-->
-            <!--<span class="icon-bar"></span>-->
 
-          </button>
-          <a href="#"><img class="logo" src="img/default_logo.png"></a>
-        </div>
+  <!-- Barra de Parte Superior -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid envoltura-barra-navegacion-top">
+      
+      <div class="navbar-header">
+        <!---<button type="button" class="boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> Menú
+          <span class="sr-only">Toggle navigation</span>
+        </button>-->
 
+        <a href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
 
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
+        <a href="#"><img class="logo" src="img/default_logo.png"></a>
       </div>
-    </nav>
+        
 
+      <!---<div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>-->
+
+    </div>
+  </nav>
+  <!-- /#Barra de Parte Superior -->
+  
+  <!-- Envoltura Barra Izquierda & Contenido de la Pagina -->
+  <div id="wrapper">
+    
+    <!-- Barra Izquierda & Contenido de la Pagina -->
     <div class="container-fluid">
       <div class="row">
         
-        <div class="col-sm-3 col-md-2 col-lg-2 sidebar hidden-xs envoltura-barra-principal">
+        <!-- Barra de Menu Izquierdo-->
+        <div id="sidebar-wrapper" class="col-sm-3 col-md-2 col-lg-2 sidebar slow hidden-xs envoltura-barra-principal">
           <ul class="nav nav-sidebar">
             <li class="active"><a class="lista" href="#">[x] Close</a></li>
             <li class="active"><a class="lista " href="#">Volver a la Busqueda <span class="sr-only">(current)</span></a></li>
@@ -68,15 +76,15 @@
             <li class="active"><a class="lista" href="#">Cerrar Sesión</a></li>
           </ul>
         </div>
-        
+        <!-- /#Barra de Menu Izquierdo-->
+
+        <!-- Contenido de la Pagina-->
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 main">
           <h1 class="titulo-cuenta page-header">Panel de control</h1>
 
           <div class="row placeholders">
             <div class="col-xs-12 col-sm-12">
-
               <section class="fondo-tarjeta">
-                    
                   <div class="fondo-tarjeta-envoltura">
                     <div class="fondo-tarjeta-imagen">
                     
@@ -94,9 +102,7 @@
                     <span>Tu perfil está al 0 %.</span>
                     <a  class="text-primary" href="#">¡Complétalo ahora!</a>
                   </p>
-
               </section>
-
             </div>
           </div>
 
@@ -104,9 +110,8 @@
             <h2 class="sub-titulo-cuenta">Aspectos destacados de tu cuenta</h2>
            
             <div class="resumen-cuenta">
-
+              
               <table class="tabla-resumen table">
-                
                 <tbody class="sub-tabla-resumen">
                   <tr> <!--Fila-->
                       <th class="sub-tabla-titulo">Añadidos recientemente
@@ -114,12 +119,11 @@
                           Haz clic en el corazón sobre la imagen de un hotel para añadirlo a la lista.
                         </p>
                       </th>
-                  </tr>
+                  </tr> <!-- /#Fila-->
                 </tbody>
               </table>
 
               <table class="table tabla-resumen">
-                
                 <tbody class="sub-tabla-resumen">
                   <tr> <!--Fila-->
                       <th class="sub-tabla-titulo">Alerta de precios para tu hotel ideal
@@ -127,26 +131,48 @@
                           Te enviaremos un correo electrónico cuando el hotel baje su precio
                         </p>
                       </th>
-                  </tr>
+                  </tr> <!-- /#Fila-->
                 </tbody>
               </table>
 
             </div>
           </section>
 
-
         </div>
+        <!-- /#Contenido de la Pagina -->
+
       </div>
     </div>
+    <!-- /# Barra Izquierda & Contenido de la Pagina -->
+  </div>
+  <!-- /#Envoltura Barra Izquierda & Contenido de la Pagina -->
 
 </div>
+<!-- /#Todo el Cuerpo de la pagina -->
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- ========================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
+      $("#sidebar-wrapper").toggleClass("hidden-xs");
+      
+  });
+  </script>
 
 </body>
 </html>
