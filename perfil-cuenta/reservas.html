@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="Coffee Icon" href="../img/trivago.png">
+
+  <title> Zona para miembros </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/dashboard.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/ariel-custom-css.css">
+
+</head>
+
+<body>
+
+<!-- Todo el Cuerpo de la pagina -->
+<div>
+
+  <!-- Barra de Parte Superior -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid envoltura-barra-navegacion-top">
+      
+      <div class="navbar-header">
+        <!---<button type="button" class="boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> Menú
+          <span class="sr-only">Toggle navigation</span>
+        </button>-->
+
+        <a href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
+
+        <a class="foto" href="#">
+          <center>
+            <img src="../img/default_logo.png" alt="Nottrivago" height="32" width="102"">
+          </center>
+        </a>
+        
+      </div>
+
+      <!---<div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>-->
+
+    </div>
+  </nav>
+  <!-- /#Barra de Parte Superior -->
+  
+  <!-- Envoltura Barra Izquierda & Contenido de la Pagina -->
+  <div id="wrapper">
+    
+    <!-- Barra Izquierda & Contenido de la Pagina -->
+    <div class="container-fluid">
+      <div class="row">
+        
+        <!-- Barra de Menu Izquierdo-->
+        <div id="sidebar-wrapper" class="col-sm-3 col-md-2 col-lg-2 sidebar hidden-xs envoltura-barra-principal">
+          <ul class="nav nav-sidebar borde">
+            <li class="active"><a class="lista" href="#">[x] Close</a></li>
+            <li class="active"><a class="lista " href="../sign-in.html">Volver a la Busqueda <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav nav-sidebar borde-dos">
+            <li class="active"><a class="lista" href="../perfil-cuenta/dashboard.html">Panel de Control</a></li>
+            <li class="active"><a class="lista" href="../perfil-cuenta/ajustes.html">Configuracion</a></li>
+            <li class="active"><a class="lista" href="../perfil-cuenta/reservas.html">Reservas</a></li>
+            <li class="active"><a class="lista" href="../perfil-cuenta/lista-hoteles.html">Listas de Hoteles</a></li>
+            <li class="active"><a class="lista" href="../perfil-cuenta/alerta-precios.html">Alerta de Precios</a></li>
+            <li class="active"><a class="lista" href="../perfil-cuenta/busqueda-reciente.html">Busquedas Recientes</a></li>
+            <li class="active"><a class="lista" href="../perfil-cuenta/suscripciones.html">Suscripciones</a></li>
+          </ul>
+          <ul class="nav nav-sidebar borde-tres">
+            <li class="active"><a class="lista" href="#">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+        <!-- /#Barra de Menu Izquierdo-->
+
+        <!-- Contenido de la Pagina-->
+        <div id="contenido-pagina" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 main">
+          <h1 class="titulo-cuenta page-header">Reservas</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-12 col-sm-12">
+
+            </div>
+          </div>
+
+          <section class="arreglo-tamanio">
+            <h2 class="sub-titulo-cuenta">Aspectos destacados de tu cuenta</h2>
+           
+          </section>
+
+        </div>
+        <!-- /#Contenido de la Pagina -->
+
+      </div>
+    </div>
+    <!-- /# Barra Izquierda & Contenido de la Pagina -->
+  </div>
+  <!-- /#Envoltura Barra Izquierda & Contenido de la Pagina -->
+
+</div>
+<!-- /#Todo el Cuerpo de la pagina -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- ========================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+  <!-- jQuery -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+      //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
+      $("#sidebar-wrapper").toggleClass("hidden-xs");
+      
+  });
+  </script>
+
+</body>
+</html>
