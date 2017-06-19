@@ -7,6 +7,23 @@ right and left paddings are 50px*/
 	text-align: center;
 }
 
+.img-sombra {
+	box-shadow: rgba(180,180,180, 0.6) 5px 5px 10px;
+}
+
+.btn-black {
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  background-color: #333;
+  border-color: #222;
+}
+.btn-black:hover {
+  color: #fff;
+  background-color: #444;
+  border-color: #333;
+}
+
 #contenedor1 {
 	background-image: url(../img/landing-page/habitacion2.jpg);
 	background-position: center;
@@ -40,7 +57,7 @@ right and left paddings are 50px*/
 	padding-bottom: 50px;
 }
 
-#contenedor2 span {
+.texto-naranja {
 	font-size: 20px;
 	color: #C94A38;
 }
@@ -61,10 +78,6 @@ hr {
 	margin-bottom: 50px;
 }
 
-#contenedor3-1 img {
-	box-shadow: rgba(180,180,180, 0.6) 5px 5px 10px;
-}
-
 #contenedor3-2 {
 	padding-left: 5%;
 }
@@ -73,10 +86,6 @@ hr {
 	color: #777;
 	text-align: left;
 	margin-left: 5%;
-}
-
-#contenedor3-2 h1 {
-	color: #444;
 }
 
 #contenedor3-2 h3 {
@@ -100,10 +109,20 @@ hr {
 
 #contenedor4 h4	{
 	color: #C94A38;
+	font-size: 	15px
 	text-shadow: rgba(0,0,0, 0.5) 1px 1px 2px;
 }
 
-#contenedor4 h1	{
+.color-titulo{
 	color: #333;
 	text-shadow: rgba(0,0,0, 0.5) 2px 2px 3px;
+}
+
+.texto-center
+{
+	text-align: center;
+}
+
+.margen-inferior {
+	margin-bottom:  50px;
 }
