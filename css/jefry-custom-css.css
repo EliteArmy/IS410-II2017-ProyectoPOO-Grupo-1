@@ -26,12 +26,14 @@ right and left paddings are 50px*/
 
 .lista-no-enumerdada{
 	list-style: none;
+	padding-left: 0px;
 }
 
 .footer-fondo-pantalla-total{
 	background-color: #293339;
 	color: #fff;
-	padding: 32px;
+	padding-left: 150px; 
+	padding-right: 130px;
 }
 
 .footer-fondo-pantalla2{ 	
@@ -75,4 +77,36 @@ h1 {
 
 a:focus, a:hover {
     text-decoration: none;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+input[type="email"] {
+	height: 33px;
+	border: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: 280px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.form-control{
+	border-radius: 0;
+}
+
+.col-lg-4{
+  	padding-left: 0px;
+}
+
+#email-index{
+	height: 33px; 
+	width: 433px;
+	max-width: 100%;
+	color: #000;
 }

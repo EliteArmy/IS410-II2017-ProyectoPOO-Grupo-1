@@ -74,12 +74,12 @@ header, nav, section, aside, article, figure, footer {
 	flex-grow: 0;
 	flex-shrink: 1;*/
 	height: 64px;
-	/*justify-content: flex-end;*/
-	/*position: relative;*/
+	justify-content: flex-end;
+	position: relative;
 	/*width:1349px;*/
 	/*margin: 0px;*/
 	/*padding: 0px;*/
-	/*max-width: 100%;*/
+	max-width: 100%;
 }
 
 .resumen-cuenta{
@@ -115,12 +115,12 @@ header, nav, section, aside, article, figure, footer {
 	background-color: rgb(255, 255, 255);
 	background-size: auto; /*Default value: auto. The background-image contains its width and height*/
 	
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 	
-	border-top: 0px solid #ddd;
+	border-top: 0px none #ddd;
 	
 	box-shadow: rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
 
@@ -134,7 +134,6 @@ header, nav, section, aside, article, figure, footer {
 	font-size: 16px;
 	line-height: 20px;
 	
-	margin-bottom: 16px;
 	padding-bottom: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
@@ -332,12 +331,14 @@ header, nav, section, aside, article, figure, footer {
 	display:block;
 
 	font-weight:bold;
+	font-size: 16px;
 	
 	margin: 0px;
 	padding-bottom:0px;
 	padding-left:16px;
 	padding-right:16px;
 	padding-top:0px;
+	
 	position:absolute;
 	text-align:left;
 	text-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px;
@@ -355,9 +356,19 @@ header, nav, section, aside, article, figure, footer {
 	flex-shrink: 0;
 	
 	left: auto;
-	max-width: 100%;
-	min-width: 200px;
+	/*min-width: 200px;*/ /*De no incluise la barra izquiera se vuelve muy angosta y las letras bajan*/
 	/*position: static;*/
+	max-width: 240px;
+	min-width: 200px;
+	max-width: 100%;
+
+}
+
+.hidden-xs{
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .barra-principal-opciones{
@@ -397,6 +408,9 @@ header, nav, section, aside, article, figure, footer {
 .boton-barra-menu{
 	background-color: rgb(255, 255, 255);
 	border-color: #EBECED;
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif", 'Glyphicons Halflings';
+	/*font-size: 16px; */
+	/*line-height: 20px; /*Inherited: Yes - Interlineado*/
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -432,9 +446,44 @@ header, nav, section, aside, article, figure, footer {
 	box-sizing: border-box;
 	display: block;
 	text-align: center;
+	margin: 0px;
 	/*margin-left: 400px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	margin-right: 0px;*/
 }
 
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    padding: 4px;
+    line-height: 1;
+    vertical-align: top;
+    border: 0px none #ddd;
+}
+
+.borde{
+	border-bottom: 1px solid #293339;
+}
+
+.borde-dos{
+	margin-top: 30px;
+}
+
+.borde-tres{
+	margin-top: 30px;
+	border-top: 1px solid #293339;
+}
+
+.foto{
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/*Esto es para el logo de Trivago en la barra superior*/
+@media (min-width: 768px){
+
+	.navbar-header {
+	    float: none;
+	}
+}
