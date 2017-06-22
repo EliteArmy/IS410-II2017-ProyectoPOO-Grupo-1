@@ -3,6 +3,13 @@
 padding: 25px 50px;
 top and bottom paddings are 25px
 right and left paddings are 50px*/
+
+footer {
+	background-color: #C94A38;
+	color: white;
+	padding: 15px 10px;
+}
+
 .header {
 	text-align: center;
 }
