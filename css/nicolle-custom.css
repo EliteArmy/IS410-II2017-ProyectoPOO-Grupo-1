@@ -632,14 +632,22 @@ a:focus, a:hover {
 }
 
 .paginas{
-    width: 18.25%;
+    width: 16%;
     text-align: center;
     font-size: 12px;
     color: #697379;
     border-right: 1px solid #cdd0d2;
     border-left: 1px solid #cdd0d2;
-    margin-left: 500px;
+    /*margin-left: 500px;*/
     font-size: 12px;
+
+}
+
+.ultimo-cuadro{
+    /*display: flex;*/
+    text-align: center;
+    width: 22%;
+    /*padding: 8px;*/
 
 }
 
@@ -661,9 +669,4 @@ a:focus, a:hover {
     width: 90px;
 }
 
-.ultimo-cuadro{
-    display: flex;
-    width: 27%;
-    padding: 8px;
 
-}
