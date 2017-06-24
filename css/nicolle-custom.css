@@ -654,3 +654,16 @@ a:focus, a:hover {
     background-color: #fff;
     color: #697379;
 }
+
+.hr1{
+    margin-top: 0;
+    margin-bottom: 1px;
+    width: 90px;
+}
+
+.ultimo-cuadro{
+    display: flex;
+    width: 27%;
+    padding: 8px;
+
+}
