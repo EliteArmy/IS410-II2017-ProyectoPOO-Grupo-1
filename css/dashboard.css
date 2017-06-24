@@ -255,7 +255,6 @@ width: 100%;
 z-index: 1500;
 */
 
-
 /* ---- Ajustes!!! ---- */
 
 .titulo-tabla-ajustes{
@@ -386,11 +385,11 @@ z-index: 1500;
 
 @media (min-width: 768px){
   .form-inline .form-control {
-      display: block;
-        min-width: 150px;
-  max-width: 325px;
-  width: 100%;
-      vertical-align: middle;
+    display: block;
+    min-width: 150px;
+    max-width: 325px;
+    width: 100%;
+    vertical-align: middle;
   }
 }
 
@@ -404,4 +403,28 @@ z-index: 1500;
     line-height: 1.25;
 }
 
+/* ---- Reservas!!! ---- */
 
+.envoltura-contenedor-reservas{
+  background-color:rgb(255, 255, 255);
+  position: relative;
+  padding: 16px 8px;
+}
+
+.contenedor-reservas {
+  /*background-color:rgb(255, 255, 255);*/
+  max-width: 980px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.reservas{
+  text-align: center;
+  box-sizing:border-box;
+  display:block;
+  color: #37454D;
+  font-size:20px;
+  line-height:25px;
+  font-weight:bold;
+  margin: 0px;
+}
