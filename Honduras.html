@@ -203,7 +203,9 @@
       <option value="4">Ordenar solo por puntuación</option>
       <option value="5">Ordenar solo por precio</option>
     </select>&nbsp;&nbsp;
-    <button class="btn btn-lg btn-compartir">Comparte</button>
+    <button class="btn btn-lg btn-compartir dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Comparte
+<span class="caret"></span>
+    </button>
   </div>
 
   <section class="lista-hoteles"> 
@@ -212,9 +214,9 @@
         <img class="imagen borde-imagen" src="img/hotel1.jpg">
       </div>
     </div>
-    <div class="detalles-hotel">
-      <div style="width: 500px;" >
-          <h3 class="nombre-hotel">Grand Roatan Caribbean Resort</h3>
+    <div class="detalles-hotel form-inline">
+      <div style="width:  57% ;" class="form-inline form-group">
+          <h3 class="nombre-hotel">Grand Roatan Caribbean Res...</h3>
           <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
           <button class="btn boton-excelente">87</button>
           <p class="detalles-boton">
@@ -227,108 +229,32 @@ el servicio de Alberca en
 este hotel.">Alberca genial</button>
       </div>
 
-    <section class="paginas">
-      <button class="btn btn-pag">Expedia</button> 
-      <button class="btn btn-pag">Hotewire</button>
-      <button class="btn btn-pag">Booklt.com</button>
-    </table>
+    <section class="paginas form-inline form-group">
+      <button class="btn btn-pag">Expedia<br>
+      <strong>$240</strong>
+      </button> 
+      <br>
+      <button class="btn btn-pag">Hotewire<br>
+      <strong>$240</strong>
+      </button>
+      <button class="btn btn-pag">Cancelon<br>
+      <strong style="color: #CC4A30;">$283</strong>
+      </button>
+      <hr class="hr1">
+      <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 20</strong></button>
+    </section>
+    </div>
+
+    <section class="ultimo-cuadro form-inline form-group">
+      <button class="btn btn-pag" style="color: ">Brooking.com</button>
     </section>
   </section>
   </div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
 
-<footer>
-      <div class="footer-fondo-pantalla-total row">
-        <div class="row marketing">
-          <div class="col-lg-6">
-            <div >
-              <strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Tegucigalpa, Francisco Morazán, Honduras
-              <br>
-            </div>
-             <div>
-              <br>
-                <div class="list-group">
-                  <a target="blank" href="https://www.facebook.com/"> <i class="fa fa-facebook-square fa-2x"> </i></a>
-                  <a target="blank" href="https://twitter.com/"> <i class="fa fa-twitter fa-2x"></i> </a></li>
-                  <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a></li>
-                  <a target="blank" href="https://plus.google.com/"><i class="fa fa-google-plus-officia fa-2x"></i> </a></li>
-                  <a target="blank" href="https://www.youtube.com/user/"><i class="fa fa-youtube fa-2x"></i> </a></li>
-                  <a target="blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a></li>
-                  <a target="blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                </div>
-            </div>
-          </div>
-
-          <!--<div class="col-lg-6">
-            <div class="col-xs-6">
-                <input class="btn correo" type="email" name="txt-correo" placeholder="Dirección de correo electrónico">
-                <button>Suscribirse</button>
-            </div>  
-          </div>-->
-          <div>
-            <table>
-                <input class="btn correo" type="text" class="form-control" placeholder="Dirección de correo electrónico">
-                <span class="btn btn-suscribirse">Suscribirse</span>
-            </table>
-      
-        </div>  
-
-        <div class="row marketing">
-          <div class="col-lg-4">
-            <ul class="lista-no-enumerdada">
-              <li >Company</li>
-              <li>Careers</li>
-              <li>Jobs</li>
-              <li>Press</li>
-              <li>Support Center</li>
-              <li>Investor Relations</li>
-              <li> Expedia</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4">
-            <ul class="lista-no-enumerdada">
-              <li>Mobile apps - searching on the go</li>
-              <li>Hotel Manager - for hoteliers</li>
-              <li>Hotel Manager - for hoteliers</li>
-              <li>Room5</li>
-              <li>Affiliate Program</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4">
-            <ul class="lista-no-enumerdada">
-              <li>Terms and Conditions</li>
-              <li>Legal Information</li>
-              <li>Privacy Policy</li>
-              <li>Site Map</li>
-              <li>Cookie policy</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-     <div class="footer-fondo-pantalla2">
-        <center>
-          <img src="img/logo_optimised_white.png"> 
-          <br>
-          <span class="footer__copyright-text">Copyright 2017 NotTrivago | Todos los derechos reservados.</span>
-        </center>
-      </div>
-
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+</body>
 </html>
