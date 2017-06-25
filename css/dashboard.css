@@ -98,6 +98,7 @@ body {
 .main {
   padding: 20px;
 }
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
@@ -105,6 +106,7 @@ body {
     
   }
 }
+
 .main .page-header {
   margin-top: 0;
 }
@@ -481,7 +483,47 @@ z-index: 1500;
 
 /* ---- Busquedas Recientes!!! ---- */
 
+.envoltura-cuerpo-busqueda-reciente{
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgb(235, 236, 237);
+  background-image:none;
+  background-origin:padding-box;
+  background-position-x:0%;
+  background-position-y:0%;
+  background-size:auto;
+  
+  border-bottom-color:rgb(155, 162, 166);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  /*border-bottom-style:solid;*/
+  /*border-bottom-width:1px;*/
+  
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  
+  border-left-color:rgb(55, 69, 77);
+  border-left-style:none;
+  border-left-width:0px;
+  
+  border-right-color:rgb(55, 69, 77);
+  border-right-style:none;
+  border-right-width:0px;
+  
+  border-top-color:rgb(55, 69, 77);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-top-style:none;
+  border-top-width:0px;
+  
+  display:block;
+}
+
 .cuerpo-busqueda-reciente{
+
   box-sizing:border-box;
   display:block;
   position: relative;
@@ -521,13 +563,27 @@ padding-top:8px;
 position:relative;
 }
 
+@media (max-width: 768px){
+  .tabla-busqueda-reciente{
+      height:138px;
+  }
+}
+
+@media (max-width: 768px){
+  .tabla-busqueda-reciente .busqueda-reciente-div-vacio{
+    height:36px;
+    /*width: 70%;*/
+  }
+}
+
 .busqueda-reciente-imagen{
   box-sizing:border-box;
   color:rgb(55, 69, 77);
   display:block;
   float:left;
   font-size:0px;
-  height:168px;
+  /*height:168px;*/
+  height: 100%;
   line-height:0px;
   
   margin-bottom:8px;
@@ -567,7 +623,7 @@ position:relative;
   height:75px;
   line-height:0px;
   margin-left:8px;
-  min-height:75px;
+  /*min-height:75px;*/
   /*width:780px;*/
   width: 75%;
 }
