@@ -3,27 +3,6 @@
 padding: 25px 50px;
 top and bottom paddings are 25px
 right and left paddings are 50px*/
-
-#parrafo2{
-	border:1px #ffffff solid; 
-	padding: 20px 200px;
-	margin:10px;
-}
- 
-#caja-correo{
-	width: 300px; height: 35px;
-}
-
-#caja-busqueda{
-	width: 500px; height: 30px;
-}
-
-#titulo-principal{
-	color:#007FAD;
-	padding-top: 50px;
-  	padding-bottom: 20px;
-}
-
 .lista-no-enumerdada{
 	list-style: none;
 	padding-left: 0px;
@@ -94,6 +73,7 @@ input[type="email"] {
 
 .btn{
 	border-radius: 0;
+	border: 0px;
 }
 
 .form-control{
@@ -106,7 +86,51 @@ input[type="email"] {
 
 #email-index{
 	height: 33px; 
-	width: 433px;
 	max-width: 100%;
 	color: #000;
+	padding-left: 10px;
+    width: 427px;
+}
+
+#div-center{
+	margin-top: 150px;
+	margin-bottom: 1200px;
+}
+
+#caja-busqueda{
+	height: 41px;
+	padding-left: 7px;
+	width: 500px;
+	border-color: #939A9D;
+}
+
+#btn-suscribirse{
+	background-color: #697379;
+	height: 35px;
+}
+
+#btn-suscribirse:hover{
+	background-color: #37454D;
+	border: 0px;
+}
+
+#btn-buscar{
+    height: 41px;
+    width: 134px;
+    border: 0px;
+}
+
+#titulo-principal{
+	color: #007fad;
+}
+
+#trivago-center{
+	font-size: 28px;
+	font-weight:bold; 
+	margin-left: 440px;
+}
+
+#ul-trivago-center{
+	padding-left: 0px;
+	margin-bottom: 0px;
 }

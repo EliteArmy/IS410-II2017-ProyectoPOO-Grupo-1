@@ -22,11 +22,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <center style="font-size: 28px; font-weight:bold; margin-left: 440px;">
-                <ul>
-                  <a href="#"><span style="color: #293339;">Not</span><span style="color: #0073CF;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span></a>
+          <center id = "trivago-center">
+                <ul id = "ul-trivago-center">
+                  <a href="#"><span style="color: #293339;">Not</span><span style="color: #007fad;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span></a>
                 </ul>
-              </center>
+          </center>
         </div>
         <div id="navbar" class="navbar-collapse collapse"> 
            <ul class="nav navbar-nav navbar-right">
@@ -34,53 +34,46 @@
               <li ><a style= "cursor: context-menu;" href="#">USD</a></li>
               <li><a href="#">ES</a></li>
               <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Mi Perfil <b class="caret"></b>
-
-              </a>
-              
-           <ul class="dropdown-menu">
-                <li><a href="#">Iniciar Sesion</a></li>
-                <li><a href="sign-in">Regístrate</a></li>
-           </ul>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Mi Perfil <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Iniciar Sesion</a></li>
+                    <li><a href="sign-in">Regístrate</a></li>
+                </ul>
               </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <br><br><br><br><br><br>
-    <div class="container">
+    
+    <div class="container" id="div-center">
       <section>
         <div>
           <center>  
-            <h1 id="titulo-principal">Encuentra tu hotel ideal <br>
-            al mejor precio
+            <h1 id="titulo-principal"> Encuentra tu hotel ideal <br>
+            al mejor precio 
             </h1>
+            <br>
             <!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
             <form class="form-inline"> 
-              <input id="caja-busqueda" type="Search" style="height: 35px" class="form-control" placeholder="Ej.: Honduras">
-              <button type="submit" class="btn btn-primary">Buscar</button>
+                <input id="caja-busqueda" type="Search" class="form-control" placeholder="Ej.: Honduras"><button id = "btn-buscar" type="submit" class="btn btn-primary"><b>Buscar</b></button>
             </form>
           </center>
         </div>
       </section>
-    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
     </div> <!-- /container -->
 
     <footer>
       <div class="footer-fondo-pantalla-total row">
         <br><br>
-        
         <div class="row marketing">
           <div class = "col-lg-6" style="padding-left: 0px;">
             <p>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!</p>
           </div>
-          <form>
-                <input type="email" id="email-index" placeholder="Dirección de correo electrónico">
-                <button type = "submit" class="btn">Suscribirse</button>
-              </form>
+          <form class="form-inline">
+              <input type="email" id="email-index" placeholder="Dirección de correo electrónico"><button type = "submit" class = "btn btn-primary" id = "btn-suscribirse"><b>Suscribirse</b></button>
+          </form>
           <hr>
           <div class="col-lg-6" style="padding-left: 0px;">
             <div  style ="width: 580px;">
