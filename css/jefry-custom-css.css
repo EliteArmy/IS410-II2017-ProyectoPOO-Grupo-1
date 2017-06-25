@@ -73,6 +73,7 @@ input[type="email"] {
 
 .btn{
 	border-radius: 0;
+	border: 0px;
 }
 
 .form-control{
@@ -105,16 +106,18 @@ input[type="email"] {
 
 #btn-suscribirse{
 	background-color: #697379;
+	height: 35px;
 }
 
 #btn-suscribirse:hover{
 	background-color: #37454D;
-	text-decoration-color: fff;
+	border: 0px;
 }
 
 #btn-buscar{
     height: 41px;
     width: 134px;
+    border: 0px;
 }
 
 #titulo-principal{
