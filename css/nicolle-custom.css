@@ -669,4 +669,171 @@ a:focus, a:hover {
     width: 90px;
 }
 
+.ultimo-cuadro{
+    display: flex;
+    width: 25%;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.precio-rojo{
+    color: #C94A30;
+    font-size: 18px;
+}
+
+.precio-verde{
+    color: #66a400;
+    font-size: 18px;
+}
+
+.btn-desayuno{
+    margin-top: 10px;
+    border-color: #7FA418;
+    background-color: #fff;
+    color: #7FA418;
+    font-size: 12px;
+    width: 200px;
+    border-radius: 2px;
+    height: 25px;
+    text-align: top;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.btn-oferta{
+    font-weight: bold;
+    background-color: #66a400;
+    border-color: #66a400;
+    color: #fff;
+    width: 200px;
+    border-radius: 2px;
+}
+
+.btn-oferta:hover{
+    background-color: #4C7B00;
+    color: #fff;
+}
+
+.btn-5estrellas{
+    margin-left: 180px;
+    width: 67px;
+    height: 20px;
+}
+
+.btn-estrellas{
+    margin-top: -5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-wifi{
+    margin-bottom: 5px;
+    height: 25px;
+    margin-left: 180px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #EBECED;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-3estrellas{
+    margin-left: 180px;
+    width: 40px;
+    height: 20px;
+}
+
+.detalles-estrellas{
+    font-size: 14px;
+}
+
+.boton-bien{
+    margin-left: 180px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #98BF6A; 
+    width: 24px;
+    height: 24px;  
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.btn-mejor{
+    color: #4c7b00;
+    border-color: #66a400;
+    background-color: #fff;
+    height: 21px;
+    width: 120px;
+    font-weight: 400;
+    border-radius: 2px;
+    line-height: 0.5;
+}
+
+.btn-mejor:hover{
+    color: #4c7b00;
+    border-color: #66a400; 
+}
+
+.btn-4estrellas{
+    margin-left: 180px;
+    width: 52px;
+    height: 20px;
+}
+
+.btn-ok{
+    margin-left: 180px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #E57A00; 
+    width: 24px;
+    height: 24px;  
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.boton-muybueno{
+    margin-left: 180px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #72AC2F; 
+    width: 24px;
+    height: 24px;  
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.boton-alberca{
+    margin-top: 25px;
+    height: 25px;
+    width: 100px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 12px;
+    background-color: #EBECED;
+    margin-bottom: 20px;
+}
+
+.sitio-web{
+    background-color: #E5F2F6;
+    color: #59A9D5;
+    width: 120px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: Arial;
+    font: inherit;
+}
 
