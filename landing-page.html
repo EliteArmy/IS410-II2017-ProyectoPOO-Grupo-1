@@ -7,7 +7,7 @@
     <link rel="Coffee Icon" href="img/trivago.png">
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/denis-custom-css.css">
+    <link rel="stylesheet" type="text/css" href="css/landing-page.css">
 </head>
 <body>
 	<header class="header">
@@ -18,31 +18,31 @@
 	
 	<div id="contenedor1" name="contenedor1">
 		<div class="container">
-			<div class="col-md-8" id="contenedor1-1">
-				Suscribete ahora y resive todas nuestras noticias y promociones
+			<div class="col-md-8 col-xs-12" id="contenedor1-1">
+				<h2><strong>Crea una cuenta gratis y descubre más sobre NotTrivago</strong></h2>
+	  			<p align="center">Al crear una cuenta, podrás <strong>guardar y compartir diversas listas de hoteles</strong>con otros viajeros. Incluso podrás <strong>crear alertas de precios</strong> para tus próximos viajes. Sincronizaremos tu cuenta de forma automática en todos tus dispositivos.</p><br>
 			</div>
-			<div class="col-md-4" id="formulario">
-				<h3>Suscribete Ahora</h3>
-				<form>
+			<div class="col-md-4 col-xs-12" align="center" id="formulario">
+				<h2>Registrate Ahora</h2>
+				<form action="POST">
 					 <div class="form-group">
-    					<label for="txt-nombre">Nombre: *</label>
     					<input type="text" class="form-control" id="txt-nombre" placeholder="Nombre">
   					</div>
   					<div class="form-group">
-    					<label for="txt-apelido">Apellido: *</label>
     					<input type="text" class="form-control" id="txt-apellido" placeholder="Apellido">
   					</div>
   					<div class="form-group">
-    					<label for="txt-ubicacion">Ubicación:</label>
-    					<input type="text" class="form-control" id="txt-ubicacion" placeholder="Ej. Miami">
+    					<input type="email" class="form-control" id="txt-email" placeholder="Email: ej. example@mail.com">
   					</div>
   					<div class="form-group">
-    					<label for="txt-email">Email: *</label>
-    					<input type="email" class="form-control" id="txt-email" placeholder="Ej. example@mail.com">
+    					<input type="password" class="form-control" id="txt-password" placeholder="Contraseña">
   					</div>
-  					<button type="submit" class="btn btn-black">¡Suscríbete ahora!</button>
+  					<div class="form-group">
+    					<input type="password" class="form-control" id="txt-passwordv" placeholder="Validar contraseña">
+  					</div>
+  					<button type="submit" class="btn btn-black">!Registrarse¡</button>
 				</form>
-				<p class="block-help">Los campos marcados con asteriscos son obligatorios</p>
+				<p class="block-help">Al hacer clic en «Registrarse», estás aceptando los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a> de NotTrivago. </p>
 			</div>
 		</div>
 	</div>
@@ -58,10 +58,10 @@
 	</div>
 	<hr>
 	<div class="container" id="contenedor3">
-		<div class="col-md-5" id="contenedor3-1">
+		<div class="col-md-5 col-xs-12" id="contenedor3-1">
 			<img src="img/landing-page/hotel.jpg" class="img-responsive img-circle img img-sombra" alt="Responsive image">
 		</div>
-		<div class="col-md-7" id="contenedor3-2">
+		<div class="col-md-7 col-xs-12" id="contenedor3-2">
 			<h1 class="color-titulo">Acerca de nosotros</h1><br>
 			<p>NotTrivago es un buscador de hoteles global: cada día comparamos las ofertas de más de 1,3 millones de hoteles en más de 200 webs de reserva con el objetivo de ser y seguir siendo la primera fuente de información independiente del viajero para encontrar el hotel ideal al mejor precio.</p> <br>
 			<h3>Cómo funciona NotTrivago</h3>
@@ -74,19 +74,19 @@
 	<div id="contenedor4">
 		<div class="container">
 			<h1 class="color-titulo">NotTrivago es ideal para</h1><br>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12">
 				<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 				<h4>Viajeros en busca de su hotel ideal</h4>
 				<p>Encuentra tu hotel ideal comparando a la vez más de 1 millón de hoteles en más de 250 webs de reserva. <br><br>
 				Crea una cuenta y podrás guardar, gestionar y compartir una lista con tus hoteles favoritos</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12">
 				<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><br>
 				<h4>Propietarios y directores de hoteles</h4>
 				<p>Regístrese gratis y aumente las impresiones, los clics y las reservas que su hotel recibe en Internet. <br><br>
 				Le ofrecemos toda nuestra ayuda p</p>ara optimizar el contenido, la reputación y las tarifas de su establecimiento en Internet.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-12">
 				<span class="glyphicon glyphicon-globe" aria-hidden="true"></span><br>
 				<h4>Cadenas hoteleras y webs de reserva</h4>
 				<p>¿Tiene una web de reserva con una API accesible y desea obtener el máximo rendimiento de su negocio? <br><br>
@@ -95,17 +95,40 @@
 		</div>
 	</div>
 
-	<div class="container margen-inferior" id="contenedor5">
+	<div align="center" class="container margen-inferior" id="contenedor5">
 		<h1 class="color-titulo texto-center" class="texto-center">Testimonios</h1>
 		<center>
 			<img aling="center" src="img/landing-page/Mujer-Aprobando.jpg" class="img img-responsive img-circle img-sombra" alt="Responsive image" style="margin: 20px">
 		</center>
-		<p class="texto-naranja">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <br>minim veniam, quis nostrud.</p>
-		<p>Amet conse ctetur</p>
+		<p class="texto-naranja">«Nos gusta NotTrivago por lo fácil que es de usar y las prestaciones tan útiles que ofrece, como ver en qué márgenes se mueven los establecimientos de la zona o la gran capacidad de carga de fotos (otros portales te limitan a 5), que nos deja mostrar muchos detalles de nuestro establecimiento para que el posible cliente se haga una idea lo más completa posible del hotel antes de venir. Es un portal con mucha visibilidad y presencia en Internet que nos permite llegar a bastantes clientes potenciales. Y con la cantidad de anuncios que se hacen en televisión, cuando preguntas a la gente por un comparador de hoteles, todos dicen trivago porque lo tienen en mente. La marca trivago está muy trabajada».</p>
+		<p class="color-titulo">Jessica Mendoza</p>
 	</div>
 
-	<footer class="container texto-center">
-		<h2 class="color-titulo">NotTrivago</h2>
+	<div id="contenedor-imagenes">
+		<img src="img/landing-page/imagen1.jpg" class="col-xs-12 col-md-3">
+		<img src="img/landing-page/imagen2.jpg" class="col-xs-12 col-md-3">
+		<img src="img/landing-page/imagen3.jpg" class="col-xs-12 col-md-3">
+		<img src="img/landing-page/imagen4.jpg" class="col-xs-12 col-md-3">
+	</div>
+
+	<div id="contenedor7" align="center">
+		<div class="container" align="center">
+			<h1>!Suscribete ahora!</h1>
+			<p>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!</p>
+
+			<div class="col-md-4"></div>
+			<form class="col-md-4 col-xs-12">
+				<div class="form-group">
+    				<input type="email" class="form-control" id="txt-suscribete" placeholder="Email: ej. example@mail.com">
+  				</div>
+  				<button type="submit" form="txt-suscribete" class="btn btn-black" style="width: 60%">!Suscríbete¡</button>
+			</form>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
+
+	<footer>
+		<h2>NotTrivago</h2>
 		<small>NotTrivago todos los derechos reservados &copy 2017</small>
 	</footer>
 		
