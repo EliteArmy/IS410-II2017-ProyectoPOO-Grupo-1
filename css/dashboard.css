@@ -428,3 +428,53 @@ z-index: 1500;
   font-weight:bold;
   margin: 0px;
 }
+
+/* ---- Lista de Hoteles!!! ---- */
+
+.envoltura-titulo-lista-hoteles{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  box-sizing:border-box;
+  display:block;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.sub-titulo-lista-hoteles{
+  box-sizing:border-box;
+  color:rgb(105, 115, 121);
+  display:block;
+  font-size:14px;
+  font-weight:normal;
+  height:14px;
+  line-height:14px;
+  padding-left:0px;
+  padding-right:0px;
+  margin: 0px;
+}
+
+.lista-hotel-infomacion{
+  box-sizing:border-box;
+  color:rgb(55, 69, 77);
+  cursor:auto;
+  display:
+  block;font-size:
+  12px;
+  height:36px;
+  line-height:18px;
+  margin-bottom:16px;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:16px;
+  text-align:center;
+}
+
+.correccion{
+  margin-bottom: 0px;
+}
+
+.lista-hotel-div{
+  /*min-width: 300px;*/
+  max-width: 400px;
+  width: 100%;
+}

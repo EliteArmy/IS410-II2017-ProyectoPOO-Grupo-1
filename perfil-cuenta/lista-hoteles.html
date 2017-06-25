@@ -86,54 +86,56 @@
         <div id="contenido-pagina" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 main">
           <h1 class="titulo-cuenta page-header">Listas de hoteles</h1>
 
-          <section class="arreglo-tamanio">
-            <h2 class="sub-titulo-cuenta">Listas con actividad reciente</h2>
-           
+          <section class="envoltura-titulo-lista-hoteles">
+            <h2 class="sub-titulo-lista-hoteles">Listas con actividad reciente</h2>
           </section>
 
           <div class="row placeholders">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
 
               <div class="envoltura-cuerpo-ajustes">
 
+                <!--Tabla 1 -->
                 <details class="cuerpo-ajustes">
 
                   <summary class="titulo-tabla-ajustes">
+
                     Mi próximo viaje
                   </summary>
 
                   <div class="tabla-ajustes">
                     <form>
                       
-                      <div class="form-group form-inline">
+                      <div class="form-group form-inline text-center">
 
-                        <div class="form-group form-inline prueba-div">
-                          <p>Contraseña anterior</p>
-                          <input type="password" class="prueba-div form-control">
-                          <input type="checkbox" name="chk-" value="">    Mostrar Contraseña
+                        <div class="form-group form-inline lista-hotel-div">
+                          <p class="lista-hotel-infomacion">¡Genial! Has creado una lista de hoteles, pero todavía está vacía.</p>
+                          <img src="../img/perfil-cuenta/lista-hoteles.png" alt="lista de hoteles vacia" height="70" width="131">
+                          <p class="lista-hotel-infomacion">Haz clic en el corazón sobre la imagen de un hotel para añadirlo a la lista.</p>
                         </div>
 
                       </div>
 
-                      <div class="form-group form-inline text-right">
-                        <button type="submit" class="btn btn-default">Prueba Ahora</button>
+                      <div class="form-group form-inline text-right correccion">
+                        <a class="text-primary" href="">Prueba Ahora</a>
                       </div>
 
                     </form>
-
-                  </div>
-
-                  <div class="tabla-ajustes">
-                    <p class="ajuste-label">Actividades recientes</p>
                   </div>
 
                 </details>
+                <!-- /#Tabla 1 -->
+
               </div>
 
             </div>
           </div>
 
-
+          <section>
+            <div>
+              <a onclick="guardarRegistro();" href="#">Crear nueva lista de hoteles</a>
+            </div>
+          </section>
 
         </div>
         <!-- /#Contenido de la Pagina -->
@@ -170,6 +172,8 @@
       
   });
   </script>
+
+  <script src="../js/ariel-custom-funcionalidades.js"></script>
 
 </body>
 </html>
