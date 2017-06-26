@@ -98,6 +98,7 @@ body {
 .main {
   padding: 20px;
 }
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
@@ -105,6 +106,7 @@ body {
     
   }
 }
+
 .main .page-header {
   margin-top: 0;
 }
@@ -238,22 +240,6 @@ body {
   }
 
 }
-
-/*
-background-color: rgba(41, 51, 57, 0.5);
-box-sizing: border-box;
-color: rgb(55, 69, 77);
-display: block;
-height: 268px;
-left: 0px;
-line-height: 20px;
-position: fixed;
-top: 0px;
-transition-property: background-color;
-transition-timing-function: ease-out;
-width: 100%;
-z-index: 1500;
-*/
 
 /* ---- Ajustes!!! ---- */
 
@@ -403,9 +389,54 @@ z-index: 1500;
     line-height: 1.25;
 }
 
+
 /* ---- Reservas!!! ---- */
 
+
 .envoltura-contenedor-reservas{
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgb(255, 255, 255);
+  background-image:none;
+  background-origin:padding-box;
+
+  background-size:auto;
+  
+  border-bottom-color:rgb(155, 162, 166);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  /*border-bottom-style:solid;*/
+  /*border-bottom-width:1px;*/
+  
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  
+  border-left-color:rgb(55, 69, 77);
+  border-left-style:none;
+  border-left-width:0px;
+  
+  border-right-color:rgb(55, 69, 77);
+  border-right-style:none;
+  border-right-width:0px;
+  
+  border-top-color:rgb(55, 69, 77);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-top-style:none;
+  border-top-width:0px;
+
+  box-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+  
+  display:block;
+
+  position: relative;
+  padding: 16px 8px;
+}
+
+.envoltura-contenedor-reservasdos{
   background-color:rgb(255, 255, 255);
   position: relative;
   padding: 16px 8px;
@@ -430,6 +461,44 @@ z-index: 1500;
 }
 
 /* ---- Lista de Hoteles!!! ---- */
+
+.envoltura-cuerpo-busqueda-reciente{
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgb(235, 236, 237);
+  background-image:none;
+  background-origin:padding-box;
+
+  background-size:auto;
+  
+  border-bottom-color:rgb(155, 162, 166);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  /*border-bottom-style:solid;*/
+  /*border-bottom-width:1px;*/
+  
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  
+  border-left-color:rgb(55, 69, 77);
+  border-left-style:none;
+  border-left-width:0px;
+  
+  border-right-color:rgb(55, 69, 77);
+  border-right-style:none;
+  border-right-width:0px;
+  
+  border-top-color:rgb(55, 69, 77);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-top-style:none;
+  border-top-width:0px;
+  
+  display:block;
+}
 
 .envoltura-titulo-lista-hoteles{
   margin-top: 10px;
@@ -479,9 +548,50 @@ z-index: 1500;
   width: 100%;
 }
 
+
 /* ---- Busquedas Recientes!!! ---- */
 
+
+.envoltura-cuerpo-busqueda-reciente{
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgb(235, 236, 237);
+  background-image:none;
+  background-origin:padding-box;
+
+  background-size:auto;
+  
+  border-bottom-color:rgb(155, 162, 166);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  /*border-bottom-style:solid;*/
+  /*border-bottom-width:1px;*/
+  
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  
+  border-left-color:rgb(55, 69, 77);
+  border-left-style:none;
+  border-left-width:0px;
+  
+  border-right-color:rgb(55, 69, 77);
+  border-right-style:none;
+  border-right-width:0px;
+  
+  border-top-color:rgb(55, 69, 77);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-top-style:none;
+  border-top-width:0px;
+  
+  display:block;
+}
+
 .cuerpo-busqueda-reciente{
+
   box-sizing:border-box;
   display:block;
   position: relative;
@@ -521,13 +631,27 @@ padding-top:8px;
 position:relative;
 }
 
+@media (max-width: 768px){
+  .tabla-busqueda-reciente{
+      height:138px;
+  }
+}
+
+@media (max-width: 768px){
+  .tabla-busqueda-reciente .busqueda-reciente-div-vacio{
+    height:36px;
+    /*width: 70%;*/
+  }
+}
+
 .busqueda-reciente-imagen{
   box-sizing:border-box;
   color:rgb(55, 69, 77);
   display:block;
   float:left;
   font-size:0px;
-  height:168px;
+  /*height:168px;*/
+  height: 100%;
   line-height:0px;
   
   margin-bottom:8px;
@@ -567,7 +691,7 @@ position:relative;
   height:75px;
   line-height:0px;
   margin-left:8px;
-  min-height:75px;
+  /*min-height:75px;*/
   /*width:780px;*/
   width: 75%;
 }
@@ -600,4 +724,138 @@ position:relative;
   padding-right:8px;
   padding-top:12px;
   text-align:right;
+}
+
+
+/* ---- Subscripciones!!! ---- */
+
+
+.envoltura-contenedor-subscripcones{
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgb(255, 255, 255);
+  background-image:none;
+  background-origin:padding-box;
+
+  background-size:auto;
+  
+  border-bottom-color:rgb(155, 162, 166);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  /*border-bottom-style:solid;*/
+  /*border-bottom-width:1px;*/
+  
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  
+  border-left-color:rgb(55, 69, 77);
+  border-left-style:none;
+  border-left-width:0px;
+  
+  border-right-color:rgb(55, 69, 77);
+  border-right-style:none;
+  border-right-width:0px;
+  
+  border-top-color:rgb(55, 69, 77);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-top-style:none;
+  border-top-width:0px;
+
+  box-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+  
+  display:block;
+
+  position: relative;
+  padding: 16px 8px;
+}
+
+.contenedor-susbcripciones{
+padding-bottom:16px;
+padding-left:16px;
+padding-right:16px;
+/*padding-top:16px;*/
+}
+
+.titulo-subscripcones{
+  box-sizing:border-box;
+  display:block;
+  font-size:16px;
+  font-weight:bold;
+  height:20px;
+  line-height:20px;
+  margin-top:0px;
+}
+
+/* ---- Alerta Precios!!! ---- */
+
+
+.titulo-alerta-precios{
+  text-align: left;
+  box-sizing:border-box;
+  display:block;
+  color: #37454D;
+  font-size:20px;
+  line-height:25px;
+  font-weight:bold;
+  line-height:21px;
+  margin-bottom:16px;
+}
+
+.subtitulo-alerta-precios{
+  text-align: left;
+  box-sizing:border-box;
+  display:block;
+  color: #37454D;
+  font-size:14px;
+
+
+  line-height:20px;
+  margin-bottom:16px;
+}
+
+.envoltura-contenedor-alerta-precios{
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgb(255, 255, 255);
+  background-image:none;
+  background-origin:padding-box;
+
+  background-size:auto;
+  
+  border-bottom-color:rgb(155, 162, 166);
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius:2px;
+  /*border-bottom-style:solid;*/
+  /*border-bottom-width:1px;*/
+  
+  border-image-outset:0px;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  
+  border-left-color:rgb(55, 69, 77);
+  border-left-style:none;
+  border-left-width:0px;
+  
+  border-right-color:rgb(55, 69, 77);
+  border-right-style:none;
+  border-right-width:0px;
+  
+  border-top-color:rgb(55, 69, 77);
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  border-top-style:none;
+  border-top-width:0px;
+
+  box-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
+  
+  display:block;
+
+  position: relative;
+  padding: 8px 0px;
 }
