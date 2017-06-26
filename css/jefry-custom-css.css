@@ -1,11 +1,21 @@
 /*If the padding property has two values:
-
 padding: 25px 50px;
 top and bottom paddings are 25px
 right and left paddings are 50px*/
+
+.white-link{
+	color: white;
+}
+
+.white-link:hover{
+	color: white;
+	text-decoration: underline;
+}
+
 .lista-no-enumerdada{
 	list-style: none;
 	padding-left: 0px;
+
 }
 
 .footer-fondo-pantalla-total{
