@@ -50,13 +50,14 @@
 body {
 	background-color: rgb(235, 236, 237);
 	box-sizing: border-box; /*Inherited: No*/
-	/*display: flex;
-	flex-direction: column;*/
 	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
 	font-size: 16px; 
 	line-height: 20px; /*Inherited: Yes - Interlineado*/
 	margin: 0; /*Inherited: No*/
 	max-width: 100%; /*Inherited:No*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+
 }
 
 header, nav, section, aside, article, figure, footer {
@@ -70,9 +71,6 @@ header, nav, section, aside, article, figure, footer {
 	box-shadow: rgba(41, 51, 57, 0.5) 0px 1px 4px 0px;
 	/*box-sizing: border-box;*/
 	/*display: block;*/
-	/*flex-basis: auto;
-	flex-grow: 0;
-	flex-shrink: 1;*/
 	height: 64px;
 	justify-content: flex-end;
 	position: relative;
@@ -80,6 +78,41 @@ header, nav, section, aside, article, figure, footer {
 	/*margin: 0px;*/
 	/*padding: 0px;*/
 	max-width: 100%;
+}
+
+.container-fluid-padding-fix{
+	padding-right: 0px;
+	padding-left: 0px; 
+	height:90vh;
+}
+
+.row-margin-fix{
+	margin-right: 0px; 
+	margin-left: 0px;
+	height: 100%;
+}
+
+.envoltura-barra-principal{
+	background-color: rgb(55, 69, 77);
+
+	box-sizing: border-box;
+	display: block;
+	
+	/*flex-basis: 252px;*/
+	/*flex-grow: 0;*/
+	/*flex-shrink: 0;*/
+	
+	left: auto;
+	/*min-width: 200px;*/ /*De no incluise la barra izquiera se vuelve muy angosta y las letras bajan*/
+	position: static;
+	/*max-width: 240px;*/
+	/*min-width: 200px;*/
+	max-width: 100%;
+	padding-left: 0px; 
+	padding-right: 0px;
+	/*position: relative;*/
+	/*height: 100%;*/
+
 }
 
 .resumen-cuenta{
@@ -236,7 +269,9 @@ header, nav, section, aside, article, figure, footer {
 	left:0px;
 	line-height:20px;
 	margin-top:-50px;
-	max-width:100%;
+	
+	width: 100%;
+	
 	position:relative;
 	top: 0px;
 	vertical-align: middle;
@@ -325,7 +360,8 @@ header, nav, section, aside, article, figure, footer {
 	line-height:20px;
 	position:absolute;
 	top:0px;
-	width:1065px;
+	/*width:1065px;*/
+	width: 100%;
 }
 
 .fondo-tarjeta-envoltura{
@@ -369,7 +405,7 @@ header, nav, section, aside, article, figure, footer {
 
 	line-height:20px;
 	max-height:100px;
-	/*max-width:100%;*/
+	max-width:100%;
 	overflow-x:hidden;
 	overflow-y:hidden;
 	position:relative;
@@ -394,25 +430,6 @@ header, nav, section, aside, article, figure, footer {
 	text-align:left;
 	text-shadow:rgba(41, 51, 57, 0.5) 0px 1px 4px;
 	top:16px;
-}
-
-.envoltura-barra-principal{
-	background-color: rgb(55, 69, 77);
-
-	box-sizing: border-box;
-	display: block;
-	
-	flex-basis: 252px;
-	flex-grow: 0;
-	flex-shrink: 0;
-	
-	left: auto;
-	/*min-width: 200px;*/ /*De no incluise la barra izquiera se vuelve muy angosta y las letras bajan*/
-	/*position: static;*/
-	max-width: 240px;
-	min-width: 200px;
-	max-width: 100%;
-
 }
 
 .hidden-xs{
@@ -452,6 +469,15 @@ header, nav, section, aside, article, figure, footer {
 	text-align: left;
 }
 
+.nav>li>a {
+  /* position: relative; */
+  /* display: block; */
+  padding-bottom: 12px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 12px;
+}
+
 .arreglo-tamanio{
 	margin-top: -25px;
 }
@@ -464,16 +490,18 @@ header, nav, section, aside, article, figure, footer {
 	/*line-height: 20px; /*Inherited: Yes - Interlineado*/
 }
 
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+.navbar-toggle:focus, .navbar-toggle:hover {
     background-color: rgb(250, 251, 252);
 }
 
-.navbar-inverse .navbar-toggle {
+.navbar-toggle {
     border-color: #EBECED;
+    /*border-color: #293339;*/
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #293339;
+.navbar-collapse, .navbar-form {
+	border-color: #EBECED;
+    /*border-color: #293339;*/
     /*background-color: #37454D;*/
     background-color: rgb(255, 255, 255);
 }
@@ -482,15 +510,22 @@ header, nav, section, aside, article, figure, footer {
 .navbar-toggle {
     position: relative;
     float: left;
-    padding: 10px 10px;
-    margin-right: 12px;
-    margin-left: 12px;
-    margin-top: 10px;
-    margin-bottom: 8px;
+    padding: 12px 18px;
+    
+    margin-right: 4px;
+    margin-left: 2px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    
     background-color: transparent;
     background-image: none;
-    border: 1px solid transparent;
+    border: 1px solid #EBECED;
     border-radius: 2px;
+    /*border-color: #EBECED;*/
+}
+
+.navbar-header{
+	height: 64px;
 }
 
 .logo{
@@ -516,12 +551,17 @@ header, nav, section, aside, article, figure, footer {
 }
 
 .borde-dos{
-	margin-top: 30px;
+	margin-top: 38px;
 }
 
 .borde-tres{
-	margin-top: 30px;
+	margin-top: 38px;
 	border-top: 1px solid #293339;
+}
+
+.borde-close{
+	border-bottom: 1px solid #293339;
+	border-right: 1px solid #293339;
 }
 
 .foto{
@@ -529,6 +569,7 @@ header, nav, section, aside, article, figure, footer {
 	display: block;
 	text-align: center;
 	margin-top: 15px;
+	width: 100%;
 }
 
 /*Esto es para el logo de Trivago en la barra superior*/
@@ -538,5 +579,4 @@ header, nav, section, aside, article, figure, footer {
 	    float: none;
 	}
 }
-
 
