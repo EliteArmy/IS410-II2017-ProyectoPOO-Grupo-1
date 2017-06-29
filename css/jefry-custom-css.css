@@ -21,8 +21,8 @@ right and left paddings are 50px*/
 .footer-fondo-pantalla-total{
 	background-color: #293339;
 	color: #fff;
-	padding-left: 150px; 
-	padding-right: 130px;
+	padding-left: 10px; 
+	padding-right: 10px;
 }
 
 .footer-fondo-pantalla2{ 	
@@ -71,6 +71,11 @@ a:focus, a:hover {
 .row {
     margin-right: 0;
     margin-left: 0;
+    padding: 0;
+}
+
+.padding-fix{
+  padding: 10;
 }
 
 input[type="email"] {
@@ -90,16 +95,12 @@ input[type="email"] {
 	border-radius: 0;
 }
 
-.col-lg-4{
-  	padding-left: 0px;
-}
-
 #email-index{
-	height: 33px; 
-	max-width: 100%;
+	height: 35px; 
+	/*max-width: 100%;*/
 	color: #000;
 	padding-left: 10px;
-    width: 427px;
+    width: 70%;
 }
 
 #div-center{
@@ -110,13 +111,17 @@ input[type="email"] {
 #caja-busqueda{
 	height: 41px;
 	padding-left: 7px;
-	width: 500px;
+	max-width: 500px;
+	width: 80%;
 	border-color: #939A9D;
 }
 
 #btn-suscribirse{
 	background-color: #697379;
 	height: 35px;
+	font-weight: bold;
+	width: 30%;
+	margin-top: -2px;
 }
 
 #btn-suscribirse:hover{
@@ -126,7 +131,8 @@ input[type="email"] {
 
 #btn-buscar{
     height: 41px;
-    width: 134px;
+    max-width: 135px;
+    width: 20%;
     border: 0px;
 }
 
@@ -137,10 +143,67 @@ input[type="email"] {
 #trivago-center{
 	font-size: 28px;
 	font-weight:bold; 
-	margin-left: 440px;
+	/*margin-left: 440px;*/
 }
 
 #ul-trivago-center{
 	padding-left: 0px;
 	margin-bottom: 0px;
 }
+
+.footer-fondo{
+	background-color: #293339;
+	padding-bottom: 15px;
+}
+
+.footer-fondo-dos{
+	background-color: #37454D;
+}
+
+.arreglo{
+	border-bottom: 2px solid #697379;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.subtitulos-footer{
+	/*padding: 0px 10px;*/
+	border-bottom: 2px solid #37454D;
+	box-sizing:border-box;
+	font-size:16px;
+	font-weight:bold;
+	line-height:20px;
+	
+	margin-bottom:12px;
+	/*margin-left:16px;*/
+	/*margin-right:16px;*/
+	
+	padding-bottom:4px;
+}
+
+.subtitulo-direccion{
+	box-sizing:border-box;
+	color:rgb(155, 162, 166);
+	direction:ltr;
+	display:inline;
+	font-size:12px;
+	/*font-weight:bold;*/
+	height:auto;
+	line-height:18px;
+	text-align:left;
+}
+
+.subtitulo-derechos-reservados{
+	box-sizing: border-box;
+	color: rgb(155, 162, 166);
+	display: block;
+	font-size: 12px;
+	height: 43px;
+	line-height: 15px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 12px;
+	text-align: center;
+}
+
