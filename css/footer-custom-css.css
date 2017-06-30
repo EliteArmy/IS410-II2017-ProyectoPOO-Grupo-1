@@ -1,0 +1,114 @@
+
+/* -- Inicio Footer -- */
+.footer-fondo-pantalla-principal{
+	background-color: #293339;
+	padding-bottom: 15px;
+}
+
+.footer-fondo{
+	background-color: #293339;
+	color: #fff;
+	padding-left: 10px; 
+	padding-right: 10px;
+}
+
+.arreglo{
+	border-bottom: 2px solid #697379;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+#email-index{
+	height: 35px; 
+	/*max-width: 100%;*/
+	color: #000;
+	padding-left: 10px;
+   width: 70%; /* Se dejo en 70% para que este en linea con el boton*/
+}
+
+#btn-suscribirse{
+	background-color: #697379;
+	height: 35px;
+	font-weight: bold;
+	width: 30%; /* Se dejo en 30% para que este en linea con la caja*/
+	margin-top: -2px;
+	border-radius: 0;
+	border: 0px;
+	overflow-x: hidden;
+}
+
+#btn-suscribirse:hover{
+	background-color: #37454D;
+	border: 0px;
+}
+
+.fa{
+	color: white;
+}
+
+.subtitulos-footer{
+	/*padding: 0px 10px;*/
+	border-bottom: 2px solid #37454D;
+	box-sizing:border-box;
+	font-size:16px;
+	font-weight:bold;
+	line-height:20px;
+	
+	margin-bottom:12px;
+	/*margin-left:16px;*/
+	/*margin-right:16px;*/
+	
+	padding-bottom:4px;
+}
+
+.lista-no-enumerdada{
+	list-style: none;
+	padding-left: 0px;
+
+}
+
+.white-link{
+	color: white;
+}
+
+.white-link:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.subtitulo-direccion{
+	box-sizing:border-box;
+	color:rgb(155, 162, 166);
+	direction:ltr;
+	display:inline;
+	font-size:12px;
+	/*font-weight:bold;*/
+	height:auto;
+	line-height:18px;
+	text-align:left;
+}
+
+.footer-fondo-pantalla-secundario{
+	background-color: #37454D;
+}
+
+.footer-fondo-pantalla-dos{ 	
+	padding: 32px;
+	color: #9BA2A6;
+	background: #37454D;
+}
+
+.subtitulo-derechos-reservados{
+	box-sizing: border-box;
+	color: rgb(155, 162, 166);
+	display: block;
+	font-size: 12px;
+	height: 43px;
+	line-height: 15px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 12px;
+	text-align: center;
+}
+/* -- Fin Footer -- */
