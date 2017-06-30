@@ -3,38 +3,9 @@ padding: 25px 50px;
 top and bottom paddings are 25px
 right and left paddings are 50px*/
 
-.white-link{
-	color: white;
-}
-
-.white-link:hover{
-	color: white;
-	text-decoration: underline;
-}
-
-.lista-no-enumerdada{
-	list-style: none;
-	padding-left: 0px;
-
-}
-
-.footer-fondo-pantalla-total{
-	background-color: #293339;
-	color: #fff;
-	padding-left: 10px; 
-	padding-right: 10px;
-}
-
-.footer-fondo-pantalla2{ 	
-	padding: 32px;
-	color: #9BA2A6;
-	background: #37454D;
-}
-
 .nav{
 	font-size:17px;
 	color: #FFFFFF;
-	
 }
 
 .nav li:hover > ul{
@@ -50,15 +21,6 @@ h1 {
 	background-color: #FFFFFF;
 }
 
-.footer .white-logo {
-    display: block;
-    margin: 0 auto;
-    height: 32px;
-    width: 102px;
-    background-size: 100%;
-    background-repeat: no-repeat
-}
-
 .navbar-static-top {
   margin-bottom: 19px;
   min-height: 10px;
@@ -68,10 +30,10 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-.row {
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
+.row{
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 .padding-fix{
@@ -79,11 +41,9 @@ a:focus, a:hover {
 }
 
 input[type="email"] {
-	height: 33px;
 	border: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	width: 280px;
 }
 
 .btn{
@@ -93,14 +53,6 @@ input[type="email"] {
 
 .form-control{
 	border-radius: 0;
-}
-
-#email-index{
-	height: 35px; 
-	/*max-width: 100%;*/
-	color: #000;
-	padding-left: 10px;
-    width: 70%;
 }
 
 #div-center{
@@ -116,24 +68,12 @@ input[type="email"] {
 	border-color: #939A9D;
 }
 
-#btn-suscribirse{
-	background-color: #697379;
-	height: 35px;
-	font-weight: bold;
-	width: 30%;
-	margin-top: -2px;
-}
-
-#btn-suscribirse:hover{
-	background-color: #37454D;
-	border: 0px;
-}
-
 #btn-buscar{
-    height: 41px;
-    max-width: 135px;
-    width: 20%;
-    border: 0px;
+  height: 41px;
+  max-width: 135px;
+  width: 20%;
+  border: 0px;
+  font-weight:bold; 
 }
 
 #titulo-principal{
@@ -152,19 +92,49 @@ input[type="email"] {
 }
 
 
-.footer-fondo{
+/* -- Inicio Footer -- */
+.footer-fondo-pantalla-principal{
 	background-color: #293339;
 	padding-bottom: 15px;
 }
 
-.footer-fondo-dos{
-	background-color: #37454D;
+.footer-fondo{
+	background-color: #293339;
+	color: #fff;
+	padding-left: 10px; 
+	padding-right: 10px;
 }
 
 .arreglo{
 	border-bottom: 2px solid #697379;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
+}
+
+#email-index{
+	height: 35px; 
+	/*max-width: 100%;*/
+	color: #000;
+	padding-left: 10px;
+   width: 70%; /* Se dejo en 70% para que este en linea con el boton*/
+}
+
+#btn-suscribirse{
+	background-color: #697379;
+	height: 35px;
+	font-weight: bold;
+	width: 30%; /* Se dejo en 30% para que este en linea con la caja*/
+	margin-top: -2px;
+	border-radius: 0;
+	border: 0px;
+	overflow-x: hidden;
+	border-radius: 0;
+	border: 0px;
+}
+
+#btn-suscribirse:hover{
+	background-color: #37454D;
+	border: 0px;
 }
 
 .subtitulos-footer{
@@ -182,6 +152,25 @@ input[type="email"] {
 	padding-bottom:4px;
 }
 
+.fa{
+	color: white;
+}
+
+.lista-no-enumerdada{
+	list-style: none;
+	padding-left: 0px;
+
+}
+
+.white-link{
+	color: white;
+}
+
+.white-link:hover{
+	color: white;
+	text-decoration: underline;
+}
+
 .subtitulo-direccion{
 	box-sizing:border-box;
 	color:rgb(155, 162, 166);
@@ -192,6 +181,16 @@ input[type="email"] {
 	height:auto;
 	line-height:18px;
 	text-align:left;
+}
+
+.footer-fondo-pantalla-secundario{
+	background-color: #37454D;
+}
+
+.footer-fondo-pantalla-dos{ 	
+	padding: 32px;
+	color: #9BA2A6;
+	background: #37454D;
 }
 
 .subtitulo-derechos-reservados{
@@ -207,4 +206,4 @@ input[type="email"] {
 	padding-top: 12px;
 	text-align: center;
 }
-
+/* -- Fin Footer -- */
