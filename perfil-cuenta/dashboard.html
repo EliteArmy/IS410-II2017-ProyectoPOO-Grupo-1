@@ -35,23 +35,21 @@
           <span class="sr-only">Toggle navigation</span>
         </button>-->
 
-        <a href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
+        <a href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Menú </a>
 
         <a class="foto" href="../index.html">
             <img src="../img/logo.png" alt="Nottrivago" height="44" width="152">
         </a>
         
+        <div class="navbar-collapse collapse">
+          <div class="nav navbar-nav">
+            <a class="barra-superior-lista glyphicon glyphicon-heart" href="#"></a>
+            <a class="barra-superior-lista" href="#"> USD </a>
+            <a class="barra-superior-lista" href="#"> Mi Perfil </a>
+          </div>
+        </div>
+
       </div>
-
-      <!---<div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>-->
-
     </div>
   </nav>
   <!-- /#Barra de Parte Superior -->
@@ -65,7 +63,7 @@
       <div class="row row-margin-fix">
         
         <!-- Barra de Menu Izquierdo-->
-        <div id="sidebar-wrapper" class="col-sm-3 col-md-2 col-lg-2 sidebar hidden-xs envoltura-barra-principal">
+        <div id="sidebar-wrapper" class="col-sm-3 col-md-2 col-lg-2 hidden-xs envoltura-barra-principal">
           <ul id="btn-close" class="nav nav-sidebar hidden borde-close">
             <li class="active"><a class="lista" href="#">[x] Close</a></li>
           </ul>
@@ -186,11 +184,9 @@
     $("#menu-toggle").click(function(e){
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-        //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
         $("#sidebar-wrapper").toggleClass("hidden-xs");
         $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
         $("#btn-close").toggleClass("hidden");
-        
     });
   </script>
 
@@ -198,11 +194,9 @@
     $("#btn-close").click(function(e){
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-        //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
         $("#sidebar-wrapper").toggleClass("hidden-xs");
         $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
         $("#btn-close").toggleClass("hidden");
-        
     });
   </script>
 

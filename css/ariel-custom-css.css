@@ -56,7 +56,7 @@ body {
 	margin: 0; /*Inherited: No*/
 	max-width: 100%; /*Inherited:No*/
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
 
 }
 
@@ -95,8 +95,10 @@ header, nav, section, aside, article, figure, footer {
 	box-sizing: border-box;
 	display: block;
 	text-align: center;
-	margin-top: 15px;
-	width: 100%;
+	margin-top: 12px;
+	/*width: 100%;*/
+	/*width: 152px;*/
+	display: inline-block;
 }
 /* -- Fin Barra Navegacion Top -- */
 
@@ -191,29 +193,33 @@ header, nav, section, aside, article, figure, footer {
 
 .navbar-collapse, .navbar-form {
 	border-color: #EBECED;
-  /*border-color: #293339;*/
   /*background-color: #37454D;*/
   background-color: rgb(255, 255, 255);
 }
 
-.navbar-toggle {
-  position: relative;
-  float: left;
-  padding: 12px 18px;
-  
-  margin-right: 4px;
-  margin-left: 2px;
-  margin-top: 8px;
-  margin-bottom: 2px;
-  
+.navbar-toggle{
   background-color: transparent;
   background-image: none;
-  border: 1px solid #EBECED;
-  border-radius: 2px;
-  /*border-color: #EBECED;*/
+  border: 0px solid #EBECED;
+  
+  border-right-width: 1px;
+  border-right-color:#EBECED;
+  border-right-style:solid;
+  border-radius: 0px;
+  
+  position: relative;
+  float: left;
+  top: 0px;
+  padding: 22px 20px;
+  
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*Esto es para el logo de Trivago en la barra superior*/
+/*cuando el ancho se hace mas de 768px pasara lo que esta dentro del {}.*/
 @media (min-width: 768px){
 	.navbar-header {
 	  float: none;
@@ -223,6 +229,13 @@ header, nav, section, aside, article, figure, footer {
 
 
 /* -- Contenido de la Pagina -- */
+#contenido-pagina{
+	-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .titulo-cuenta{
 	box-sizing:border-box;
 	display: block;
@@ -448,10 +461,10 @@ header, nav, section, aside, article, figure, footer {
 }
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-    padding: 4px;
-    line-height: 1;
-    vertical-align: top;
-    border: 0px none #ddd;
+  padding: 4px;
+  line-height: 1;
+  vertical-align: top;
+  border: 0px none #ddd;
 }
 
 .sub-tabla-resumen{
@@ -641,6 +654,7 @@ header, nav, section, aside, article, figure, footer {
   width: 100%;
 }
 
+/*cuando el ancho se hace mas de 768px pasara lo que esta dentro del {}.*/
 @media (min-width: 768px){
   .form-inline .form-control {
     display: block;
@@ -899,12 +913,14 @@ padding-top:8px;
 position:relative;
 }
 
+/*cuando el ancho se hace menos de 768px pasara lo que esta dentro del {}.*/
 @media (max-width: 768px){
   .tabla-busqueda-reciente{
       height:138px;
   }
 }
 
+/*cuando el ancho se hace menos de 768px pasara lo que esta dentro del {}.*/
 @media (max-width: 768px){
   .tabla-busqueda-reciente .busqueda-reciente-div-vacio{
     height:36px;
