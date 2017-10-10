@@ -1,0 +1,63 @@
+.nottrivago {
+	text-align: center;
+	font-size: 28px;
+	padding: 12px;
+	font-weight: bold;
+}
+
+.navbar {
+	border-bottom: 1px solid #ddd;
+} 
+
+nav, footer a:hover,
+a:focus {
+	text-decoration:none; 
+}
+
+nav .l1 {
+	color: #293339;
+}
+
+nav .l2 {
+	color: #007fad;
+}
+
+nav .l3 {
+	color: #F48F00;
+}
+
+nav .l4 {
+	color: #C94A38;
+}
+
+footer {
+	background-color: #293339;
+	padding-top: 15px;
+	color: #eee;
+	margin-top: 15px;
+}
+
+footer .copyright {
+	background-color: #37454D;
+	color: #eee;
+	text-align: center;
+	padding: 15px;
+}
+
+footer h3 {
+	font-weight: bold;
+}
+
+footer a {
+	color: #eee;
+	padding-left: 0px;
+}
+
+footer a:hover {
+	color: #ccc;
+}
+
+footer ul {
+	list-style: none;
+	padding-left: 0px;
+}
