@@ -2,7 +2,9 @@
 
 class Hotel {
 	
-	protected $variable;
+	protected $Nombre;
+	protected $ubicacion;
+	protected $coordenada; // variable para google maps api
 
 	public function __construct(){
 	

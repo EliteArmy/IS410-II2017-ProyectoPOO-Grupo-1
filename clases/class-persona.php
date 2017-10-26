@@ -1,21 +1,19 @@
 <?php
 
-	class Persona {
+	 abstract class Persona {
 
 		protected $nombre;
 		protected $apellido;
-		protected $correo;
-		protected $contrasena;
 		protected $edad;
 		protected $genero;
 		protected $telefono;
 
 		public function __construct(
-					$nombre,
-					$apellido,
-					$edad,
-					$genero,
-					$telefono){
+				$nombre,
+				$apellido,
+				$edad,
+				$genero,
+				$telefono){
 			$this->nombre = $nombre;
 			$this->apellido = $apellido;
 			$this->edad = $edad;
