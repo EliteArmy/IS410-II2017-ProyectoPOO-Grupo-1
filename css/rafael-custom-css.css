@@ -131,12 +131,24 @@
 	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
 	font-size:20px;
 	font-weight:normal;
-	height:57px;
 	line-height:25px;
+	text-align:left;
+}
 
-	padding-bottom:16px;
-	padding-top:16px;
-	text-align:center;
+.subtitulos-registro{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	cursor:default;
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:14px;
+	font-weight:bold;
+	height:17px;
+	line-height:17.5px;
+	margin-bottom:4px;
+	max-width:100%;
+	text-size-adjust:100%;
+	/*width:352px;*/
 }
 
 .envoltura-signo-interrogacion{
