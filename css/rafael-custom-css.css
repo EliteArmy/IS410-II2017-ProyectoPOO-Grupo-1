@@ -150,73 +150,91 @@
 }
 
 .boton-de-facebook{
-	align-items:
-flex-start;
-background-color:rgb(79, 106, 156);
-border-bottom-color:rgb(255, 255, 255);
-border-bottom-left-radius:2px;
-border-bottom-right-radius:2px;
-border-bottom-style:none;
-border-bottom-width:0px;
-border-image-outset:0px;
-border-image-repeat:stretch;
-border-image-slice:100%;
-border-image-source:none;
-border-image-width:1;
-border-left-color:rgb(255, 255, 255);
-border-left-style:none;
-border-left-width:0px;
-border-right-color:rgb(255, 255, 255);
-border-right-style:none;
-border-right-width:0px;
-border-top-color:rgb(255, 255, 255);
-border-top-left-radius:2px;
-border-top-right-radius:2px;
-border-top-style:none;
-border-top-width:0px;
-box-sizing:border-box;
-color:rgb(255, 255, 255);
-cursor:pointer;
-display:block;
-font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
-font-size:16px;
-font-stretch:normal;
-font-style:normal;
-font-variant-caps:normal;
-font-variant-ligatures:normal;
-font-variant-numeric:normal;
-font-weight:bold;
-height:43.9915px;letter-spacing:
-normal;
-line-height:16px;
-margin-bottom:16px;
-margin-left:0px;
-margin-right:0px;
-margin-top:0px;
-overflow-x:hidden;
-overflow-y:hidden;padding-bottom:
-0px;
-padding-left:0px;
-padding-right:0px;
-padding-top:0px;
-position:relative;
-text-align:center;
-text-decoration-color:rgb(255, 255, 255);
-text-decoration-line:none;
-text-decoration-style:solid;
-text-indent:0px;
-text-overflow:ellipsis;
-text-rendering:auto;
-text-shadow:none;
-text-size-adjust:100%;
-text-transform:none;
-touch-action:manipulation;
-user-select:none;
-vertical-align:middle;
-white-space:nowrap;
-width:304.474px;
-word-spacing:0px;
-writing-mode:horizontal-tb;
+	align-items:flex-start;
+	background-color:rgb(79, 106, 156);
+
+	border-bottom-color:rgb(255, 255, 255);
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+	border-bottom-width:0px;
+
+	border-image-outset:0px;
+	border-image-repeat:stretch;
+	border-image-slice:100%;
+
+	border-image-width:1;
+	border-left-color:rgb(255, 255, 255);
+	border-left-width:0px;
+
+	border-right-color:rgb(255, 255, 255);
+	border-right-width:0px;
+
+	border-top-color:rgb(255, 255, 255);
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+
+	border-top-width:0px;
+	box-sizing:border-box;
+	color:rgb(255, 255, 255);
+	cursor:pointer;
+	display:block;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	font-weight:bold;
+
+	height:43.9915px;
+	letter-spacing:normal;
+	line-height:16px;
+	margin-bottom:16px;
+
+	overflow-x:hidden;
+	overflow-y:hidden;
+
+	position:relative;
+	text-align:center;
+
+	text-indent:0px;
+	text-overflow:ellipsis;
+	text-rendering:auto;
+	text-shadow:none;
+	text-size-adjust:100%;
+	text-transform:none;
+	touch-action:manipulation;
+
+	vertical-align:middle;
+	white-space:nowrap;
+	width:100%;
+	word-spacing:0px;
+}
+
+.boton-letras-facebook{
+	box-sizing:
+	border-box;
+	color:rgb(255, 255, 255);
+	cursor:pointer;
+	display:inline;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant-caps:normal;
+	font-variant-ligatures:normal;
+	font-variant-numeric:normal;
+	font-weight:bold;
+	height:auto;
+	letter-spacing:normal;
+	line-height:16px;
+	text-align:center;
+	text-indent:0px;
+	text-rendering:auto;
+	text-shadow:none;
+	text-size-adjust:100%;
+	text-transform:none;
+	user-select:none;
+	white-space:nowrap;
+	width:auto;
+	word-spacing:0px;
+	writing-mode:horizontal-tb;
 }
 
 .boton-de-googleplus{
@@ -325,6 +343,12 @@ writing-mode:horizontal-tb;
 	padding-right:10px;
 }
 
+.parrafo-footer2{
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
 /* ---- Sign Up!!! ---- */
 .envoltura-caja-registro-manual{
 	box-sizing:border-box;

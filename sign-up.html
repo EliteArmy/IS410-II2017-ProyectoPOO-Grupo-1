@@ -36,7 +36,7 @@
 			<div class="container-fluid">
 	      <div class="row">
 			  	<section class="envoltura-cajas-registro">
-			  		<div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			  		<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
 			  			<h3 align="center">
 					  		<strong>Crea una cuenta para tener más opciones en trivago. ¡Es gratis!</strong>
 					  	</h3>
@@ -48,21 +48,30 @@
 							  	
 							  	<div class="envoltura-caja-registro-social col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							  		<div class="envoltura-caja-registro-social2">
+							  			
 							  			<h2 class="titulo-de-registro">
 												Regístrate con una red social
 											</h2>
-											<form>
+											<form method="POST" action="procesar.php">
 												<table class="tamanio">
 
 													<tr>
 														<td>
-															<input class="btn btn-primary boton-de-facebook" type="submit" value="Registrate con Facebook">
+															<button class="btn btn-primary boton-de-facebook" type="button" value="">
+																<span class="boton-letras-facebook">
+																	Registrate con Facebook
+																</span>
+															</button>
 														</td>
 													</tr>
 
 													<tr>
 														<td>
-															<input class="btn btn-danger boton-de-googleplus" type="submit" value="Registrate con Google+">
+															<button class="btn btn-danger boton-de-googleplus" type="button" value="">
+																<span class="boton-letras-facebook">
+																	Registrate con Google+
+																</span>
+															</button>
 														</td>
 													</tr>
 												</table>
@@ -76,7 +85,7 @@
 										<h2 class="titulo-de-registro">
 											Regístrate con tu e-mail
 										</h2>
-									  	<form>
+									  	<form method="POST" action="procesar.php">
 									  		<table class="table table-hover tamanio">
 
 									  			<tr>
