@@ -9,6 +9,10 @@ footer {
 	text-align: center;
 }
 
+#map {
+	height: 300px;
+	width: 100%;
+}
 .header {
 	text-align: center;
 }
