@@ -1,5 +1,14 @@
-.color-de-fondo{
-	background-color: #EBECED
+body {
+	background-color: #EBECED;
+	box-sizing: border-box; /*Inherited: No*/
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 16px; 
+	line-height: 20px; /*Inherited: Yes - Interlineado*/
+	margin: 0; /*Inherited: No*/
+	max-width: 100%; /*Inherited:No*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+
 }
 
 #barra-menu {
@@ -9,6 +18,26 @@
 #navabar-letras{
 	font-size:28px; 
 	font-weight: bold;
+}
+
+/*Esto es para el logo de Trivago en la barra superior*/
+@media (min-width: 768px){
+	.navbar-header {
+	  float: none;
+	}
+}
+
+.foto {
+  display: inline-block;
+  margin: 15px auto;
+  width: 152px;
+  margin-left: 116px;
+}
+
+.float-derecha{
+	float: right;
+	margin: 8px auto;
+	width: 148px;
 }
 
 .envoltorio-total{
@@ -55,7 +84,7 @@
 }
 
 .envoltura-caja-registro-social2{
-	background-attachment:scroll;
+	/*background-attachment:scroll;*/
 	background-clip:border-box;
 	background-color:rgb(255, 255, 255);
 	background-origin:padding-box;
@@ -317,7 +346,7 @@
 }
 
 .envoltura-caja-inicio-manual2{
-	background-attachment:scroll;
+	/*background-attachment:scroll;*/
 	background-clip:border-box;
 	background-color:rgb(255, 255, 255);
 	background-origin:padding-box;
@@ -349,6 +378,14 @@
 	padding-top: 16px;
 	padding-bottom: 8px;
 }
+
+.parrafo-con-margin{
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
 /* ---- Sign Up!!! ---- */
 .envoltura-caja-registro-manual{
 	box-sizing:border-box;
@@ -365,7 +402,7 @@
 }
 
 .envoltura-caja-registro-manual2{
-	background-attachment:scroll;
+	/*background-attachment:scroll;*/
 	background-clip:border-box;
 	background-color:rgb(255, 255, 255);
 	background-origin:padding-box;
