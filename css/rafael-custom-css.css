@@ -1,5 +1,14 @@
-.color-de-fondo{
-	background-color: #EBECED
+body {
+	background-color: #EBECED;
+	box-sizing: border-box; /*Inherited: No*/
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size: 16px; 
+	line-height: 20px; /*Inherited: Yes - Interlineado*/
+	margin: 0; /*Inherited: No*/
+	max-width: 100%; /*Inherited:No*/
+	overflow-x: hidden;
+	overflow-y: scroll;
+
 }
 
 #barra-menu {
@@ -9,6 +18,26 @@
 #navabar-letras{
 	font-size:28px; 
 	font-weight: bold;
+}
+
+/*Esto es para el logo de Trivago en la barra superior*/
+@media (min-width: 768px){
+	.navbar-header {
+	  float: none;
+	}
+}
+
+.foto {
+  display: inline-block;
+  margin: 15px auto;
+  width: 152px;
+  margin-left: 116px;
+}
+
+.float-derecha{
+	float: right;
+	margin: 8px auto;
+	width: 148px;
 }
 
 .envoltorio-total{
@@ -55,13 +84,10 @@
 }
 
 .envoltura-caja-registro-social2{
-	background-attachment:scroll;
+	/*background-attachment:scroll;*/
 	background-clip:border-box;
 	background-color:rgb(255, 255, 255);
-	background-image:none;
 	background-origin:padding-box;
-	background-position-x:0%;
-	background-position-y:0%;
 	background-size:auto;
 	border-bottom-left-radius:2px;
 	border-bottom-right-radius:2px;
@@ -94,36 +120,6 @@
 	display:block;
 }
 
-.color-letras-facebook{
-	box-sizing:border-box;
-	color:rgb(255, 255, 255);
-	cursor:pointer;
-	display:inline-block;
-	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
-	font-size:16px;
-
-	font-weight:bold;
-	height:16px;
-	letter-spacing:normal;
-	line-height:16px;
-	text-align:center;
-	text-indent:0px;
-	text-rendering:auto;
-	text-shadow:none;
-
-	text-transform:none;
-	transform:matrix(1, 0, 0, 1, 0, 0);
-	transition-delay:0s, 0.5s, 0s;
-	transition-duration:0.5s, 0.5s, 0.5s;
-	transition-property:transform, display, -webkit-transform;
-	transition-timing-function:linear, linear, linear;
-	user-select:none;
-	white-space:nowrap;
-	width:190.266px;
-	word-spacing:0px;
-	writing-mode:horizontal-tb;
-}
-
 .titulo-de-registro{
 	box-sizing:border-box;
 	color:rgb(55, 69, 77);
@@ -151,19 +147,9 @@
 	/*width:352px;*/
 }
 
-.envoltura-signo-interrogacion{
-	box-sizing:border-box;
-	color:rgb(55, 69, 77);
-	display:inline-block;
-	font-weight:normal;
-	height:25px;
-	line-height:25px;
-	position:relative;
-	text-align:center;
-}
-
 .tamanio{
-	width: 100%;
+	max-width: 100%;
+	min-width: 100%
 }
 
 .barrita-top{
@@ -178,10 +164,8 @@
 	border-collapse:separate;
 	box-sizing:border-box;
 	color:rgb(55, 69, 77);
-	cursor:default;
 	display:table-cell;
-	font-family:
-	Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-family: Arial, Helvetica, Sans, sans-serif, "Sans Serif";
 	font-size:14px;
 	font-weight:normal;
 	height:20px;
@@ -196,63 +180,88 @@
 
 .boton-de-facebook{
 	align-items:flex-start;
-	background-color:rgb(58, 87, 157);
+	background-color:rgb(79, 106, 156);
+
 	border-bottom-color:rgb(255, 255, 255);
 	border-bottom-left-radius:2px;
 	border-bottom-right-radius:2px;
-	border-bottom-style:none;
 	border-bottom-width:0px;
+
 	border-image-outset:0px;
 	border-image-repeat:stretch;
 	border-image-slice:100%;
-	border-image-source:none;
+
 	border-image-width:1;
 	border-left-color:rgb(255, 255, 255);
-	border-left-style:none;
 	border-left-width:0px;
+
 	border-right-color:rgb(255, 255, 255);
-	border-right-style:none;
 	border-right-width:0px;
+
 	border-top-color:rgb(255, 255, 255);
 	border-top-left-radius:2px;
 	border-top-right-radius:2px;
-	border-top-style:none;
+
 	border-top-width:0px;
 	box-sizing:border-box;
 	color:rgb(255, 255, 255);
 	cursor:pointer;
-	display:inline-block;
+	display:block;
 	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
 	font-size:16px;
-
 	font-weight:bold;
-	height:44px;
+
+	height:43.9915px;
 	letter-spacing:normal;
 	line-height:16px;
 	margin-bottom:16px;
+
 	overflow-x:hidden;
 	overflow-y:hidden;
-	
-	padding-bottom:11px;
-	padding-left:13px;
-	padding-right:13px;
-	padding-top:13px;
+
 	position:relative;
 	text-align:center;
-	
-	text-decoration-color:rgb(255, 255, 255);
-	text-decoration-line:none;
-	text-decoration-style:solid;
+
 	text-indent:0px;
 	text-overflow:ellipsis;
 	text-rendering:auto;
 	text-shadow:none;
+	text-size-adjust:100%;
 	text-transform:none;
 	touch-action:manipulation;
-	user-select:none;
+
 	vertical-align:middle;
 	white-space:nowrap;
-	width: 100%;
+	width:100%;
+	word-spacing:0px;
+}
+
+.boton-letras-facebook{
+	box-sizing:
+	border-box;
+	color:rgb(255, 255, 255);
+	cursor:pointer;
+	display:inline;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant-caps:normal;
+	font-variant-ligatures:normal;
+	font-variant-numeric:normal;
+	font-weight:bold;
+	height:auto;
+	letter-spacing:normal;
+	line-height:16px;
+	text-align:center;
+	text-indent:0px;
+	text-rendering:auto;
+	text-shadow:none;
+	text-size-adjust:100%;
+	text-transform:none;
+	user-select:none;
+	white-space:nowrap;
+	width:auto;
 	word-spacing:0px;
 	writing-mode:horizontal-tb;
 }
@@ -263,9 +272,7 @@
 	border-bottom-color:rgb(255, 255, 255);
 	border-bottom-left-radius:2px;
 	border-bottom-right-radius:2px;
-	border-bottom-style:none;
-	border-bottom-width:0px;
-	border-image-outset:0px;
+
 	border-image-repeat:stretch;
 	border-image-slice:100%;
 	border-image-source:none;
@@ -323,25 +330,7 @@
 	writing-mode:horizontal-tb;
 }
 
-.envoltura-caja-registro-manual{
-	box-sizing:border-box;
-	color:rgb(55, 69, 77);
-	display:flex;
-	flex-direction:column;
-	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
-	font-size:16px;
-	/*height:500px;*/
-	line-height:20px;
-	padding-left:8px;
-	padding-right:8px;
-	/*width:416px;*/
-}
-
 /* ---- Log In!!! ---- */
-.concentimiento{
-	text-align: left;
-}
-
 .envoltura-caja-inicio-manual{
 	box-sizing:border-box;
 	color:rgb(55, 69, 77);
@@ -357,13 +346,10 @@
 }
 
 .envoltura-caja-inicio-manual2{
-	background-attachment:scroll;
+	/*background-attachment:scroll;*/
 	background-clip:border-box;
 	background-color:rgb(255, 255, 255);
-	background-image:none;
 	background-origin:padding-box;
-	background-position-x:0%;
-	background-position-y:0%;
 	background-size:auto;
 	border-bottom-left-radius:2px;
 	border-bottom-right-radius:2px;
@@ -377,8 +363,8 @@
 	flex-shrink:0;
 	/*height:289px;*/
 	line-height:20px;
-	padding-left:16px;
-	padding-right:16px;
+	padding-left:8px;
+	padding-right:8px;
 }
 
 .parrafo-footer{
@@ -386,15 +372,41 @@
 	padding-right:10px;
 }
 
+.parrafo-footer2{
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+
+.parrafo-con-margin{
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
 /* ---- Sign Up!!! ---- */
+.envoltura-caja-registro-manual{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:flex;
+	flex-direction:column;
+	font-family:Arial, Helvetica, Sans, sans-serif, "Sans Serif";
+	font-size:16px;
+	/*height:500px;*/
+	line-height:20px;
+	padding-left:8px;
+	padding-right:8px;
+	/*width:416px;*/
+}
+
 .envoltura-caja-registro-manual2{
-	background-attachment:scroll;
+	/*background-attachment:scroll;*/
 	background-clip:border-box;
 	background-color:rgb(255, 255, 255);
-	background-image:none;
 	background-origin:padding-box;
-	background-position-x:0%;
-	background-position-y:0%;
+
 	background-size:auto;
 	border-bottom-left-radius:2px;
 	border-bottom-right-radius:2px;
@@ -408,6 +420,6 @@
 	flex-shrink:0;
 	/*height:289px;*/
 	line-height:20px;
-	padding-left:16px;
-	padding-right:16px
+	padding-left:8px;
+	padding-right:8px
 }
