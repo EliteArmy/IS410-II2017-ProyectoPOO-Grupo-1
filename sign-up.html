@@ -55,18 +55,18 @@
 	          		<div class="row">
 							  	
 							  	<div class="envoltura-caja-registro-social col-xs-12 col-sm-6 col-md-6 col-lg-6">
-							  		<div class="envoltura-caja-registro-social2">
+							  		<div class="caja-registro-social">
 							  			
-							  			<h2 class="titulo-de-registro">
+							  			<h2 class="titulo-caja-registro">
 												Regístrate con una red social
 											</h2>
 											<form method="POST" action="procesar.php">
-												<table class="tamanio">
+												<table class="tamanio-botones-sociales">
 
 													<tr>
 														<td>
-															<button class="btn btn-primary boton-de-facebook" type="button" value="">
-																<span class="boton-letras-facebook">
+															<button id="" class="btn boton-color-azul envoltura-botones-sociales " type="button" value="">
+																<span class="boton-letras-interior">
 																	Registrate con Facebook
 																</span>
 															</button>
@@ -75,8 +75,8 @@
 
 													<tr>
 														<td>
-															<button class="btn btn-danger boton-de-googleplus" type="button" value="">
-																<span class="boton-letras-facebook">
+															<button id="" class="btn boton-color-rojo envoltura-botones-sociales" type="button" value="">
+																<span class="boton-letras-interior">
 																	Registrate con Google+
 																</span>
 															</button>
@@ -92,16 +92,16 @@
 										</div>	
 									</div>
 
-									<div class="envoltura-caja-registro-manual col-xs-12 col-sm-6 col-md-6 col-lg-6">
-										<div class="envoltura-caja-registro-manual2">
-										<h2 class="titulo-de-registro">
-											Regístrate con tu e-mail
-										</h2>
+									<div class="envoltura-caja-registro-correo col-xs-12 col-sm-6 col-md-6 col-lg-6">
+										<div class="caja-registro-correo">
+											<h2 class="titulo-caja-registro">
+												Regístrate con tu e-mail
+											</h2>
 									  	<form method="POST" action="procesar.php">
-									  		<table class="table table-hover tamanio">
+									  		<table class="table table-hover tamanio-botones-sociales">
 
 									  			<tr>
-									  				<td colspan="2" class="subtitulos-registro">
+									  				<td colspan="2" class="subtitulos-caja-registro">
 									  					<b>Correo Electronico:</b>
 									  				</td>
 									  			</tr>
@@ -113,7 +113,7 @@
 									  			</tr>
 
 									  			<tr>
-									  				<td colspan="2" class="subtitulos-registro">
+									  				<td colspan="2" class="subtitulos-caja-registro">
 									  					<b>Contraseña:</b>
 									  				</td>
 									  			</tr>
@@ -125,7 +125,7 @@
 							        			</td>
 							      			</tr>
 							      			<tr>
-							      				<td colspan="2" class="subtitulos-registro">
+							      				<td colspan="2" class="subtitulos-caja-registro">
 							      					<b>Validar Contraseña:</b>
 							      				</td>
 							      			</tr>
@@ -137,8 +137,18 @@
 
 									      	<tr>
 									      		<td colspan="2">
-									      			<input class="btn btn-danger" type="reset" value="Reestablecer">
-									      			<input class="btn btn-primary" type="button" value="Registrarse" onclick="window.location.href='dashboard.html'">
+									      			
+									      			<button class="btn boton-color-rojo" type="reset" value="">
+									      				<span class="boton-letras-interior-dos">
+																	Reestablecer
+																</span>
+									      			</button>
+
+									      			<button class="btn boton-color-azul" type="button" value="" onclick="window.location.href='dashboard.html'">
+									      				<span class="boton-letras-interior-dos">
+																	Registrarse
+																</span>
+									      			</button>
 									      		</td>
 									      	</tr>
 									  		</table>
@@ -159,7 +169,7 @@
 							</div>
 
 							<div class="envoltura-caja-registro-social">
-							  <div class="envoltura-caja-registro-social2">
+							  <div class="caja-registro-social">
 							  	<p class="parrafo-footer2 text-left">¿Es usted un hotelero y desea registrarse?
 								  	<a href="http://www.trivago.com/?sLanguageLocale=MXhotelmanager/login.html">Regístrese aquí
 								  	</a>
