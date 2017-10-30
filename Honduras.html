@@ -138,15 +138,16 @@
                 &lrm;$15
               </div>
               <div class="max">
-                máx. &lrm;$483
+                <span id="sliderStatus"></span>
               </div>
               <div class="precio-max precio-max-min">
-                &lrm;$483
+                máx &lrm;$483
               </div>
               <br>
               <div class="barra-precios">
-              <input id="ex1" data-slider-id="ex1Slider" type="range" data-slider-min="0" data-slider-ax="483" data-slider-ster="1" data-slider-value="14"/>
-            </div>  
+              <input id="ex1" data-slider-id="ex1Slider" type="range" min="15" max="483" 
+              step="0" value="241" onchange="sliderChange(this.value)"/>
+            </div>
             <div class="hoteles-disponibles">
               <label><input type="checkbox" > Ver sólo hoteles disponibles</label>
             </div>
@@ -1605,10 +1606,16 @@ Pedro Sula">Mejor valorado</button>
           </center>
       </div>
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+<<<<<<< HEAD
+    
+    <script type="text/javascript" src="js/rafael.js"></script>
+=======
+>>>>>>> 66ced0acce45e04aeff278b08e03af0d2e6fe2dc
 
 </body>
 </html>
