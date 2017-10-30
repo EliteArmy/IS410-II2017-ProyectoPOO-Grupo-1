@@ -1,4 +1,4 @@
-.body {
+..body {
   padding-bottom: 20px;
   background-color: #ebeced;
   font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
@@ -145,11 +145,16 @@ a:focus, a:hover {
 		box-sizing: 50em;
 }
 
+.barra-busqueda{
+    background-color: #37454d;
+    border-color: #37454d;
+    padding-bottom: 10px;
+}
 
 .barra {
     background-color: #37454d;
     border-color: #37454d;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
