@@ -23,10 +23,10 @@
 <div>
 
   <!-- Barra de Parte Superior -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar">
     <div class="container-fluid envoltura-barra-navegacion-top">
       
-      <div class="navbar-header">
+      <div class="navbar-header text-center">
         <!---<button type="button" class="boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> Menú
           <span class="sr-only">Toggle navigation</span>
         </button>-->
@@ -34,9 +34,7 @@
         <a href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
 
         <a class="foto" href="../index.html">
-          <center>
-            <img src="../img/logo.png" alt="Nottrivago" height="44" width="152"">
-          </center>
+            <img src="../img/logo.png" alt="Nottrivago" height="44" width="152">
         </a>
         
       </div>
@@ -58,14 +56,17 @@
   <div id="wrapper">
     
     <!-- Barra Izquierda & Contenido de la Pagina -->
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid container-fluid-fix">
+      
+      <div class="row row-margin-fix">
         
         <!-- Barra de Menu Izquierdo-->
         <div id="sidebar-wrapper" class="col-sm-3 col-md-2 col-lg-2 sidebar hidden-xs envoltura-barra-principal">
-          <ul class="nav nav-sidebar borde">
+          <ul id="btn-close" class="nav nav-sidebar hidden borde-close">
             <li class="active"><a class="lista" href="#">[x] Close</a></li>
-            <li class="active"><a class="lista " href="../index.html">Volver a la Busqueda <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav nav-sidebar borde">
+            <li class="active"><a class="lista " href="../index.html"> < Volver a la Búsqueda <span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar borde-dos">
             <li class="active"><a class="lista" href="../perfil-cuenta/dashboard.html">Panel de Control</a></li>
@@ -83,10 +84,10 @@
         <!-- /#Barra de Menu Izquierdo-->
 
         <!-- Contenido de la Pagina-->
-        <div id="contenido-pagina" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-lg-10 col-lg-offset-2 main">
+        <div id="contenido-pagina" class="col-sm-9 col-md-10 col-lg-10 main">
           <h1 class="titulo-cuenta page-header">Ajustes</h1>
 
-          <div class="row placeholders">
+          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
             
 	            <div class="envoltura-cuerpo-ajustes">
@@ -260,13 +261,27 @@
 
   <!-- Menu Toggle Script -->
   <script>
-  $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-      //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
-      $("#sidebar-wrapper").toggleClass("hidden-xs");
-      
-  });
+    $("#menu-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
+        $("#sidebar-wrapper").toggleClass("hidden-xs");
+        $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
+        $("#btn-close").toggleClass("hidden");
+        
+    });
+  </script>
+
+  <script>
+    $("#btn-close").click(function(e){
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
+        $("#sidebar-wrapper").toggleClass("hidden-xs");
+        $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
+        $("#btn-close").toggleClass("hidden");
+        
+    });
   </script>
 
 </body>

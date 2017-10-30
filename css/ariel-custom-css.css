@@ -57,7 +57,6 @@ body {
 	max-width: 100%; /*Inherited:No*/
 	overflow-x: hidden;
 	overflow-y: scroll;
-
 }
 
 header, nav, section, aside, article, figure, footer {
@@ -117,17 +116,33 @@ header, nav, section, aside, article, figure, footer {
 
 
 /* -- Barra de Navagacion Principal Izquierda -- */
-.envoltura-barra-principal{
-	background-color: rgb(55, 69, 77);
-	box-sizing: border-box;
-	display: block;
-	left: auto;
-	/*min-width: 200px;*/ /*De no incluise la barra izquiera se vuelve muy angosta y las letras bajan*/
-	position: static;
-	max-width: 100%;
-	padding-left: 0px; 
-	padding-right: 0px;
-	/*position: relative;*/
+@media (max-width: 767px){
+	.envoltura-barra-principal{
+		background-color: rgb(55, 69, 77);
+		box-sizing: border-box;
+		display: block;
+		left: auto;
+		position: static;
+		max-width: 100%;
+		padding-left: 0px; 
+		padding-right: 0px;
+		overflow-y: scroll;
+		/*position: relative;*/
+	}
+}
+
+@media (min-width: 768px){
+	.envoltura-barra-principal{
+		background-color: rgb(55, 69, 77);
+		box-sizing: border-box;
+		display: block;
+		left: auto;
+		position: static;
+		max-width: 100%;
+		padding-left: 0px; 
+		padding-right: 0px;
+		/*position: relative;*/
+	}
 }
 
 .hidden-xs{

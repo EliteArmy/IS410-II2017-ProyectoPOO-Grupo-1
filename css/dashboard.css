@@ -35,19 +35,37 @@
     background-color: #293339;
   }
 }
-
-#sidebar-wrapper {
+@media (max-width: 767px) {
+  #sidebar-wrapper {
     z-index: 1000;
     /*position: fixed;*/
     /*width: 0;*/
     height: 100%;
-    min-height: 490px;
+    min-height: 100px;
     /*overflow-y: auto;*/
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+  }
 }
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    z-index: 1000;
+    /*position: fixed;*/
+    /*width: 0;*/
+    height: 100%;
+    min-height: 520px;
+    /*overflow-y: auto;*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+}
+
+
 
 /* Sidebar navigation */
 .nav-sidebar {
