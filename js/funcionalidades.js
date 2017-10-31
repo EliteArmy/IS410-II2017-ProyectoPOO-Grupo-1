@@ -25,3 +25,4 @@ $("#menu-toggle").click(function(e){
     $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
     $("#btn-close").toggleClass("hidden");
 });
+

@@ -31,7 +31,7 @@
           <span class="sr-only">Toggle navigation</span>
         </button>-->
 
-        <a href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
+        <a onclick="abrirMenu();" href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
 
         <a class="foto" href="../index.html">
             <img src="../img/logo.png" alt="Nottrivago" height="44" width="152">
@@ -140,43 +140,20 @@
 </div>
 <!-- /#Todo el Cuerpo de la pagina -->
 
-
-  <!-- Bootstrap core JavaScript -->
   <!-- ========================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 
   <!-- jQuery -->
-  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.min.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
   <script src="../js/bootstrap.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e){
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
-        $("#sidebar-wrapper").toggleClass("hidden-xs");
-        $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
-        $("#btn-close").toggleClass("hidden");
-        
-    });
-  </script>
-
-  <script>
-    $("#btn-close").click(function(e){
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        //$("#sidebar-wrapper").toggleClass("slow, hidden-xs");
-        $("#sidebar-wrapper").toggleClass("hidden-xs");
-        $("#contenido-pagina").toggleClass("col-sm-offset-3 col-md-offset-2 col-lg-offset-2");
-        $("#btn-close").toggleClass("hidden");
-        
-    });
-  </script>
+  <!-- Custom JavaScript -->
+  <script src="../js/controlador.js"></script>
+  <script src="../js/funcionalidades.js"></script>
 
 </body>
 </html>
