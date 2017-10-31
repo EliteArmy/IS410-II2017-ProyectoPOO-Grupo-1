@@ -145,6 +145,12 @@ body {
 	/*width:352px;*/
 }
 
+.letras-rojas{
+	color: red;
+	margin: 0px;
+	display: block;
+}
+
 .tamanio-botones-sociales{
 	max-width: 100%;
 	min-width: 100%;
