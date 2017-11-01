@@ -38,8 +38,8 @@ function validacionCamposs(){
 
   } else {
 
-    document.getElementById("txt-correo").style.borderColor = "#ff0000";
-    document.getElementById("txt-correo-error").innerHTML = "Debe de incluir un correo";
+    //document.getElementById("txt-correo").style.borderColor = "#ff0000";
+    //document.getElementById("txt-correo-error").innerHTML = "Debe de incluir un correo";
     sinErrores = false; // Tiene Error
   }
 
@@ -49,8 +49,8 @@ function validacionCamposs(){
 
   } else {
 
-    document.getElementById("txt-contrasena").style.borderColor = "#ff0000";
-    document.getElementById("txt-contrasena-error").innerHTML = "Debe incluir una contrasena valida";
+    //document.getElementById("txt-contrasena").style.borderColor = "#ff0000";
+    //document.getElementById("txt-contrasena-error").innerHTML = "Debe incluir una contrasena valida";
     sinErrores = false; // Tiene Error
   }
 

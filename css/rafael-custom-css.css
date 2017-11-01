@@ -310,9 +310,13 @@ body {
 }
 /*
 input:invalid {
-  border-color: purple;
+  border-color: red;
 }
-
+*/
 input:valid {
   border-color: #ccc;
-}*/
+}
+
+input:focus:invalid {
+  border-color: red;
+}
