@@ -55,7 +55,7 @@
 												Inicia sesión con una red social
 											</h2>
 
-											<form method="POST" action="procesar.php">
+											<form method="POST" action="perfil-cuenta/dashboard.html" onsubmit="return guardarNuevoRegistroUsuario()">
 												<table class="tamanio-botones-sociales">
 													
 													<tr>
@@ -90,18 +90,18 @@
 									  	<h2 class="titulo-caja-registro">
 								  			Inicia sesión con tu e-mail
 								  		</h2>
-									  	<form method="POST" action="procesar.php">
+									  	<form method="POST" action="perfil-cuenta/dashboard.html" onsubmit="return guardarNuevoRegistroUsuario()">
 									  		<table class="table table-hover tamanio">
 
 													<tr>
-									  				<td colspan="2" class="subtitulos-caja-registro">
+									  				<td  colspan="2" class="subtitulos-caja-registro">
 															<strong>Correo Electronico:</strong>
 									  				</td>
 									  			</tr>
 
 									  			<tr>
 									  				<td colspan="2">
-									  					<input class="form-control" type="email" name="txt-correo" placeholder="Ingrese su correo electronico">
+									  					<input id="txt-correo" name="txt-correo" class="form-control" type="email" name="txt-correo" placeholder="Ingrese su correo electronico"><label class="letras-rojas" id="txt-correo-error"></label>
 									  				</td>
 									  			</tr>
 
@@ -116,16 +116,20 @@
 
 							      			<tr>
 							      				<td colspan="2">
-							      					<input class="form-control" type="password" placeholder="Ingrese su contraseña">
+							      					<input id="txt-contrasena" name="txt-contrasena" class="form-control" type="password" placeholder="Ingrese su contraseña"><label class="letras-rojas" id="txt-contrasena-error"></label>
 							      				</td>
 							      			</tr>
 
 									      	<tr>
 								      			<td class="subtitulos-password">
-								      				<input type="checkbox" name="Mostrar-Contraseña"> Mostrar Contraseña
+								      				<input type="checkbox" name="" onchange="document.getElementById('txt-contrasena').type = this.checked ? 'text' : 'password'"> Mostrar Contraseña
 								      			</td>
 								      			<td class="text-right">
-									      			<input type="button" class="btn btn-primary"  value="Iniciar Sesion">
+									      			<button class="btn boton-color-azul" type="submit" value="">
+									      				<span class="boton-letras-interior-dos">
+																	Inciar Sesión
+																</span>
+									      			</button>
 									      		</td>
 									      	</tr>
 										      	
@@ -163,6 +167,21 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- ========================================== -->
+	  <!-- Placed at the end of the document so the pages load faster -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+	  <!-- jQuery -->
+	  <script src="js/jquery.min.js"></script>
+
+	  <!-- Bootstrap Core JavaScript -->
+	  <script src="js/bootstrap.min.js"></script>
+
+	  <!-- Custom JavaScript -->
+	  <script src="js/controlador.js"></script>
+	  <script src="js/funcionalidades.js"></script>
 
   </body>
 

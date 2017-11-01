@@ -1,4 +1,3 @@
-
 function guardarNuevoRegistroUsuario(){
     
     //alert("Se guardara la informacion");
@@ -10,7 +9,7 @@ function guardarNuevoRegistroUsuario(){
         "txt-correo="+$("#txt-correo").val()+"&"+
         "contrasena="+$("#contrasena").val();
     }
-
+    //alert(temporal);
     return temporal;
 
     //alert("Parametros: " + parametros);
@@ -29,7 +28,7 @@ function guardarNuevoRegistroUsuario(){
     */
 }
 
-function validacionCampos(){
+function validacionCamposs(){
 
   var sinErrores = true; // Sin Error
 
@@ -51,7 +50,7 @@ function validacionCampos(){
   } else {
 
     document.getElementById("txt-contrasena").style.borderColor = "#ff0000";
-    document.getElementById("txt-contrasena-error").innerHTML = "Debe incluir una contrasena";
+    document.getElementById("txt-contrasena-error").innerHTML = "Debe incluir una contrasena valida";
     sinErrores = false; // Tiene Error
   }
 
