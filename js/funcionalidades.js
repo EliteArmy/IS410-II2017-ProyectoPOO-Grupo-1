@@ -12,15 +12,15 @@ function guardarNuevoRegistroUsuario(){
     //alert(temporal);
     return temporal;
 
+    /*Por los momentos no hace la peticion AJAX, solo hace la validacion de los campos*/
     //alert("Parametros: " + parametros);
     /*
     $.ajax({
-        url: "ajax/guardar-registro.php",
+        url: "ajax/...",
         data: parametros,
         method: "POST",
         success: function(respuesta){
-            $("#div-memes").html(respuesta  +  $("#div-memes").html()); // Permite que los memes aparescan al principio y no al final
-        },
+            $("#").html(respuesta  +  $("").html()); 
         error: function(e){
             alert("Error: " + e);
         }
