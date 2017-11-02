@@ -49,13 +49,13 @@
 	<div>
 		<center>	
 			<!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
-				<div class="barra-texto btn-group btn-group-lg">	
-					<form class="form-inline col-lg-7 barra">
+				<div class="barra-texto btn-group btn-group-lg" align="center">	
+					<form class="form-inline col-lg-6 barra">
 						<!--<table>
 						<input class="form-control horus__querytext" id="caja-pais" type="searching" name="seleccionar-pais" value="Honduras">
 						<button type="submit" class="btn btn-primary">Buscar</button><br><br>-->
 			
-						<div class="input-group-lg col-lg-11">
+						<div class="input-group-lg">
             <table>
   							<input class="caja-texto" type="text" class="form-control" value="Honduras" aria-describedby="basic-addon2">
   							<span class="btn-primary boton" id="basic-addon2">Buscar</span>
@@ -86,7 +86,7 @@
 <div>
 	<div class="col-lg-2 caja-mapa" style="background-image: url(img/map-access.jpg);"  align="center" >
   <table >
-    <button class="btn btn-default btn-mapa">Ver Mapa</button>
+    <button class="btn btn-default btn-mapa" id="map">Ver Mapa</button>
 <!--</div>-->
  <br><br><br>
 <div class="lista-f borde-caja">
@@ -252,7 +252,12 @@ este hotel.">Alberca genial</button>
       <strong class="precio-verde">$240</strong>
       </button>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel1(){
+          window.open("https://www.orbitz.com/Islas-De-La-Bahia-Hotels-Grand-Roatan-Caribbean-Resort.h10921361.Hotel-Information?trv_curr=USD&chid=7693b46d-f639-4b1a-8e8d-6b7f933977cb&mdpcid=ORBITZ-US.META.TRIVAGO.CORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.10921361.ROATAN&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=206988692_24&trv_dp=178&rm1=a2&paandi=true")
+        }
+      </script>
+      <button type="button" class="btn btn-lg btn-oferta" onclick="ofertaHotel1()">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -300,7 +305,12 @@ este hotel.">Alberca genial</button>
       <strong class="precio-verde">$103</strong>
       </button>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel2(){
+          window.open("https://www.expedia.com/Tegucigalpa-Hotels-Hyatt-Place-Tegucigalpa.h11590740.Hotel-Information?trv_curr=USD&chid=f88fe97d-de4f-4d9d-aff8-dc65798a3ef6&mdpcid=US.META.TRIVAGO.HOTELSCORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.11590740.TEGUCIGALPA&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=205747842_24&trv_dp=101&rm1=a2&paandi=true")
+        }
+      </script>
+      <button class="btn btn-lg btn-oferta" onclick="ofertaHotel2();">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -350,7 +360,12 @@ este hotel.">Alberca genial</button>
       <strong class="precio-verde">$175</strong>
       </button>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel3(){
+          window.open("https://www.tripadvisor.com/Hotel_Review-s1-g944573-d939692-Reviews-Infinity_Bay_Spa_and_Beach_Resort-West_Bay_Roatan_Bay_Islands.html");
+        }
+      </script>
+      <button class="btn btn-lg btn-oferta" onclick="ofertaHotel3();">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -397,7 +412,12 @@ este hotel.">Alberca genial</button>
       </button>
       <br><br>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel4(){
+          window.open("https://www.expedia.com/Northern-Coast-Hotels-Copantl-Hotel-Convention-Center.h45418.Hotel-Information?trv_curr=USD&chid=4cf3b814-3349-4eb5-b63f-428a7e3cd474&mdpcid=US.META.TRIVAGO.HOTELSCORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.45418.SAN%20PEDRO%20SULA&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=209339246_24&trv_dp=116&rm1=a2&paandi=true");
+        }
+      </script>
+      <button class="btn btn-lg btn-oferta" onclick="ofertaHotel4();">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -450,7 +470,12 @@ Central)">Mejor valorado</button>
       <strong class="precio-verde">$70</strong>
       </button>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel5(){
+          window.open("https://www.hiexpress.com/hotels/us/en/reservation/book?qAdlt=2&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qCiD=11&qCiMy=102017&qCoD=12&qCoMy=102017&qDest=Colonia+Lomas+del+Mayab+frente+a+la+Curacao+Tegucigalpa++Honduras&qFRA=1&qGRM=0&qHtlC=TGUEX&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qRtP=6CBARC&qSHp=1&qSlH=TGUEX&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&method=redirect&icdv=99630926&cm_mmc=trivago_cpc_US_TGUEX&glat=META_trivago_cpc_US_TGUEX&dp=true&icdv=99630926");
+        }
+      </script>
+      <button class="btn btn-lg btn-oferta" onclick="ofertaHotel5()">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -497,7 +522,12 @@ Central)">Mejor valorado</button>
       <strong class="precio-verde">$70</strong>
       </button>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel6(){
+          window.open("https://www.booking.com/searchresults.html?aid=340295;label=metatrivago-hotel-442218_xqdz-a5a49e49fef8ab20f8ec41bd01292305_los-1_nrm-1_gstadt-2_gstkid-0_curr-usd_lang-en-us;sid=8f4bb09061db204db13a3b54ba335eca;checkin=2017-11-11;checkout=2017-11-12;city=-1129439;highlighted_hotels=442218;hlrd=with_av;keep_landing=1;redirected=1;source=hotel;sr_show_room=44221803_91687223_4_42_0&utm_campaign=us&utm_content=los-1_nrm-1_gstadt-2_gstkid-0_curr-usd_lang-en-us&utm_medium=meta&utm_source=metatrivago&utm_term=hotel-442218&");
+        }
+      </script>
+      <button class="btn btn-lg btn-oferta" onclick="ofertaHotel6()">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -547,7 +577,12 @@ este hotel.">Alberca genial</button>
       <strong class="precio-verde">$172</strong>
       </button>
       <button class="btn btn-desayuno">Desayuno gratis</button>
-      <button class="btn btn-lg btn-oferta">Ver oferta</button>
+      <script>
+        function ofertaHotel7(){
+          window.open("https://www.expedia.com/Islas-De-La-Bahia-Hotels-Paradise-Beach-Hotel.h5110868.Hotel-Information?trv_curr=USD&chid=c1f539ca-2a1e-456c-832b-7b5d39fcbdf1&mdpcid=US.META.TRIVAGO.HOTELSCORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.5110868.ROATAN&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=207881950_24&trv_dp=139&rm1=a2&paandi=true");
+        }
+      </script>
+      <button class="btn btn-lg btn-oferta" onclick="ofertaHotel7()">Ver oferta</button>
     </section>
     </div>
   </section>
@@ -1611,11 +1646,8 @@ Pedro Sula">Mejor valorado</button>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-<<<<<<< HEAD
     
     <script type="text/javascript" src="js/funcionalidades.js"></script>
-=======
->>>>>>> 66ced0acce45e04aeff278b08e03af0d2e6fe2dc
 
 </body>
 </html>
