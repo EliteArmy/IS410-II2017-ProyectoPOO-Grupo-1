@@ -1,15 +1,17 @@
 function guardarNuevoRegistroUsuario(){
     
-    //alert("Se guardara la informacion");
+    alert("Se guardara la informacion");
     var temporal = validacionCampos();
-
+    
+    alert(temporal);
+    
     if(temporal){
       // URLEncoded
       var parametros = 
         "txt-correo="+$("#txt-correo").val()+"&"+
-        "contrasena="+$("#contrasena").val();
+        "txt-contrasena="+$("#txt-contrasena").val();
     }
-    //alert(temporal);
+    
     return temporal;
 
     /*Por los momentos no hace la peticion AJAX, solo hace la validacion de los campos*/
@@ -28,7 +30,7 @@ function guardarNuevoRegistroUsuario(){
     */
 }
 
-function validacionCamposs(){
+function validacionCampos(){
 
   var sinErrores = true; // Sin Error
 
