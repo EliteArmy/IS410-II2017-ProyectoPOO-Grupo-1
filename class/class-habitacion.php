@@ -1,9 +1,9 @@
 <?php 
 	class ClassName
 	{
-		protected $nombreHotel;
+		protected $hotel;
 		protected $numCamas;
-		protected $precio; // Precio por Noche
+		protected $precio;
 		
 		function __construct(argument)
 		{

@@ -5,15 +5,7 @@ class Hotel {
 	protected $Nombre;
 	protected $ubicacion;
 	protected $coordenada; // variable para google maps api
-	protected $descripcion;
-	protected $numAbitaciones; // Indivdual, Doble, Familiar, Múltiple
-	
-	protected $valoracion; // Notas de 0 a 10
-	protected $categoria; // Numero de estrellas
-	protected $precio; // Rango de precios por noche
-
-	protected $comentarios;
-	protected $ofertas;
+	protected $numAbitaciones;
 
 	public function __construct(){
 	
