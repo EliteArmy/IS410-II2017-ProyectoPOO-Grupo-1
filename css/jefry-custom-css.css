@@ -207,3 +207,29 @@ input[type="email"] {
 	text-align: center;
 }
 /* -- Fin Footer -- */
+
+.border-centro{
+	border-bottom-width: 0px;
+    border-top-width: 0px;
+    color:black;
+
+}
+
+.moneda{
+    width: 62px;
+    height: 50px;
+}
+
+.navde{
+	height: 51px;
+	border-bottom: 0px;
+}
+
+.tabla-centro{
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+ 	border-right-width: 0px; 
+    margin-bottom: 0px;
+    width: 700px;
+}
