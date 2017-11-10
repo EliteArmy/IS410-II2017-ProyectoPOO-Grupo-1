@@ -1,26 +1,28 @@
 function guardarNuevoRegistroUsuario(){
     
-    //alert("Se guardara la informacion");
+    alert("Se guardara la informacion");
     var temporal = validacionCampos();
-
+    
+    alert(temporal);
+    
     if(temporal){
       // URLEncoded
       var parametros = 
         "txt-correo="+$("#txt-correo").val()+"&"+
-        "contrasena="+$("#contrasena").val();
+        "txt-contrasena="+$("#txt-contrasena").val();
     }
-    //alert(temporal);
+    
     return temporal;
 
+    /*Por los momentos no hace la peticion AJAX, solo hace la validacion de los campos*/
     //alert("Parametros: " + parametros);
     /*
     $.ajax({
-        url: "ajax/guardar-registro.php",
+        url: "ajax/...",
         data: parametros,
         method: "POST",
         success: function(respuesta){
-            $("#div-memes").html(respuesta  +  $("#div-memes").html()); // Permite que los memes aparescan al principio y no al final
-        },
+            $("#").html(respuesta  +  $("").html()); 
         error: function(e){
             alert("Error: " + e);
         }
@@ -28,7 +30,7 @@ function guardarNuevoRegistroUsuario(){
     */
 }
 
-function validacionCamposs(){
+function validacionCampos(){
 
   var sinErrores = true; // Sin Error
 
