@@ -1,0 +1,29 @@
+body {
+	background-image: url(../img/admin/hero.jpg);
+	background-position: all;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav, footer {
+	background-color: white;
+}
+
+#div-formulario {
+	padding: 20px;
+	margin-top: 12%;
+}
+
+#temp {
+	height: 500px;
+}
+
+footer {
+	margin-top: 20px;
+	width: 100%;
+	height: 48px;
+}
+
+footer p {
+	padding-top: 1%;
+}
