@@ -56,8 +56,14 @@ body {
   margin-left: -20px;
 }
 
-a, a:hover, a:focus {
+.nav-sidebar > li >a, a:hover, a:focus {
     color:#C94A38;
+}
+
+
+.nav-sidebar > li > a:hover {
+    color: #fff;
+    background-color: #72BDF8;
 }
 
 .nav-sidebar > li > a {
