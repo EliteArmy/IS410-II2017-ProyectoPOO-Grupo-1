@@ -1,4 +1,4 @@
-.body {
+body {
   padding-bottom: 20px;
   background-color: #ebeced;
   font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
@@ -7,6 +7,14 @@
   direction: ltr;
   font-size: 12px;
   display: block;
+}
+
+.foto{
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
 }
 
 #parrafo2{

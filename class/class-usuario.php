@@ -9,7 +9,7 @@
 		private $email;
 		private $password;
 		private $fechaNacimiento;
-		private $cíudad;
+		private $ciudad;
 		private $pais;
 
 		public function __construct($codUsuario,
@@ -19,7 +19,7 @@
 					$email,
 					$password,
 					$fechaNacimiento,
-					$cíudad,
+					$ciudad,
 					$pais){
 			$this->codUsuario = $codUsuario;
 			$this->codTipoUsuario = $codTipoUsuario;
@@ -28,9 +28,11 @@
 			$this->email = $email;
 			$this->password = $password;
 			$this->fechaNacimiento = $fechaNacimiento;
-			$this->cíudad = $cíudad;
+			$this->ciudad = $ciudad;
 			$this->pais = $pais;
 		}
+
+		// Sets y Gets
 		public function getCodUsuario(){
 			return $this->codUsuario;
 		}
@@ -73,11 +75,11 @@
 		public function setFechaNacimiento($fechaNacimiento){
 			$this->fechaNacimiento = $fechaNacimiento;
 		}
-		public function getCíudad(){
-			return $this->cíudad;
+		public function getciudad(){
+			return $this->ciudad;
 		}
-		public function setCíudad($cíudad){
-			$this->cíudad = $cíudad;
+		public function setciudad($ciudad){
+			$this->ciudad = $ciudad;
 		}
 		public function getPais(){
 			return $this->pais;
@@ -85,7 +87,8 @@
 		public function setPais($pais){
 			$this->pais = $pais;
 		}
-		public function toString(){
+
+		public function __toString(){
 			return "CodUsuario: " . $this->codUsuario . 
 				" CodTipoUsuario: " . $this->codTipoUsuario . 
 				" Nombre: " . $this->nombre . 
@@ -93,8 +96,9 @@
 				" Email: " . $this->email . 
 				" Password: " . $this->password . 
 				" FechaNacimiento: " . $this->fechaNacimiento . 
-				" Cíudad: " . $this->cíudad . 
+				" ciudad: " . $this->ciudad . 
 				" Pais: " . $this->pais;
 		}
+
 	}
 ?>

@@ -1,9 +1,11 @@
 <?php
+
 	class Conexion{
+
 		private $host = "localhost";
 		private $usuario = "root";
 		private $password = "";
-		private $baseDatos = "playstore_db";
+		private $baseDatos = "";
 		private $puerto = 3306;
 		private $link;
 
