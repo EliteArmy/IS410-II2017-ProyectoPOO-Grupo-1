@@ -148,11 +148,6 @@ a:focus, a:hover {
     padding: 0 40px 0 50px;
 }
 
-.barra-texto {
-		width: 2900px;
-		box-sizing: 50em;
-}
-
 .barra-busqueda{
     background-color: #37454d;
     border-color: #37454d;
