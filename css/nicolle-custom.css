@@ -237,10 +237,10 @@ a:focus, a:hover {
     background: #fff;
     margin-bottom: 10px;
     border-radius: 2px;
-    height: 70px;
-    padding: 16px 1px 13px;
-    margin-left: 100px;
-    width: 250px;
+    /*height: 70px;*/
+    /*padding: 16px 1px 13px;*/
+    /*margin-left: 100px;*/
+    /*width: 250px;*/
     cursor: pointer;
 }
 
@@ -252,7 +252,7 @@ a:focus, a:hover {
 }
 
 .lista-f {
-    width: 250px;
+    /*width: 250px;*/
     overflow: hidden;
 }
 
@@ -266,8 +266,8 @@ a:focus, a:hover {
 .tabla-filtros {
     background: #fff;
     display: table;
-    height: 45px;
-    width: 250px;
+    /*height: 45px;*/
+    /*width: 250px;*/
     line-height: 15px;
 }
 
@@ -338,7 +338,7 @@ a:focus, a:hover {
 
 .tabla-botones {
     margin-bottom: 0;
-    width: 105%;
+    /*width: 105%;*/
 }
 .boton-estrellas{
     border-color: #F6AB3F;
@@ -346,8 +346,8 @@ a:focus, a:hover {
     border: 1px;
     border-radius: 2px;
     float: left;
-    height: 36px;
-    width: 36px;
+    /*height: 36px;*/
+    /*width: 36px;*/
     cursor: pointer;
     border-radius: 2px;
 }
@@ -358,8 +358,8 @@ a:focus, a:hover {
     border: 1px solid #697379;
     border-radius: 2px;
     float: left;
-    height: 36px;
-    width: 36px;
+    /*height: 36px;*/
+    /*width: 36px;*/
     cursor: pointer;
     border-radius: 2px;
 }
@@ -432,13 +432,13 @@ a:focus, a:hover {
     height: 16px;
     overflow: hidden;
     padding-top: 3px;
-    width: 60px;
+    /*width: 60px;*/
     font-size: 12px;
     font-weight: 400;
 }
 
 .max {
-    width: 250px;
+    /*width: 250px;*/
     margin-top: -13px;
     padding-left: 16px;
     padding-right: 16px;
@@ -469,8 +469,8 @@ a:focus, a:hover {
 }
 
 .boton-precios {
-    width: 24px;
-    height: 24px;
+    /*width: 24px;*/
+    /*height: 24px;*/
     border: 1px solid #9ba2a6;
     border-radius: 1em;
     position: absolute;
@@ -498,8 +498,8 @@ a:focus, a:hover {
     background-color: #fff;
     position: absolute;
     top: 0;
-    width: 36px;
-    height: 30px;
+    /*width: 36px;*/
+    /*height: 30px;*/
     margin-top: 42px;
     margin-right: 20px;
     right: 0;
@@ -508,7 +508,7 @@ a:focus, a:hover {
 
 .caja-hotel{
     width: 100%;
-    height: 36px;
+    /*height: 36px;*/
     border-radius: 2px;
     border: 1px solid #697379;
     -webkit-appearance: none;
@@ -590,8 +590,8 @@ a:focus, a:hover {
     font-weight: bold;
     color: white;
     background-color: #007400; 
-    width: 24px;
-    height: 24px;  
+    /*width: 24px;*/
+    /*height: 24px; */ 
     border-radius: 2px;
     text-align: center;
     padding: 2px 0;
@@ -627,8 +627,8 @@ a:focus, a:hover {
 .btn-alberca{
     margin-left: 180px;
     margin-top: 10px;
-    height: 25px;
-    width: 100px;
+    /*height: 25px;*/
+    /*width: 100px;*/
     border-radius: 15px;
     text-align: center;
     padding: 2px 0;
