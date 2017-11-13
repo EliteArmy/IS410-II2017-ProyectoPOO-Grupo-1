@@ -100,5 +100,22 @@
 				" Pais: " . $this->pais;
 		}
 
+		public static function obtenerUsuarios($conexion, $tipoUsuario) {
+			$sql = 'SELECT cod_usuario, cod_tipo_usuario, Nombre, apellido, email, password, fecha_nacimiento, ciudad, pais FROM tbl_usuario WHERE cod_tipo_usuario = ' . $tipoUsuario;
+
+			$resultado = $conexion->ejecutarConsulta($sql);
+
+
+			if ($fila = $conexion->obtenerFila($resultado)) {
+				$usuarios[] = $fila;
+
+				while ($fila = $conexion->obtenerFila($resultado)) {
+					$usuarios[] = $fila;
+				}
+
+				echo json_encode($usuarios);
+			}
+		}
+
 	}
 ?>

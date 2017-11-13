@@ -5,7 +5,7 @@
 		private $host = "localhost";
 		private $usuario = "root";
 		private $password = "";
-		private $baseDatos = "";
+		private $baseDatos = "nottrivago_db";
 		private $puerto = 3306;
 		private $link;
 
