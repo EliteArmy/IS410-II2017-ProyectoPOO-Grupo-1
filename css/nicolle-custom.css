@@ -271,6 +271,9 @@ a:focus, a:hover {
 .boton-interno-mapa {
     background: #fff;
     border-radius: 2px;
+    width: 35%;
+    margin: 0 auto;
+    border: 1px solid #293339;
 }
 
 .bordes-mapa-busqueda{
