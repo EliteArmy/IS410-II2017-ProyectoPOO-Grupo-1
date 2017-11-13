@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" href="../../img/trivago.png">
 
-	<title>Hoteles en Honduras-78%</title>
+	<title>Hoteles en Honduras</title>
 	
 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../../css/nicolle-custom.css">
@@ -100,124 +100,153 @@
           </div>
        </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid container-fluid-margin">
           <div class="row">
             
-            <!-- BARRA LATERAL DE BUSQUEDA --> 
+            <!-- Envoltorio Barra Lateral -->
             <div class="col-xs-3 col-sm-3 col-md-3col-lg-3">
-            	<div class="caja-mapa" align="center">
-                
-                <table>
+              
+              <!-- MAPA LATERAL -->
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="bordes-mapa-busqueda">
                   <button class="btn btn-default btn-mapa" id="map" style="background-image: url(../../img/hoteles-iconos/map-access.jpg);">
-                    Ver Mapa
+                    <div class="boton-interno-mapa">
+                      Ver Mapa
+                    </div> 
                   </button>
+                </div>  
+              </div>
+              <!-- FIN MAPA LATERAL -->
 
-                    <div class="lista-f borde-caja">
-                      <div class="filtros">
-                        <section class="caja-filtros">
-                              
-                          <div class="tabla-filtros">
-                            <div class="top-filtros cambiodetabla apuntar">
-                              Top Filtros
-                            </div>
-                            <div class="b-filtros cambiodetabla apuntar">
-                              Filtros extra
-                            </div>
-                          </div>
+              <!-- BARRA LATERAL DE BUSQUEDA --> 
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              	<div class="caja-mapa" align="center">
+                  
+                  <table>
 
-                          <div>
-                            <section class="tablas-grupo letra-filtros">
-                              Estrellas
-                              <div class="tabla-botones">
-                                <button class="boton-estrellas" style="background-image: url(img/1estrella.png);" title="Hoteles de 0/1 estrellas">  
-                                </button>
-                                <button class="boton-estrellas espacio-botones" style="background-image: url(img/2estrellas.png);" title="Hoteles de 2 estrellas"> 
-                                </button>
-                                <button class="boton-estrellas espacio-botones" style="background-image: url(img/3estrellas.png);" title="Hoteles de 3 estrellas">  
-                                </button>
-                                <button class="boton-estrellas espacio-botones" style="background-image: url(img/4estrellas.png);" title="Hoteles de 4 estrellas">
-                                </button>
-                                <button class="boton-estrellas espacio-botones" style="background-image: url(img/5estrellas.png);" title="Hoteles de 5 estrellas">
-                                </button>
-                              </div>
-                            </section>
-
-                            <hr class="hr">
-                            <section class="tablas-grupo letra-filtros">
-                              Puntuación
-                              <div class="tabla-botones">
-                                <button class="grupo-botones btn-danger" title="Deficiente">0+</button>
-                                <button class="grupo-botones btn-warning espacio-botones" title="Ok">70+</button>
-                                <button class="grupo-botones btn-bueno espacio-botones" title="Bueno">75+</button>
-                                <button class="grupo-botones btn-muybueno espacio-botones" title="Muy Bueno">80+</button>
-                                <button class="grupo-botones btn-exc espacio-botones" title="Excelente">85+</button>
-                              </div>
-                            </section>
-
-                            <hr class="hr">
-                            <section class="tablas-grupo precios">
-                              Precio
-                              <div class="rango-precios">
-
-                                <div class="precio-minimo precio-max-min">
-                                  &lrm;$15
-                                </div>
-                                <div class="max">
-                                  <span id="sliderStatus">241</span>
-                                </div>
-                                <div class="precio-max precio-max-min">
-                                  máx &lrm;$483
-                                </div>
-                                <div class="barra-precios">
-                                  <input id="ex1" data-slider-id="ex1Slider" type="range" min="15" max="483" 
-                                  step="0" value="241" onchange="sliderChange(this.value)"/>
-                                </div>
-                                <div class="hoteles-disponibles">
-                                  <label><input type="checkbox" > Ver sólo hoteles disponibles</label>
-                                </div>
-                              </div>
-                            </section>
-
-                            <hr class="hr">
-                             <section class="tablas-grupo letra-filtros">
-                                Lo más buscado
-                                <div class="tabla-botones">
-
-                                  <button class="boton-estrellas btn-mascotas" style="background-image: url(../img/mascotas.png);" title="Mascotas permitidas">  
-                                  </button>
-                                  <button class="boton-estrellas espacio-botones" style="background-image: url(../img/playa.png);" title="Playa"> 
-                                  </button>
-                                  <button class="boton-estrellas espacio-botones" style="background-image: url(../img/wifi.png);" title="Wi-Fi gratis">  
-                                  </button>
-                                  <button class="boton-estrellas espacio-botones" style="background-image: url(../img/desayuno.png);" title="Desayuno">
-                                  </button>
-                                  <button class="boton-estrellas espacio-botones" style="background-image: url(../img/alberca.png);" title="Alberca">
-                                  </button>
-                                </div>
-                            </section>
-
-                            <hr class="hr">
-                            <section class="tablas-grupo letra-filtros">
-                              Buscar nombre de hotel
-
-                              <div>
-                                <input class="caja-hotel"  type="text" name="txt-hoteles" placeholder="Buscar nombre de hotel"><button class="btn btn-hotel glyphicon glyphicon-search"></button>
-                              </div>    
-                            </section>
-
-                            <hr class="hr">
-                            <section class="tablas-grupo letra-filtros">
-                              <button class="btn btn-borrar">Borrar todos los filtros</button>
-                            </section>
-                          </div>
-                        </section>
+                    <div class="tabla-filtros text-center">
+                      <div class="top-filtros cambiodetabla apuntar">
+                        Top Filtros
+                      </div>
+                      <div class="b-filtros cambiodetabla apuntar">
+                        Filtros extra
                       </div>
                     </div>
-                </table>
+
+                    <div class="envoltura-botones-estrella">
+                        
+                      Categoria del Hotel
+
+                      <button class="sub-boton-estrella" title="Hoteles de 0/1 estrellas">
+                        <img src="../../img/hoteles-iconos/1estrella.png" alt="1 Estrella" height="37" width="37">
+                      </button>
+                      
+                      <button class="sub-boton-estrella" title="Hoteles de 2 estrellas">
+                        <img src="../../img/hoteles-iconos/2estrellas.png" alt="2 Estrella" height="37" width="37"> 
+                      </button>
+                      
+                      <button class="sub-boton-estrella" title="Hoteles de 3 estrellas">
+                        <img src="../../img/hoteles-iconos/3estrellas.png" alt="3 Estrella" height="37" width="37">
+                      </button>
+                      
+                      <button class="sub-boton-estrella" title="Hoteles de 4 estrellas">
+                        <img src="../../img/hoteles-iconos/4estrellas.png" alt="4 Estrella" height="37" width="37">
+                      </button>
+                      
+                      <button class="sub-boton-estrella" title="Hoteles de 5 estrellas">
+                        <img src="../../img/hoteles-iconos/5estrellas.png" alt="5 Estrella" height="37" width="37">
+                      </button>
+
+                    </div>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo letra-filtros">
+                      
+                      Valoracion de los huespedes
+
+                      <div class="tabla-botones">
+
+                        <button class="grupo-botones btn-danger" title="Deficiente">0+</button>
+                        <button class="grupo-botones btn-warning" title="Ok">70+</button>
+                        <button class="grupo-botones btn-bueno" title="Bueno">75+</button>
+                        <button class="grupo-botones btn-muybueno" title="Muy Bueno">80+</button>
+                        <button class="grupo-botones btn-exc" title="Excelente">85+</button>
+
+                      </div>
+
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo precios">
+                      Precio
+                      <div class="rango-precios">
+
+                        <div class="precio-minimo precio-max-min">
+                          &lrm;$15
+                        </div>
+                        <div class="max">
+                          <span id="sliderStatus">241</span>
+                        </div>
+                        <div class="precio-max precio-max-min">
+                          máx &lrm;$483
+                        </div>
+                        <div class="barra-precios">
+                          <input id="ex1" data-slider-id="ex1Slider" type="range" min="15" max="483" 
+                          step="0" value="241" onchange="sliderChange(this.value)"/>
+                        </div>
+                        <div class="hoteles-disponibles">
+                          <label><input type="checkbox" > Ver sólo hoteles disponibles</label>
+                        </div>
+                      </div>
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo letra-filtros">
+                      Lo más buscado
+                      <div class="tabla-botones">
+
+                        <button class="boton-estrellas btn-mascotas" style="background-image: url(../img/mascotas.png);" title="Mascotas permitidas">  
+                        </button>
+                        <button class="boton-estrellas" style="background-image: url(../img/playa.png);" title="Playa"> 
+                        </button>
+                        <button class="boton-estrellas" style="background-image: url(../img/wifi.png);" title="Wi-Fi gratis">  
+                        </button>
+                        <button class="boton-estrellas" style="background-image: url(../img/desayuno.png);" title="Desayuno">
+                        </button>
+                        <button class="boton-estrellas" style="background-image: url(../img/alberca.png);" title="Alberca">
+                        </button>
+                      </div>
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo letra-filtros">
+                      Buscar nombre de hotel
+
+                      <div>
+                        <input class="caja-hotel"  type="text" name="txt-hoteles" placeholder="Buscar nombre de hotel"><button class="btn btn-hotel glyphicon glyphicon-search"></button>
+                      </div>    
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo letra-filtros">
+                      <button class="btn btn-borrar">Borrar todos los filtros</button>
+                    </section>
+
+
+
+
+                  </table>
+                </div>
               </div>
+              <!-- FIN BARRA LATERAL DE BUSQUEDA -->
             </div>
-            <!-- FIN BARRA LATERAL DE BUSQUEDA -->
-          
+            <!-- FIN Envoltorio Barra Lateral -->
+
             <!-- SUB BARRA DE BUSQUEDA SUPERIOR -->
             <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
               
@@ -986,7 +1015,8 @@
             </div>
           </section>
         -->
-
+      </div>
+      <div>
         <!--
            <section class="lista-hoteles"> 
             <div>
@@ -1236,9 +1266,7 @@
             </div>
           </section>
         -->
-      </div>
 
-      <div>
         <!--
            <section class="lista-hoteles"> 
             <div>
