@@ -14,13 +14,13 @@
 
 		public function __construct($codUsuario,
 					$codTipoUsuario,
-					$nombre,
-					$apellido,
 					$email,
 					$password,
-					$fechaNacimiento,
-					$ciudad,
-					$pais){
+					$nombre = null,
+					$apellido = null,
+					$fechaNacimiento = null,
+					$ciudad = null,
+					$pais = null){
 			$this->codUsuario = $codUsuario;
 			$this->codTipoUsuario = $codTipoUsuario;
 			$this->nombre = $nombre;
@@ -100,8 +100,18 @@
 				" Pais: " . $this->pais;
 		}
 
+		public static function obtenerUsuario($conexion, $codigoUsuario = 0) {
+			$sql = 'SELECT cod_usuario, cod_tipo_usuario, nombre, apellido, email, password, fecha_nacimiento, ciudad, pais FROM tbl_usuario WHERE cod_usuario = ' . $codigoUsuario;
+
+			$resultado = $conexion->ejecutarConsulta($sql);
+
+			if ($fila = $conexion->obtenerFila($resultado)) {
+				echo json_encode($fila);
+			}
+		}
+
 		public static function obtenerUsuarios($conexion, $tipoUsuario) {
-			$sql = 'SELECT cod_usuario, cod_tipo_usuario, Nombre, apellido, email, password, fecha_nacimiento, ciudad, pais FROM tbl_usuario WHERE cod_tipo_usuario = ' . $tipoUsuario;
+			$sql = 'SELECT cod_usuario, cod_tipo_usuario, nombre, apellido, email, password, fecha_nacimiento, ciudad, pais FROM tbl_usuario WHERE cod_tipo_usuario = ' . $tipoUsuario;
 
 			$resultado = $conexion->ejecutarConsulta($sql);
 
@@ -117,5 +127,24 @@
 			}
 		}
 
+		public function insertarUsuario($conexion)
+		{
+			$sql = sprintf("INSERT INTO tbl_usuario(cod_tipo_usuario, email, password) 
+							VALUES (%s, '%s', '%s')",
+							$conexion->antiInyeccion($this->codTipoUsuario),
+							$conexion->antiInyeccion($this->email),
+							$conexion->antiInyeccion($this->password)
+						);
+			$resultado = $conexion->ejecutarConsulta($sql);
+
+			return $conexion->ultimoId();
+		}
+
+		public function eliminarUsuario($conexion, $codigoUsuario)
+		{
+			$sql = 'DELETE FROM tbl_usuario WHERE cod_usuario = ' . $codigoUsuario;
+
+			$resultado = $conexion->ejecutarConsulta($sql);
+		}
 	}
 ?>
