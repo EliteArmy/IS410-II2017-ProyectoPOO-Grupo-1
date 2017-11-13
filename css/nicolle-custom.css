@@ -1,12 +1,13 @@
 body {
-  padding-bottom: 20px;
-  background-color: #ebeced;
-  font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
-  line-height: 1.25;
-  -webkit-font-smoothing: antialiased;
-  direction: ltr;
-  font-size: 12px;
-  display: block;
+    padding-bottom: 20px;
+    background-color: #ebeced;
+    font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
+    line-height: 1.25;
+    direction: ltr;
+    font-size: 12px;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container-fluid-padding-fix {
@@ -279,14 +280,13 @@ a:focus, a:hover {
 .subtitulos-barra-lateral{
     box-sizing:border-box;
     color:rgb(55, 69, 77);
-    direction:ltr;
     display:block;
-
     font-size:14px;
     font-weight:700;
     height:17px;
     line-height:17.5px;
-    margin-bottom:16px;
+    margin-bottom:12px;
+    margin-top: 4px;
 
     text-size-adjust:100%;
 }
@@ -344,15 +344,15 @@ a:focus, a:hover {
 }
 
 .cambiodetabla{
-    border: 1px 
-    solid #cdd0d2;
+    /*border: 1px*/
+    /*solid #cdd0d2;*/
     vertical-align: middle;
     display: table-cell;
-    height: 4px;
+    /*height: 4px*/
     text-align: center;
     font-size: 14px;
-    border-width: 1px 0 1px 1px;
-    width: 100%;
+    /*border-width: 1px 0 1px 1px;*/
+    /*width: 100%;*/
 }
 
 .apuntar {
@@ -384,7 +384,7 @@ a:focus, a:hover {
     line-height: 12px;
     font-weight: 700;
     font-size: 12px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     overflow: hidden
 }
 
@@ -403,7 +403,7 @@ a:focus, a:hover {
 }
 
 .sub-boton-estrella{
-    float: left;
+    /*float: left;*/
     cursor: pointer;
     margin-right: 2px;
     margin-left: 2px;
@@ -625,8 +625,8 @@ a:focus, a:hover {
 }
 
 .hr{
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .lista-hoteles{
