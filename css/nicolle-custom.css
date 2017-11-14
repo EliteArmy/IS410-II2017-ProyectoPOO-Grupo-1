@@ -34,14 +34,6 @@ body {
     padding: 20px 200px;
     margin:10px;
 }
- 
-#caja-correo{
-    width: 300px; height: 35px;
-}
-
-#caja-busqueda{
-    width: 500px; height: 30px;
-}
 
 #titulo-principal{
     color:#007FAD;
@@ -140,24 +132,23 @@ a:focus, a:hover {
     border-top-right-radius: 2px;
   }
 
- .borde{
+ .sin-borde{
  	border-color: #fff;
- 	margin: 0;
+ 	/*margin: 0;*/
  	border:none;
  	font-size: 14px;
- 
  }
 
 .sincronizar{
 	border-radius: 2px;
     margin-right: 8px;
-    padding-left: 0;
+    /*padding-left: 4px;*/
     height: 42px;
-    text-align: left;
+    text-align: center;
     background-color: #fff;
     font-size: 12px;
     line-height: 15px;
-    padding: 0 40px 0 50px;
+    /*padding: 0 40px 0 50px;*/
 }
 
 .barra-busqueda{
@@ -188,6 +179,11 @@ a:focus, a:hover {
 .h2{
 	color: #fff;
 	font-family: Arial;
+}
+
+#boton-buscar {
+    padding: 10px 30px;
+    border-radius: 2px;
 }
 
 .btn-ordenar{
