@@ -1,8 +1,28 @@
-function temp(codigo) {
+function marcar(codigo) {
 	if($("input[value='"+codigo+"']").prop('checked'))
 		$("input[value='"+codigo+"']").parent().parent().addClass("warning");
 	else 
 		$("input[value='"+codigo+"']").parent().parent().removeClass("warning");
+}
+
+function eliminarUsuario(codigoUsuario) {
+	$.ajax({
+			url:'../ajax/admin-controlador.php?accion=eliminar-usuario',
+			data: 'codigo-usuario='+codigoUsuario,
+			method: 'POST',
+			dataType:"html",
+			success: function(resultado){
+				alert(resultado);
+				$("input[value='"+codigoUsuario+"']").closest('tr').remove();
+			},
+			error:function(e){
+				
+			}
+		});
+}
+
+function temp(codigoUsuario) {
+	$("input[value='"+codigoUsuario+"']").closest('tr').remove();
 }
 
 $(document).ready(function() {
@@ -12,12 +32,22 @@ $(document).ready(function() {
 		method: 'POST',
 		dataType:"json",
 		success: function(resultado){
+			
 			if (resultado) {
 				for (var i = 0; i < resultado.length; i++) {
 					$("#tbl-usuarios").append(
 						'<tr>' +
-                            '<td><input type="checkbox" onclick="temp('+resultado[i].cod_usuario+')" name="checkbox[]" value="'+resultado[i].cod_usuario+'" class="checkbox"></td>' +
-                            '<td>'+resultado[i].cod_usuario+'</td>' +
+                            '<td><input type="checkbox" onclick="marcar('+resultado[i].cod_usuario+')" name="checkbox[]" value="'+resultado[i].cod_usuario+'" class="checkbox"></td>' +
+                            '<td>' +
+                            	'<div class="btn-group" role="group" aria-label="...">' +
+                    				'<button type="button" onclick="temp('+resultado[i].cod_usuario+')" class="btn btn-xs btn-default">' +
+                    				'<span class="glyphicon glyphicon-pencil"></span>' +
+                					'</button>' +
+                					'<button type="button" onclick="eliminarUsuario('+resultado[i].cod_usuario+')" class="btn btn-xs btn-default">' +
+                    					'<span class="glyphicon glyphicon-trash"></span>' +
+                					'</button>' +
+         						'</div>' +
+                            '</td>' +
                             '<td>'+resultado[i].nombre+'</td>' +
                             '<td>'+resultado[i].apellido+'</td>' +
                             '<td>'+resultado[i].email+'</td>' +
@@ -36,8 +66,15 @@ $(document).ready(function() {
 	//alert($("#btn-agregar").val());
 
 	$("#btn-desplegar").click(function () {
-		$("#div-agregar").slideDown("slow");
+		$("#btn-desplegar").parent().hide();
+		$("#div-agregar").show();
 		$("#txt-email").focus();
+	});
+
+	$("#btn-cancelar").click(function () {
+		$("#btn-desplegar").parent().show();
+		$("#div-agregar").hide();
+		//$("#txt-email").focus();
 	});
 
 	$("#btn-guardar").click(function () {
@@ -52,11 +89,25 @@ $(document).ready(function() {
 			method: 'POST',
 			dataType:"json",
 			success: function(resultado){
+				$("#btn-desplegar").parent().show();
+				$("#div-agregar").hide();
+				$("#txt-email").val('');
+				$("#txt-password").val('');
+
 				if (resultado) {
 					$("#tbl-usuarios").append(
 						'<tr>' +
                             '<td><input type="checkbox" onclick="temp('+resultado.cod_usuario+')" name="checkbox[]" value="'+resultado.cod_usuario+'" class="checkbox"></td>' +
-                            '<td>'+resultado.cod_usuario+'</td>' +
+                            '<td>' +
+                            	'<div class="btn-group" role="group" aria-label="...">' +
+                    				'<button type="button" class="btn btn-xs btn-default">' +
+                    				'<span class="glyphicon glyphicon-pencil"></span>' +
+                					'</button>' +
+                					'<button type="button" onclick="eliminarUsuario('+resultado.cod_usuario+')" class="btn btn-xs btn-default">' +
+                    					'<span class="glyphicon glyphicon-trash"></span>' +
+                					'</button>' +
+         						'</div>' +
+                            '</td>' +
                             '<td>'+resultado.nombre+'</td>' +
                             '<td>'+resultado.apellido+'</td>' +
                             '<td>'+resultado.email+'</td>' +

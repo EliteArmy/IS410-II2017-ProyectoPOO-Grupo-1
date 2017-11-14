@@ -65,10 +65,10 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Usuarios</a></li>
-                    <li><a href="#">Hoteleros</a></li>
-                    <li class="active"><a href="#">Administradores</a></li>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
+                    <li><a href="hoteleros.html">Hoteleros</a></li>
+                    <li class="active"><a href="">Administradores</a></li>
                     <li><a href="#">configuraciones</a></li>
                     <hr>
                     <li><a href="">Nav item again</a></li>
@@ -90,16 +90,34 @@
                             </span>
                         </div><!-- /input-group -->
                     </div><!-- /.col-lg-6 -->
-                    <div class="btn-group col-md-2 col-md-offset-6" role="group" aria-label="...">
+
+                    <form class="form-inline col-sm-7 col-sm-offset-1" id="div-agregar" style="display: none;">
+                            <div class="form-group">
+                                <label for="txt-email">Correo </label>
+                                <input type="email" class="form-control" id="txt-email" placeholder="example@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-password">Password </label>
+                                <input type="password" class="form-control" id="txt-password" placeholder="Password">
+                            </div>
+                            <button type="button" class="btn btn-default" id="btn-guardar" value="3">
+                                <span class="glyphicon glyphicon-floppy-disk"></span>
+                            </button>
+                            <button type="reset" class="btn btn-default" id="btn-cancelar">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                    </form>
+
+                    <div class="btn-group col-md-1 col-sm-offset-7" role="group" aria-label="...">
                         <button type="button" class="btn btn-default" id="btn-desplegar">
                             <span class="glyphicon glyphicon-plus"></span>
                         </button>
-                        <button type="button" class="btn btn-default">
+                        <!-- <button type="button" class="btn btn-default">
                             <span class="glyphicon glyphicon-pencil"></span>
                         </button>
                         <button type="button" class="btn btn-default">
                             <span class="glyphicon glyphicon-trash"></span>
-                        </button>
+                        </button> -->
                     </div>
                 </div><!-- /.row -->
                 
@@ -110,7 +128,7 @@
                         <thead>
                             <tr class="danger">
                                 <th><input type="checkbox" class="checkbox"></th>
-                                <th>#</th>
+                                <th>Opciones</th>
                                 <th>Nombre</th>
                                 <th>Apellido</th>
                                 <th>Email</th>
@@ -123,7 +141,7 @@
                     </table>
                 </div>
 
-                <div id="div-agregar" class="row" style="display: none;">
+                <!-- <div id="div-agregar" class="row" style="display: none;">
                     <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
                         <form class="form-inline ">
                             <div class="form-group">
@@ -142,7 +160,8 @@
                             </button>
                         </form>
                     </div>
-                </div>
+                </div> -->
+
             </div>
         </div>
     </div>

@@ -145,6 +145,8 @@
 			$sql = 'DELETE FROM tbl_usuario WHERE cod_usuario = ' . $codigoUsuario;
 
 			$resultado = $conexion->ejecutarConsulta($sql);
+
+			echo "usuario eliminado";
 		}
 	}
 ?>

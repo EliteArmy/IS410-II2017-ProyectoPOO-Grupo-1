@@ -16,6 +16,10 @@
 					$_POST['password']);
 			$id =$usuario->insertarUsuario($conexion);
 			Usuario::obtenerUsuario($conexion, $id);
+			break;
+		case 'eliminar-usuario':
+			include '../class/class-usuario.php';
+			Usuario::eliminarUsuario($conexion, $_POST['codigo-usuario']);
 			break;		
 		default:
 			# code...
