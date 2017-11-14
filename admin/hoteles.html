@@ -67,20 +67,20 @@
                 <ul class="nav nav-sidebar">
                     <li><a href="inicio.html">Inicio</a></li>
                     <br>
-                    <li class="active"><a href="">Usuarios</a></li>
+                    <li><a href="usuarios.html">Usuarios</a></li>
                     <li><a href="hoteleros.html">Hoteleros</a></li>
                     <li><a href="administradores.html">Administradores</a></li>
                     <br>
-                    <li><a href="hoteles.html">Hoteles</a></li>
+                    <li class="active"><a href="">Hoteles</a></li>
                     <li><a href="#">configuraciones</a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">Usuarios: Normales </h1>
+                <h1 class="page-header">Hoteles Registrados</h1>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="buscar Usuario">
+                            <input type="text" class="form-control" placeholder="buscar hotel">
                             <span class="input-group-btn">
                             <button class="btn btn-primary" type="button">
                             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -98,7 +98,7 @@
                                 <label for="txt-password">Password </label>
                                 <input type="password" class="form-control" id="txt-password" placeholder="Password">
                             </div>
-                            <button type="button" class="btn btn-default" id="btn-guardar" value="1">
+                            <button type="button" class="btn btn-default" id="btn-guardar" value="2">
                                 <span class="glyphicon glyphicon-floppy-disk"></span>
                             </button>
                             <button type="reset" class="btn btn-default" id="btn-cancelar">
@@ -128,15 +128,17 @@
                                 <th><input type="checkbox" class="checkbox"></th>
                                 <th>Opciones</th>
                                 <th>Nombre</th>
-                                <th>Apellido</th>
                                 <th>Email</th>
-                                <th>Password</th>
+                                <th>Telefono</th>
+                                <th>Ciudad</th>
+                                <th>Latitud</th>
+                                <th>Longitud</th>
                             </tr>
                         </thead>
-                        <tbody id = "tbl-usuarios">
+                        <tbody id = "tbl-hoteles">
                            <!-- tabla para los registros de usuario -->
                         </tbody>
-                    </table>
+                    </table> 
                 </div>
 
                 <!-- <div id="div-agregar" class="row" style="display: none;">
@@ -174,6 +176,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <!-- controlador-->
-    <script src="../js/admin/controlador.js"></script>
+    <script src="../js/admin/controlador-hoteles.js"></script>
   </body>
 </html>

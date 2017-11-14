@@ -20,6 +20,12 @@
 		case 'eliminar-usuario':
 			include '../class/class-usuario.php';
 			Usuario::eliminarUsuario($conexion, $_POST['codigo-usuario']);
+			break;
+		case 'obtner-hoteles':
+			include '../class/class-hotel.php';
+			include '../class/class-comentario.php';
+			include '../class/class-servicio.php';
+			Hotel::obtenerHoteles($conexion);
 			break;		
 		default:
 			# code...
