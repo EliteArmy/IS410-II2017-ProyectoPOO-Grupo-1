@@ -2,7 +2,9 @@
     session_start();
     if (!isset($_SESSION["codigo_usuario"])){
         header("Location: index.html");
-    }
+    } else if (!($_SESSION["tipo_usuario"] == 3))
+        header("Location: index.html");
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +54,7 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id='lbl-usuario' ></span> <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Configurar Perfil</a></li>
                     <li role="separator" class="divider"></li>
@@ -85,83 +87,24 @@
                 <h1 class="page-header">Administradores</h1>
                 <div class="row placeholders">
                     <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="../img/admin/luffy.png" width="200" style="position: center" height="200" class="img-responsive img-circle" alt="Generic placeholder thumbnail">
-                        <h4>Mugiwara No Luffy</h4>
-                        <span class="text-muted">Admin: Supremo</span>
+                        <img src="../img/perfil-cuenta/avatar.png" width="200" style="position: center" height="200" id='img-usuario' class="img-responsive img-circle" alt="Generic placeholder thumbnail">
+                        <h4 id="lbl-nombre"></h4>
+                        <span class="text-muted">Administrador del sitio</span>
                     </div>
-                    <div class="col-xs-6 col-sm-3 placeholder">
+                    <!-- <div class="col-xs-6 col-sm-3 placeholder">
                         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
                         <h4>Label</h4>
                         <span class="text-muted">Something else</span>
-                    </div>
+                    </div> -->
                 </div>
 
                 <h2 class="sub-header">Notificaciones</h2>
                 <div class="row">
     	            <div class="col-sm-4">
-    				    <div class="input-group">
-      		                <input type="text" class="form-control" placeholder="buscar Usuario">
-              				<span class="input-group-btn">
-            				    <button class="btn btn-primary" type="button">
-        			     	       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-        	       	            </button>
-      		                </span>
-    				    </div><!-- /input-group -->
-  				    </div><!-- /.col-lg-6 -->
-  		            <div class="btn-group" role="group" aria-label="...">
-	                    <button type="button" class="btn btn-default">
-	                    	<span class="glyphicon glyphicon-pencil"></span>
-	                    </button>
-	                    <button type="button" class="btn btn-default">
-	                    	<span class="glyphicon glyphicon-floppy-disk"></span>
-	                    </button>
-	                    <button type="button" class="btn btn-default">
-	                    	<span class="glyphicon glyphicon-trash"></span>
-	                    </button>
-			        </div>
+    				        <h1>#proximamente :x</h1>
+  				        </div><!-- /.col-lg-6 -->
 			    </div><!-- /.row -->
 			    <br>
-          <div class="table-responsive">
-            <table class="table table-striped table-hover">
-              <thead>
-                <tr>
-                	<th><input type="checkbox" class="checkbox"></th>
-                  	<th>#</th>
-                  	<th>Header</th>
-                  	<th>Header</th>
-                  	<th>Header</th>
-                  	<th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                	<td><input type="checkbox" class="checkbox"></td>
-                  	<td>1,001</td>
-                  	<td>Lorem</td>
-                  	<td>ipsum</td>
-                  	<td>dolor</td>
-                  	<td>sit</td>
-                </tr>
-                <tr class="danger">
-                	<td><input type="checkbox" class="checkbox"></td>
-                  	<td>1,002</td>
-                  	<td>amet</td>
-                  	<td>consectetur</td>
-                  	<td>adipiscing</td>
-                  	<td>elit</td>
-                </tr>
-                <tr>
-                	<td><input type="checkbox" class="checkbox"></td>
-                  	<td>1,003</td>
-                  	<td>amet</td>
-                  	<td>consectetur</td>
-                  	<td>adipiscing</td>
-                  	<td>elit</td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
         </div>
       </div>
     </div>
@@ -175,5 +118,6 @@
     <script src="../js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/admin/controlador-inicio.js"></script>
   </body>
 </html>

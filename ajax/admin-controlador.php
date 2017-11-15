@@ -26,6 +26,10 @@
 			include '../class/class-comentario.php';
 			include '../class/class-servicio.php';
 			Hotel::obtenerHoteles($conexion);
+			break;
+		case 'usuario':
+			session_start();
+    		echo json_encode($_SESSION);
 			break;		
 		default:
 			# code...

@@ -151,7 +151,7 @@
 
 		public static function verificarUsuario($conexion, $email,$password, $tipoUsuario){
 				$sql = sprintf(
-						"SELECT cod_usuario, cod_tipo_usuario, nombre, apellido, email 
+						"SELECT cod_usuario, cod_tipo_usuario, nombre, apellido, email, url_img_usuario
 						FROM tbl_usuario 
 						WHERE cod_tipo_usuario = %s AND email = '%s' AND password = '%s'",
 						$tipoUsuario, $email, $password
@@ -166,6 +166,9 @@
 					$_SESSION["codigo_usuario"] = $fila["cod_usuario"];
 					$_SESSION["correo"] = $fila["email"];
 					$_SESSION["nombre"] = $fila["nombre"];
+					$_SESSION["apellido"] = $fila["apellido"];
+					$_SESSION["img"] = $fila["url_img_usuario"];
+					$_SESSION["tipo_usuario"] = $fila["cod_tipo_usuario"];
 					$respuesta["status"]=1;
 					$respuesta["mensaje"]="Si tiene acceso" ;
 				}else{

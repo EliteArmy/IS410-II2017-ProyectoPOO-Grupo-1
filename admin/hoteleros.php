@@ -2,7 +2,9 @@
     session_start();
     if (!isset($_SESSION["codigo_usuario"])){
         header("Location: index.html");
-    }
+    } else if (!($_SESSION["tipo_usuario"] == 3))
+        header("Location: index.html");
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +54,7 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id='lbl-usuario' ></span> <span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Configurar Perfil</a></li>
                     <li role="separator" class="divider"></li>

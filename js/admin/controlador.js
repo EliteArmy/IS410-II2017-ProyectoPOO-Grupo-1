@@ -27,6 +27,22 @@ function temp(codigoUsuario) {
 
 $(document).ready(function() {
 	$.ajax({
+		url:"../ajax/admin-controlador.php?accion=usuario",
+		method: "POST",
+		data: '',
+		dataType: 'json',
+		success:function(respuesta){
+			if (respuesta) {
+				$('#lbl-usuario').html(((respuesta.nombre != null) ? respuesta.nombre : 'Admin') + ' ' +
+					((respuesta.apellido != null) ? respuesta.apellido : ''));
+			}
+		},
+		error:function(){
+
+		}
+	});
+
+	$.ajax({
 		url:'../ajax/admin-controlador.php?accion=obtener-usuarios',
 		data: 'tipo-usuario=' + $("#btn-guardar").val(),
 		method: 'POST',
