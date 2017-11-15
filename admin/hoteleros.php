@@ -4,8 +4,8 @@
         header("Location: index.html");
     } else if (!($_SESSION["tipo_usuario"] == 3))
         header("Location: index.html");
-    
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

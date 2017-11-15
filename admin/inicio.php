@@ -4,8 +4,8 @@
         header("Location: index.html");
     } else if (!($_SESSION["tipo_usuario"] == 3))
         header("Location: index.html");
-    
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,6 +39,7 @@
           </button>
           <a class="navbar-brand" href="#"><span style="color: #293339;">Not</span><span style="color: #0073CF;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span>: admin</a>
         </div>
+
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <!-- <li><a href="#">Dashboard</a></li>
@@ -70,40 +71,41 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 col-md-2 sidebar">
-                <ul class="nav nav-sidebar">
-                    <li class="active"><a href="">Inicio</a></li>
-                    <br>
-                    <li><a href="usuarios.php">Usuarios</a></li>
-                    <li><a href="hoteleros.php">Hoteleros</a></li>
-                    <li><a href="administradores.php">Administradores</a></li>
-                    <br>                                        
-                    <li><a href="hoteles.php">Hoteles</a></li>
-                    <li><a href="#">configuraciones</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="page-header">Administradores</h1>
-                <div class="row placeholders">
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="../img/perfil-cuenta/avatar.png" width="200" style="position: center" height="200" id='img-usuario' class="img-responsive img-circle" alt="Generic placeholder thumbnail">
-                        <h4 id="lbl-nombre"></h4>
-                        <span class="text-muted">Administrador del sitio</span>
-                    </div>
-                    <!-- <div class="col-xs-6 col-sm-3 placeholder">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-                        <h4>Label</h4>
-                        <span class="text-muted">Something else</span>
-                    </div> -->
-                </div>
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="">Inicio</a></li>
+                <br>
+                <li><a href="usuarios.php">Usuarios</a></li>
+                <li><a href="hoteleros.php">Hoteleros</a></li>
+                <li><a href="administradores.php">Administradores</a></li>
+                <br>                                        
+                <li><a href="hoteles.php">Hoteles</a></li>
+                <li><a href="#">configuraciones</a></li>
+            </ul>
+        </div>
 
-                <h2 class="sub-header">Notificaciones</h2>
-                <div class="row">
-    	            <div class="col-sm-4">
-    				        <h1>#proximamente :x</h1>
-  				        </div><!-- /.col-lg-6 -->
-			    </div><!-- /.row -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Administradores</h1>
+            <div class="row placeholders">
+                <div class="col-xs-6 col-sm-3 placeholder">
+                    <img src="../img/perfil-cuenta/avatar.png" width="200" style="position: center" height="200" id='img-usuario' class="img-responsive img-circle" alt="Generic placeholder thumbnail">
+                    <h4 id="lbl-nombre"></h4>
+                    <span class="text-muted">Administrador del sitio</span>
+                </div>
+                <!-- <div class="col-xs-6 col-sm-3 placeholder">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+                    <h4>Label</h4>
+                    <span class="text-muted">Something else</span>
+                </div> -->
+            </div>
+
+            <h2 class="sub-header">Notificaciones</h2>
+            <div class="row">
+	            <div class="col-sm-4">
+				        <h1>#proximamente :x</h1>
+			        </div><!-- /.col-lg-6 -->
+	          </div><!-- /.row -->
 			    <br>
         </div>
       </div>

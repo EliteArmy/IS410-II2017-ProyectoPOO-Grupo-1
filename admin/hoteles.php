@@ -4,8 +4,8 @@
         header("Location: index.html");
     } else if (!($_SESSION["tipo_usuario"] == 3))
         header("Location: index.html");
-    
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,6 +39,7 @@
           </button>
           <a class="navbar-brand" href="#"><span style="color: #293339;">Not</span><span style="color: #0073CF;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span>: admin</a>
         </div>
+        
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <!-- <li><a href="#">Dashboard</a></li>
@@ -58,7 +59,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">Configurar Perfil</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="cerar_sesion.php">Cerrar Sesion</a></li>
+                    <li><a href="cerrar_sesion.php">Cerrar Sesion</a></li>
                 </ul>
             </li>
           </ul>
@@ -83,6 +84,7 @@
                     <li><a href="#">configuraciones</a></li>
                 </ul>
             </div>
+            
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                 <h1 class="page-header">Hoteles Registrados</h1>
                 <div class="row">
