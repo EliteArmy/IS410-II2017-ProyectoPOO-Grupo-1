@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	
 	$.ajax({
 		url:"../ajax/admin-controlador.php?accion=usuario",
 		method: "POST",

@@ -30,6 +30,7 @@
 			$this->fechaNacimiento = $fechaNacimiento;
 			$this->ciudad = $ciudad;
 			$this->pais = $pais;
+			echo "Instancia creada!";
 		}
 
 		// Sets y Gets
@@ -127,21 +128,33 @@
 			}
 		}
 
-		public function insertarUsuario($conexion)
-		{
+		public function insertarUsuario($conexion){
 			$sql = sprintf("INSERT INTO tbl_usuario(cod_tipo_usuario, email, password) 
 							VALUES (%s, '%s', '%s')",
 							$conexion->antiInyeccion($this->codTipoUsuario),
 							$conexion->antiInyeccion($this->email),
 							$conexion->antiInyeccion($this->password)
 						);
+
 			$resultado = $conexion->ejecutarConsulta($sql);
 
 			return $conexion->ultimoId();
 		}
 
-		public function eliminarUsuario($conexion, $codigoUsuario)
-		{
+		public function insertarUsuarioNuevo($conexion){
+			echo "<b>Usuario almacenado con exito</b>";
+			$sql = sprintf("INSERT INTO tbl_usuario(cod_tipo_usuario, email, password) 
+							VALUES (%s, '%s', '%s')",
+							$conexion->antiInyeccion($this->codTipoUsuario),
+							$conexion->antiInyeccion($this->email),
+							$conexion->antiInyeccion($this->password)
+						);
+
+			echo "<b>Usuario almacenado con exito</b>";
+			$resultado = $conexion->ejecutarConsulta($sql);
+		}
+
+		public function eliminarUsuario($conexion, $codigoUsuario){
 			$sql = 'DELETE FROM tbl_usuario WHERE cod_usuario = ' . $codigoUsuario;
 
 			$resultado = $conexion->ejecutarConsulta($sql);
