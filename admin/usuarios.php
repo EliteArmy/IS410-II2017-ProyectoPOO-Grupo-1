@@ -58,7 +58,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">Configurar Perfil</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="cerrar_secion.php">Cerrar Sesion</a></li>
+                    <li><a href="cerrar_sesion.php">Cerrar Sesion</a></li>
                 </ul>
             </li>
           </ul>
