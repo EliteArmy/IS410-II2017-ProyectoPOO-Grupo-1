@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="../../img/trivago.png">
+
+	<title>Hoteles en Honduras</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/nicolle-custom.css">
+  <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default" id="barra-menu">
+
+  	<div class="navbar-header">
+  		<button type="button" class="navbar-toggle"></button>
+  		 <center>
+          <a class="foto" href="../index.html">
+         <img src="../img/notTrivago.png" alt="Nottrivago" height="44" width="152">
+          </a>
+      </center>	
+  	</div>
+
+  	<div class="collapse navbar-collapse navbar-ex1-collapse">
+  		<ul class="nav navbar-nav navbar-right">
+  			<li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a>
+        </li>
+  			<li><a href="#">USD</a></li>
+  			<li><a href="#">ES</a></li>
+  			<li class="dropdown">
+        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          	Mi Perfil <b class="caret"></b>
+        	</a>
+      		<ul class="dropdown-menu">
+      			<li><a href="#">Iniciar Sesion</a></li>
+      			<li><a href="../../sign-in">Regístrate</a></li>
+        	</ul>
+        </li>
+      </ul>
+  	</div>
+
+  </nav> 
+
+  <!-- CONTAINER TOTAL DEL CUERPO -->
+  <div class="container-fluid container-fluid-padding-fix">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      	
+        <div class="fondo-pantalla-barra-superior">
+          <div class="container-fluid">
+            <div class="row">
+
+              <!-- BARRA DE BUSQUEDA SUPERIOR-->
+              <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-8 text-center">
+               	
+      					<!--form-inline es para que el boton y la barra se mantengan en la misma linea-->
+                <form style="margin: 20px">
+                  <div class="form-group">
+                     <div class="input-group input-group-lg">
+                        
+                        <input type="text" id="txt-buscar" class="form-control" placeholder="Ej: tegucigalpa">
+                        <span class="input-group-btn">
+                          <button id="boton-buscar" class="btn btn-primary" type="button">Buscar</button>
+                        </span>
+
+                      </div>
+                  </div>
+                  <div class="form-inline">
+                    <label style="color: white">Fecha de entrada:</label>
+                    <input type="date" class="form-control" placeholder="">
+                    <label style="color: white">Fecha de salida:</label>
+                    <input type="date" class="form-control">
+                    <label style="color: white">Número de camas:</label>
+                    <select class="form-control">
+                      <option>dobles</option>
+                      <option>dobles</option>
+                      <option>dobles</option>
+                      <option>dobles</option>
+                      <option>dobles</option>
+                    </select>
+                  </div>
+                </form>
+
+              </div>
+              <!-- FIN BARRA DE BUSQUEDA SUPERIOR -->
+
+            </div>
+          </div>
+       </div>
+
+        <div class="container-fluid container-fluid-margin">
+          <div class="row">
+            
+            <!-- Envoltorio Barra Lateral -->
+            <div class="col-xs-4 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
+              
+              <!-- MAPA LATERAL -->
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="bordes-mapa-busqueda">
+                  <button class="btn btn-default btn-mapa" id="map" style="background-image: url(../img/hoteles-iconos/map-access.jpg);">
+                    <div class="boton-interno-mapa">
+                      Ver Mapa
+                    </div> 
+                  </button>
+                </div>  
+              </div>
+              <!-- FIN MAPA LATERAL -->
+
+              <!-- BARRA LATERAL DE BUSQUEDA --> 
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              	<div class="caja-mapa" align="center">
+                  <table>
+
+                    <div class="tabla-filtros text-center">
+                      <div class="top-filtros cambiodetabla apuntar">
+                        <h4 class="subtitulos-barra-lateral">
+                          Top Filtros
+                        </h4> 
+                      </div>
+
+                      <div class="b-filtros cambiodetabla apuntar">
+                        <h4 class="subtitulos-barra-lateral">
+                          Filtros extra
+                        </h4>
+                      </div>
+                    </div>
+
+                    <hr class="hr">
+                    
+                    <section class="tablas-grupo">
+
+                      <h4 class="subtitulos-barra-lateral">
+                          Categoria del Hotel    
+                      </h4>
+
+                      <div class="envoltura-botones-estrella">
+
+                        <button type="button" class="sub-boton-estrella" title="Hoteles de 0/1 estrellas">
+                          <img src="../img/hoteles-iconos/1estrella.png" alt="1 Estrella" height="37" width="37">
+                        </button>
+                        
+                        <button type="button" class="sub-boton-estrella" title="Hoteles de 2 estrellas">
+                          <img src="../img/hoteles-iconos/2estrellas.png" alt="2 Estrella" height="37" width="37"> 
+                        </button>
+                        
+                        <button type="button" class="sub-boton-estrella" title="Hoteles de 3 estrellas">
+                          <img src="../img/hoteles-iconos/3estrellas.png" alt="3 Estrella" height="37" width="37">
+                        </button>
+                        
+                        <button type="button" class="sub-boton-estrella" title="Hoteles de 4 estrellas">
+                          <img src="../img/hoteles-iconos/4estrellas.png" alt="4 Estrella" height="37" width="37">
+                        </button>
+                        
+                        <button type="button" class="sub-boton-estrella" title="Hoteles de 5 estrellas">
+                          <img src="../img/hoteles-iconos/5estrellas.png" alt="5 Estrella" height="37" width="37">
+                        </button>
+
+                      </div>
+
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo">
+                      
+                      <h4 class="subtitulos-barra-lateral">
+                        Valoracion de los huespedes    
+                      </h4>
+
+                      <div class="tabla-botones">
+
+                        <button class="grupo-botones btn-danger" title="Deficiente">0+</button>
+                        <button class="grupo-botones btn-warning" title="Ok">70+</button>
+                        <button class="grupo-botones btn-bueno" title="Bueno">75+</button>
+                        <button class="grupo-botones btn-muybueno" title="Muy Bueno">80+</button>
+                        <button class="grupo-botones btn-exc" title="Excelente">85+</button>
+
+                      </div>
+
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo precios">
+
+                      <h4 class="subtitulos-barra-lateral">
+                        Precio    
+                      </h4>
+
+                      <div class="rango-precios">
+
+                        <div class="precio-minimo precio-max-min">
+                          &lrm;$15
+                        </div>
+                        <div class="max">
+                          <span id="sliderStatus">241</span>
+                        </div>
+                        <div class="precio-max precio-max-min">
+                          máx &lrm;$483
+                        </div>
+                        <div class="barra-precios">
+                          <input id="ex1" data-slider-id="ex1Slider" type="range" min="15" max="483" 
+                          step="0" value="241" onchange="sliderChange(this.value)"/>
+                        </div>
+                        <div class="hoteles-disponibles">
+                          <label><input type="checkbox" > Ver sólo hoteles disponibles</label>
+                        </div>
+                      </div>
+
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo">
+
+                      <h4 class="subtitulos-barra-lateral">
+                        Lo más buscado
+                      </h4>
+
+                      <div class="tabla-botones">
+
+                        <button class="sub-boton-estrella btn-mascotas" title="Mascotas permitidas">
+                          <img src="../img/hoteles-iconos/mascotas.png" alt="Mascotas permitidas" height="37" width="37">  
+                        </button>
+
+                        <button class="sub-boton-estrella" title="Playa"> 
+                          <img src="../img/hoteles-iconos/playa.png" alt="playa" height="37" width="37">
+                        </button>
+
+                        <button class="sub-boton-estrella" title="Wi-Fi gratis">  
+                          <img src="../img/hoteles-iconos/wifi.png" alt="Wi-Fi gratis" height="37" width="37">
+                        </button>
+                        
+                        <button class="sub-boton-estrella" title="Desayuno">
+                          <img src="../img/hoteles-iconos/desayuno.png" alt="Desayuno" height="37" width="37">
+                        </button>
+
+                        <button class="sub-boton-estrella" title="Alberca">
+                          <img src="../img/hoteles-iconos/alberca.png" alt="Alberca" height="37" width="37">
+                        </button>
+                      </div>
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo">
+
+                      <h4 class="subtitulos-barra-lateral">
+                        Buscar nombre de hotel
+                      </h4>
+
+                      <div>
+                        <input class="caja-hotel"  type="text" name="txt-hoteles" placeholder="Buscar nombre de hotel"><button class="btn btn-hotel glyphicon glyphicon-search"></button>
+                      </div>   
+
+                    </section>
+
+                    <hr class="hr">
+
+                    <section class="tablas-grupo">
+                      <button class="btn btn-borrar">Borrar todos los filtros</button>
+                    </section>
+
+                  </table>
+                </div>
+              </div>
+              <!-- FIN BARRA LATERAL DE BUSQUEDA -->
+            </div>
+            <!-- FIN Envoltorio Barra Lateral -->
+
+            <!-- SUB BARRA DE BUSQUEDA SUPERIOR -->
+            <div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
+              
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+                <h5 class="titulo-numero-hoteles">
+                  <span id=""><b> 242 </b> de 792 hoteles</span>
+                </h5>
+              </div>
+
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right">
+                <select class="btn btn-lg btn-ordenar" name="slc-ordenar" id="slc-ordenar">
+                  <option value="1"> Ordenar por popularidad </option>
+                  <option value="2"> Priorizar la valoración </option>
+                  <option value="3"> Priorizar el precio </option>
+                  <option value="4"> Ordenar solo por puntuación </option>
+                  <option value="5"> Ordenar solo por precio </option>
+                </select>
+              </div>
+
+            </div>
+            <!-- FIN SUB BARRA DE BUSQUEDA SUPERIOR -->
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+    <!-- FIN CONTAINER TOTAL DEL CUERPO -->
+
+      <div>
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel1.jpg">
+              </div>
+            </div>
+
+            <div class="detalles-hotel form-inline">
+              
+              <div style="width: 57%;" class="form-inline form-group">
+                <h3 class="nombre-hotel">Grand Roatan Caribbean Res...</h3>
+                <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                
+                <button class="btn boton-excelente">87</button>
+                
+                <p class="detalles-boton">
+                  <span class="calidad">Excelente</span>
+                  <span class="opiniones">(151 opiniones)</span>
+                </p>
+
+                <button class="btn btn-alberca" title="A los huéspedes les gustó el servicio de Alberca en este hotel.">Alberca genial</button>
+              </div>
+
+              <section class="paginas form-inline form-group">
+                <button class="btn btn-pag">Expedia<br>
+                  <strong>$240</strong>
+                </button> 
+
+                <button class="btn btn-pag">Hotels.com<br>
+                  <strong>$240</strong>
+                </button>
+                <button class="btn btn-pag">Cancelon<br>
+                  <strong style="color: #CC4A30;">$283</strong>
+                </button>
+                <hr class="hr1">
+                <button class="btn btn-pag" style="color: #333;">
+                  <strong>Más ofertas: 20</strong>
+                </button>
+              </section>
+
+              <section class="ultimo-cuadro form-inline form-group">
+                <button class="btn btn-pag" style="color: #333;">Brooking.com
+                  <strong class="precio-rojo"><strike>$265</strike></strong>
+                  <strong class="precio-verde">$240</strong>
+                </button>
+                <button class="btn btn-desayuno">
+                  Desayuno gratis
+                </button>
+                <script>
+                  function ofertaHotel1(){
+                    window.open("https://www.orbitz.com/Islas-De-La-Bahia-Hotels-Grand-Roatan-Caribbean-Resort.h10921361.Hotel-Information?trv_curr=USD&chid=7693b46d-f639-4b1a-8e8d-6b7f933977cb&mdpcid=ORBITZ-US.META.TRIVAGO.CORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.10921361.ROATAN&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=206988692_24&trv_dp=178&rm1=a2&paandi=true")
+                  }
+                </script>
+                <button type="button" class="btn btn-lg btn-oferta" onclick="ofertaHotel1()">
+                  Ver oferta
+                </button>
+              </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel2.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Hyatt Place Tegucigalpa</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">Tegucigalpa(Distrito Central), Francisco
+                  Morazán, Honduras</h5>
+                  <button class="btn boton-excelente">87</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(122 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Orbitz<br>
+              <strong>$103</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotels.com<br>
+              <strong>103</strong>
+              </button>
+              <button class="btn btn-pag">HotelQuickly<br>
+              <strong style="color: #CC4A30;">$140</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 17</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-rojo"><strike>$140</strike></strong><br>
+              <strong class="precio-verde">$103</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <script>
+                function ofertaHotel2(){
+                  window.open("https://www.expedia.com/Tegucigalpa-Hotels-Hyatt-Place-Tegucigalpa.h11590740.Hotel-Information?trv_curr=USD&chid=f88fe97d-de4f-4d9d-aff8-dc65798a3ef6&mdpcid=US.META.TRIVAGO.HOTELSCORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.11590740.TEGUCIGALPA&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=205747842_24&trv_dp=101&rm1=a2&paandi=true")
+                }
+              </script>
+              <button class="btn btn-lg btn-oferta" onclick="ofertaHotel2();">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel3.jpg">
+              </div>
+            </div>
+            
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Infinity Best Spa & Beach Res...</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button>
+                   <span class="detalles-estrellas">Apart Hotel</span>
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn boton-excelente">85</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(624 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-alberca" title="A los huéspedes les gustó el servicio de Alberca en este hotel.">Alberca genial</button>
+              </div>
+
+              <section class="paginas form-inline form-group">
+                <button class="btn btn-pag">Expedia<br>
+                <strong>$175</strong>
+                </button> 
+                <br>
+                <button class="btn btn-pag">Hotwire<br>
+                <strong>$175</strong>
+                </button>
+                <button class="btn btn-pag">HotelQuickly<br>
+                <strong style="color: #CC4A30;">$298</strong>
+                </button>
+                <hr class="hr1">
+                <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 26</strong></button>
+              </section>
+
+              <section class="ultimo-cuadro form-inline form-group">
+                <button class="btn btn-pag" style="color: #333;">Brooking.com
+                <br>
+                <strong class="precio-rojo"><strike>$298</strike></strong><br>
+                <strong class="precio-verde">$175</strong>
+                </button>
+                <button class="btn btn-desayuno">Desayuno gratis</button>
+                <script>
+                  function ofertaHotel3(){
+                    window.open("https://www.tripadvisor.com/Hotel_Review-s1-g944573-d939692-Reviews-Infinity_Bay_Spa_and_Beach_Resort-West_Bay_Roatan_Bay_Islands.html");
+                  }
+                </script>
+                <button class="btn btn-lg btn-oferta" onclick="ofertaHotel3();">Ver oferta</button>
+              </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel4.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Copantl Hotel y Suites</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">San Pedro Sula, Cortés, Honduras</h5>
+                  <button class="btn boton-bien">79</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Bien</span>
+                    <span class="opiniones">(134 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+            </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Orbitz<br>
+              <strong>$110</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$110</strong>
+              </button>
+              <button class="btn btn-pag">Hotwire<br>
+              <strong >$110</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 13</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-verde">$110</strong>
+              </button>
+              <br><br>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <script>
+                function ofertaHotel4(){
+                  window.open("https://www.expedia.com/Northern-Coast-Hotels-Copantl-Hotel-Convention-Center.h45418.Hotel-Information?trv_curr=USD&chid=4cf3b814-3349-4eb5-b63f-428a7e3cd474&mdpcid=US.META.TRIVAGO.HOTELSCORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.45418.SAN%20PEDRO%20SULA&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=209339246_24&trv_dp=116&rm1=a2&paandi=true");
+                }
+              </script>
+              <button class="btn btn-lg btn-oferta" onclick="ofertaHotel4();">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel5.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Holiday Inn Express Teguciga...</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <button class="btn btn-mejor" title="Hotel de 5 estrellas con mejor puntuación en Teguciga(Distrito Central)">Mejor valorado</button>
+                  <h5 class="ubicacion">Tegucigalpa(Distrito Central), Francisco
+                  Morazán, Honduras</h5>
+                  <button class="btn boton-excelente">89</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(313 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$70</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">HotelQuickly<br>
+              <strong>$85</strong>
+              </button>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$90</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 25</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$90</strike></strong><br>
+              <strong class="precio-verde">$70</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <script>
+                function ofertaHotel5(){
+                  window.open("https://www.hiexpress.com/hotels/us/en/reservation/book?qAdlt=2&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qCiD=11&qCiMy=102017&qCoD=12&qCoMy=102017&qDest=Colonia+Lomas+del+Mayab+frente+a+la+Curacao+Tegucigalpa++Honduras&qFRA=1&qGRM=0&qHtlC=TGUEX&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qRtP=6CBARC&qSHp=1&qSlH=TGUEX&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&method=redirect&icdv=99630926&cm_mmc=trivago_cpc_US_TGUEX&glat=META_trivago_cpc_US_TGUEX&dp=true&icdv=99630926");
+                }
+              </script>
+              <button class="btn btn-lg btn-oferta" onclick="ofertaHotel5()">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel6.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Gran Sula</h3>
+                  <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">San Pedro Sula, Cortés, Honduras</h5>
+                  <button class="btn btn-ok">73</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(147 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Traveloctiy<br>
+              <strong>$70</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Orbitz<br>
+              <strong>$70</strong>
+              </button><br>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$120</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 23</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-rojo"><strike>$120</strike></strong><br>
+              <strong class="precio-verde">$70</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <script>
+                function ofertaHotel6(){
+                  window.open("https://www.booking.com/searchresults.html?aid=340295;label=metatrivago-hotel-442218_xqdz-a5a49e49fef8ab20f8ec41bd01292305_los-1_nrm-1_gstadt-2_gstkid-0_curr-usd_lang-en-us;sid=8f4bb09061db204db13a3b54ba335eca;checkin=2017-11-11;checkout=2017-11-12;city=-1129439;highlighted_hotels=442218;hlrd=with_av;keep_landing=1;redirected=1;source=hotel;sr_show_room=44221803_91687223_4_42_0&utm_campaign=us&utm_content=los-1_nrm-1_gstadt-2_gstkid-0_curr-usd_lang-en-us&utm_medium=meta&utm_source=metatrivago&utm_term=hotel-442218&");
+                }
+              </script>
+              <button class="btn btn-lg btn-oferta" onclick="ofertaHotel6()">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel7.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Paradise Beach Hotel</h3>
+                  <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn boton-muybueno">83</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Muy bien</span>
+                    <span class="opiniones">(628 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+                  <button class="btn boton-alberca" title="A los huéspedes les gustó el servicio de Alberca eneste hotel.">Alberca genial</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$172</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotwire<br>
+              <strong>$172</strong>
+              </button>
+              <br>
+              <button class="btn btn-pag">Orbitz<br>
+              <strong>$172</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 17</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-verde">$172</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <script>
+                function ofertaHotel7(){
+                  window.open("https://www.expedia.com/Islas-De-La-Bahia-Hotels-Paradise-Beach-Hotel.h5110868.Hotel-Information?trv_curr=USD&chid=c1f539ca-2a1e-456c-832b-7b5d39fcbdf1&mdpcid=US.META.TRIVAGO.HOTELSCORESEARCH.HOTEL&abax=15859.0&mctc=5&mdpdtl=HTL.5110868.ROATAN&langid=1033&chkin=11/11/2017&chkout=11/12/2017&rateplanid=207881950_24&trv_dp=139&rm1=a2&paandi=true");
+                }
+              </script>
+              <button class="btn btn-lg btn-oferta" onclick="ofertaHotel7()">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel8.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">La Cascadas</h3>
+                  <h5 class="ubicacion">San Pedro Sula, Cortés, Honduras</h5>
+                  <button class="btn boton-excelente">86</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(192 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$70</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$70</strong>
+              </button>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$79</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 19</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$79</strike></strong><br>
+              <strong class="precio-verde">$70</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel9.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">LQ Hotel Tegucigalpa</h3>
+                  <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <button class="btn btn-mejor" title="Hotel de 4 estrellas con mejor puntuación en Teguciga(Distrito Central)">Mejor valorado</button>
+                  <h5 class="ubicacion">Tegucigalpa(Distrito Central), Francisco Morazán, Honduras</h5>
+                  <button class="btn boton-excelente">88</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(303 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$240</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotwire<br>
+              <strong>$240</strong>
+              </button>
+              <button class="btn btn-pag">Cancelon<br>
+              <strong style="color: #CC4A30;">$283</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 20</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$265</strike></strong><br>
+              <strong class="precio-verde">$240</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel10.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Hilton Princess San Pedro Sula</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">San Pedro Sula, Cortés, Honduras</h5>
+                  <button class="btn boton-muybueno">82</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Muy bien</span>
+                    <span class="opiniones">(395 opiniones)</span>
+                  </p>
+                  <br><br><br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$94</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Orbitz<br>
+              <strong>$94</strong>
+              </button>
+              <button class="btn btn-pag">Hotelsclick.com<br>
+              <strong style="color: #CC4A30;">$103</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 27</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-rojo"><strike>$103</strike></strong><br>
+              <strong class="precio-verde">$94</strong>
+              </button>
+              <br><br><br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel11.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Clarion Hotel Real</h3>
+                  <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">Tegucigalpa(Distrito Central), Francisco Morazán, Honduras</h5>
+                  <button class="btn boton-bien">78</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Bien</span>
+                    <span class="opiniones">(403 opiniones)</span>
+                  </p>
+                  <br><br><br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$94</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotels.com<br>
+              <strong>$94</strong>
+              </button>
+              <button class="btn btn-pag">HotelQuickly<br>
+              <strong style="color: #CC4A30;">$110</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 24</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$110</strike></strong><br>
+              <strong class="precio-verde">$94</strong>
+              </button>
+              <br><br><br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel12.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Crowne Plaza San Pedro Sula</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">San Pedro Sula, Cortés, Honduras</h5>
+                  <button class="btn btn-ok">74</button>
+                  <p class="detalles-boton">
+                    <span class="opiniones">(158 opiniones)</span>
+                  </p>
+                  <br><br><br><br><br>
+
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn sitio-web">Sitio web del<br> hotel<br>
+              <strong>$90</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$90</strong>
+              </button>
+              <button class="btn btn-pag">HotelQuickly<br>
+              <strong style="color: #CC4A30;">$107</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 26</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$107</strike></strong><br>
+              <strong class="precio-verde">$90</strong>
+              </button>
+              <br><br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel13.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Clarion Copan Ruinas</h3>
+                   <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <button class="btn btn-mejor" title="Hotel de 4 estrellas con mejor puntuación en  Teguciga(Distrito Central)">Mejor valorado</button>
+                  <h5 class="ubicacion">Copan Ruinas, Copán, Honduras</h5>
+                  <button class="btn boton-muybueno">84</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Muy bien</span>
+                    <span class="opiniones">(143 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$86</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong>$98</strong>
+              </button>
+              <button class="btn btn-pag">HotelQuickly<br>
+              <strong style="color: #CC4A30;">$112</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 23</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-rojo"><strike>$112</strike></strong><br>
+              <strong class="precio-verde">$86</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel14.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Tegucigalpa Marriott</h3>
+                  <h5 class="ubicacion">Tegucigalpa(Distrito Central), Francisco Morazán, Honduras</h5>
+                  <button class="btn boton-excelente">86</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(399 opiniones)</span>
+                  </p>
+                  <br><br><br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+            <button class="btn sitio-web">Sitio web del<br> hotel<br>
+            <strong>$91</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$91</strong>
+              </button>
+              <button class="btn btn-pag">bedfinder<br>
+              <strong style="color: #CC4A30;">$183</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 27</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$183</strike></strong><br>
+              <strong class="precio-verde">$91</strong>
+              </button>
+              <br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+      </div>
+      <div>
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel15.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Pristine Bay Resort</h3>
+                            <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  Resort
+
+                  <button class="btn btn-mejor" title="Hotel de 4 estrellas con mejor puntuación en Teguciga(Distrito Central)">Mejor valorado</button>
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn boton-excelente">88</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(78 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$255</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotels.com<br>
+              <strong>$262</strong>
+              </button>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$286</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 21</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$286</strike></strong><br>
+              <strong class="precio-verde">$198</strong>
+              </button>
+              <br><br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel16.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Indura Beach & Golf Restort</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <button class="btn btn-mejor" title="Hotel de 5 estrellas con mejor puntuación en Tela">Mejor valorado</button>
+                  <h5 class="ubicacion">Tela, Atlántida, Honduras</h5>
+                  <button class="btn boton-excelente">86</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(45 opiniones)</span>
+                  </p>
+                  <br>
+                 <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Hotwire<br>
+              <strong>$119</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">GetaRoom<br>
+              <strong>$119</strong>
+              </button>
+              <button class="btn btn-pag">Hotelsclick.com<br>
+              <strong style="color: #CC4A30;">$152</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 23</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Experia
+              <br>
+              <strong class="precio-rojo"><strike>$152</strike></strong><br>
+              <strong class="precio-verde">$119</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel17.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Marina Copan</h3>
+                  <button class="btn btn-4estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">Copán Ruinas, Copán, Honduras</h5>
+                  <button class="btn boton-muybueno">84</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Muy bien</span>
+                    <span class="opiniones">(21 opiniones)</span>
+                  </p>
+                  <br><br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$240</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotewire<br>
+              <strong>$240</strong>
+              </button>
+              <button class="btn btn-pag">Cancelon<br>
+              <strong style="color: #CC4A30;">$283</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 13</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br><br>
+              <strong class="precio-verde">$98</strong>
+              </button>
+              <br><br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel18.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Minister Business</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <button class="btn btn-mejor" title="Hotel de 3 estrellas con mejor puntuación en Teguciga(Distrito Central)">Mejor valorado</button>
+                  <h5 class="ubicacion">Tegucigalpa(Distrito Central), Francisco Morazán, Honduras</h5>
+                  <button class="btn boton-muybueno">82</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Muy bien</span>
+                    <span class="opiniones">(56 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$74</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$74</strong>
+              </button>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$84</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 19</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$84</strike></strong><br>
+              <strong class="precio-verde">$74</strong>
+              </button>
+              <br><br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel19.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Holiday Inn Express San Ped...</h3>
+                  <button class="btn btn-2estrellas" style="background-image: url(img/estrellas.png)"></button> B&B
+                  <button class="btn btn-mejor" title="Hotel de 2 estrellas con mejor puntuación en San Pedro Sula)">Mejor valorado</button>
+                  <h5 class="ubicacion">San Pedro, Cortés, Honduras</h5>
+                  <button class="btn boton-bien">78</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Bien</span>
+                    <span class="opiniones">(257 opiniones)</span>
+                  </p>
+                  <br><br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn sitio-web">Sitio web del<br>hotel<br>
+              <strong>$77</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$77</strong>
+              </button>
+              <button class="btn btn-pag">otel.com<br>
+              <strong style="color: #CC4A30;">$106</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 27</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$106</strike></strong><br>
+              <strong class="precio-verde">$77</strong>
+              </button>
+              <br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel20.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Intercontinental Real San Ped...</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <button class="btn btn-mejor" title="Hotel de 5 estrellas con mejor puntuación en San Pedro Sula">Mejor valorado</button>
+                  <h5 class="ubicacion">San Pedro, Cortés, Honduras</h5>
+                  <button class="btn boton-excelente">88</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(266 opiniones)</span>
+                  </p>
+                  <br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$176</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">priceline.com<br>
+              <strong>$168</strong>
+              </button>
+              <button class="btn btn-pag">Amoma.com<br>
+              <strong style="color: #CC4A30;">$236</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 26</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$367</strike></strong><br>
+              <strong class="precio-verde">$176</strong>
+              </button>
+              <br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel21.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Real InterContinental Tegucig...</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+
+                  <h5 class="ubicacion">Tegucigalpa (Distrito Central), Francisco Morazán, Honduras</h5>
+                  <button class="btn boton-excelente">87</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(266 opiniones)</span>
+                  </p>
+                  <br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$168</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">priceline.com<br>
+              <strong>$168</strong>
+              </button>
+              <button class="btn btn-pag">Amoma.com<br>
+              <strong style="color: #CC4A30;">$236</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 27</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$236</strike></strong><br>
+              <strong class="precio-verde">$168</strong>
+              </button>
+              <br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel22.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Fantasy Island Beach Resort</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button> Resort
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn btn-malo">69</button>
+                  <p class="detalles-boton">
+                    <span class="opiniones">(315 opiniones)</span>
+                  </p>
+                  <br><br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">HotelQuickly<br>
+              <strong>$210</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">GetaRoom<br>
+              <strong>$167</strong>
+              </button>
+              <button class="btn btn-pag">Amoma.com<br>
+              <strong style="color: #CC4A30;">$316</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 25</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-rojo"><strike>$316</strike></strong><br>
+              <strong class="precio-verde">$167</strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel23.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Barefoot Cay</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn boton-excelente">87</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(151 opiniones)</span>
+                  </p>
+                  <br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$255</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Travelocity<br>
+              <strong>$263</strong>
+              </button>
+              <button class="btn btn-pag">Orbitz<br>
+              <strong style="color: #CC4A30;">$263</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 20</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-verde">$263</strong>
+              </button>
+              <br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel24.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Pristine Bay Resort</h3>
+                  <button class="btn btn-5estrellas" style="background-image: url(img/estrellas.png)"></button> Resort
+                  <button class="btn btn-mejor" title="Hotel de 5 estrellas con mejor puntuación en San Pedro Sula">Mejor valorado</button>
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn boton-excelente">88</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Excelente</span>
+                    <span class="opiniones">(78 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Expedia<br>
+              <strong>$255</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotels.com<br>
+              <strong>$262</strong>
+              </button>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$286</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 21</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Brooking.com
+              <br>
+              <strong class="precio-rojo"><strike>$286</strike></strong><br>
+              <strong class="precio-verde">$198</strong>
+              </button>
+              <br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel25.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Villa Telamar</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
+                  <button class="btn boton-bien">76</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Bien</span>
+                    <span class="opiniones">(93 opiniones)</span>
+                  </p>
+                  <br>
+                  <button class="btn btn-wifi">Wi-Fi Gratis</button>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">TripAdvisor<br>
+              <strong>$179</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotwire<br>
+              <strong>$179</strong>
+              </button><br>
+              <button class="btn btn-pag">Orbitz<br>
+              <strong >$179</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 6</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia<br>
+              <strong class="precio-verde">$179</strong>
+              </button>
+              <br><br><br>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+
+        <!--
+           <section class="lista-hoteles"> 
+            <div>
+              <div class="imagenes-hoteles">
+                <img class="imagen borde-imagen" src="img/hotel26.jpg">
+              </div>
+            </div>
+            <div class="detalles-hotel form-inline">
+              <div style="width:  57% ;" class="form-inline form-group">
+                  <h3 class="nombre-hotel">Boutique La Cordillera</h3>
+                  <button class="btn btn-3estrellas" style="background-image: url(img/estrellas.png)"></button>
+                  <h5 class="ubicacion">San Pedro Sula, Cortés, Honduras</h5>
+                  <button class="btn boton-bien">77</button>
+                  <p class="detalles-boton">
+                    <span class="calidad">Bien</span>
+                    <span class="opiniones">(141 opiniones)</span>
+                  </p>
+                  <br><br>
+              </div>
+
+            <section class="paginas form-inline form-group">
+              <button class="btn btn-pag">Hotels.com<br>
+              <strong>$83</strong>
+              </button> 
+              <br>
+              <button class="btn btn-pag">Hotwire<br>
+              <strong>$81</strong>
+              </button>
+              <button class="btn btn-pag">Elvoline<br>
+              <strong style="color: #CC4A30;">$92</strong>
+              </button>
+              <hr class="hr1">
+              <button class="btn btn-pag" style="color: #333;"><strong>Más ofertas: 18</strong></button>
+            </section>
+
+            <section class="ultimo-cuadro form-inline form-group">
+              <button class="btn btn-pag" style="color: #333;">Expedia
+              <br>
+              <strong class="precio-rojo"><strike>$92</strike></strong><br>
+              <strong class="precio-verde">$81
+              </strong>
+              </button>
+              <button class="btn btn-desayuno">Desayuno gratis</button>
+              <button class="btn btn-lg btn-oferta">Ver oferta</button>
+            </section>
+            </div>
+          </section>
+
+        -->
+      </div>
+
+
+    <!-- INICIO DEL FOOTER!!! -->
+    <footer>
+      
+      <div class="footer-fondo-pantalla-principal">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 text-center">
+              <div class="footer-fondo">
+                <br>
+                <br>
+                <div class="container-fluid">
+                  <div class="row arreglo">
+                    <div class="">
+                      <div class="col-sm-12 col-md-6 col-lg-6 form-inline">
+                        <p>¿Quieres recibir ofertas exclusivas de hoteles? ¡Suscríbete a nuestro boletín de noticias!</p>
+                      </div>
+
+                      <form class="col-sm-12 col-md-6 col-lg-6 form-inline">
+                          <input type="email" id="email-index" placeholder="Dirección de correo electrónico"><button type="submit" class="btn btn-primary" id="btn-suscribirse">Suscribirse</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-fluid">
+                  <div class="row text-left ">
+                    
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <h4 class="subtitulos-footer">Nuestra Empresa</h4>
+                      <ul class="lista-no-enumerdada">
+                        <li><a target="blank" href="nosotros.html" class="white-link"> Nosotros </a></li>
+                        <li><a target="blank" href="#" class="white-link"> Ofertas de empleo </a></li>
+                        <li><a target="blank" href="#" class="white-link"> Empleo </a></li>
+                        <li><a target="blank" href="#" class="white-link"> Prensa </a></li>
+                        <li><a target="blank" href="#" class="white-link"> Investor Relations</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <h4 class="subtitulos-footer">Nuestros Productos</h4>
+                      <ul class="lista-no-enumerdada">
+                        <li><a target="blank" href="#" class="white-link">Aplicaciones Moviles</a></li>
+                        <li><a target="blank" href="#" class="white-link">Hotel Manager</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <h4 class="subtitulos-footer">Nuestro Socios</h4>
+                      <ul class="lista-no-enumerdada">
+                        <li><a target="blank" href="#" class="white-link">Affiliate Program</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <h4 class="subtitulos-footer">Contactanos</h4>
+                      <div>
+                        <div class="list-group">
+                          <a target="blank" href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
+                          <a target="blank" href="https://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;
+                          <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>&nbsp;
+                          <a target="blank" href="https://plus.google.com/"><i class="fa fa-google-plus-official fa-2x"></i></a>&nbsp;
+                          <a target="blank" href="https://www.youtube.com/user/"><i class="fa fa-youtube-play fa-2x"></i></a>&nbsp;
+                          <a target="blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a>&nbsp;
+                          <a target="blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a>&nbsp;
+                        </div>
+
+                        <div class="subtitulo-direccion">
+                          <strong>NotTrivago HN</strong>, UNAH, Boulevard Suyapa, Tegucigalpa, Francisco Morazán, Honduras
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="footer-fondo-pantalla-secundario"> 
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 text-center">
+              <div class="footer-fondo-pantalla-dos">
+                <center>
+                  <a target="blank" href="#" class="white-link"> Expedia </a> | 
+                  <a target="blank" href="#" class="white-link"> Terminos de uso </a> | 
+                  <a target="blank" href="#" class="white-link"> Legal </a> | 
+                  <a target="blank" href="#" class="white-link"> Política de privacidad </a> | 
+                  <a target="blank" href="#" class="white-link"> Política de cookies </a> | 
+                  <a target="blank" href="#" class="white-link"> Mapa del sitio </a> | 
+                  <a target="blank" href="#" class="white-link"> Ayuda</a>
+                  <br>
+                  <img src="img/logo_optimised_white.png" height="38" width="150" 
+                    alt="Nottrivago"> 
+                  <br>
+                  <span class="subtitulo-derechos-reservados"> Copyright 2017 NotTrivago | Todos los derechos reservados. </span>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- FIN DEL FOOTER!!! -->
+    
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script type="text/javascript" src="../js/funcionalidades.js"></script> -->
+    <script type="text/javascript" src="../js/buscar.js"></script>
+
+</body>
+</html>
