@@ -10,7 +10,7 @@ $("#btn-registrar-usuario").click(function () {
 		var parametros = 'txt-correo=' + $("#txt-correo").val() + '&' +
 		'txt-contrasena=' + $("#txt-contrasena").val() + '&' +
 		'tipo-usuario=' + $("#btn-registrar-usuario").val();
-		alert(parametros);
+		//alert(parametros);
 
 		$.ajax({
 			url: "../ajax/gestion-usuario.php?accion=registrar-usuario-nuevo",
@@ -23,7 +23,7 @@ $("#btn-registrar-usuario").click(function () {
 				//location.href = "../paginas-web/acceso-cuenta/registro-exitoso.html"
 			},
 			error:function(err){
-				alert("Erroraso: " + err);
+				alert("Error: " + err);
         $("#error").html(err);
 			}
 		});

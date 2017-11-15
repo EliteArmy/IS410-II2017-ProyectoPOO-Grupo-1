@@ -142,7 +142,7 @@
 		}
 
 		public function insertarUsuarioNuevo($conexion){
-			echo "<b>Usuario almacenado con exito</b>";
+
 			$sql = sprintf("INSERT INTO tbl_usuario(cod_tipo_usuario, email, password) 
 							VALUES (%s, '%s', '%s')",
 							$conexion->antiInyeccion($this->codTipoUsuario),
