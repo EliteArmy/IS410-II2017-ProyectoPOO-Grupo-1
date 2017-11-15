@@ -13,7 +13,7 @@ $("#btn-registrar-usuario").click(function () {
 		//alert(parametros);
 
 		$.ajax({
-			url: "../ajax/gestion-usuario.php?accion=registrar-usuario-nuevo",
+			url: "../../ajax/gestion-usuario.php?accion=registrar-usuario-nuevo",
 			data: parametros,
 			method: "POST",
       dataType: "html",
