@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["codigo_usuario"])){
+        header("Location: index.html");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,7 +56,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">Configurar Perfil</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Cerrar Sección</a></li>
+                    <li><a href="cerar_sesion.php">Cerrar Sesion</a></li>
                 </ul>
             </li>
           </ul>
@@ -65,11 +71,11 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="inicio.php">Inicio</a></li>
                     <br>
-                    <li><a href="usuarios.html">Usuarios</a></li>
-                    <li><a href="hoteleros.html">Hoteleros</a></li>
-                    <li><a href="administradores.html">Administradores</a></li>
+                    <li><a href="usuarios.php">Usuarios</a></li>
+                    <li><a href="hoteleros.php">Hoteleros</a></li>
+                    <li><a href="administradores.php">Administradores</a></li>
                     <br>
                     <li class="active"><a href="">Hoteles</a></li>
                     <li><a href="#">configuraciones</a></li>

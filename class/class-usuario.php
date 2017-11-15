@@ -148,5 +148,32 @@
 
 			echo "usuario eliminado";
 		}
+
+		public static function verificarUsuario($conexion, $email,$password, $tipoUsuario){
+				$sql = sprintf(
+						"SELECT cod_usuario, cod_tipo_usuario, nombre, apellido, email 
+						FROM tbl_usuario 
+						WHERE cod_tipo_usuario = %s AND email = '%s' AND password = '%s'",
+						$tipoUsuario, $email, $password
+					);
+				//echo ($sql);
+				$resultado = $conexion->ejecutarConsulta($sql);
+
+				$cantidadRegistros = $conexion->cantidadRegistros($resultado);
+				$respuesta=array();
+				if ($cantidadRegistros==1){
+					$fila = $conexion->obtenerFila($resultado);
+					$_SESSION["codigo_usuario"] = $fila["cod_usuario"];
+					$_SESSION["correo"] = $fila["email"];
+					$_SESSION["nombre"] = $fila["nombre"];
+					$respuesta["status"]=1;
+					$respuesta["mensaje"]="Si tiene acceso" ;
+				}else{
+					$respuesta["status"]=0;
+					$respuesta["mensaje"]="No tiene acceso" ;
+				}
+
+				echo json_encode($respuesta);
+		}
 	}
 ?>

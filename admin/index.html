@@ -36,12 +36,17 @@
 		    			<input type="file" id="exampleInputFile">
 		    			<p class="help-block">Example block-level help text here.</p>
 		  			</div> -->
-		  			<div class="checkbox">
+		  			<!-- <div class="checkbox">
 		    			<label>
 		    	  		<input type="checkbox"> Check me out
 		    			</label>
-		  			</div>
-		  			<button type="button" class="btn btn-default">Iniciar Sección</button>
+		  			</div -->
+		  			<div class="alert alert-danger" style="display: none;" id="lbl-info" role="alert">
+  						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  						<span class="sr-only">Error:</span>
+  							Introduzca un correo y contraseña validos 
+					</div>
+		  			<button type="button" id="btn-iniciar" class="btn btn-default">Iniciar Sección</button>
 				</form>
 			</div>
 		</div>
@@ -50,5 +55,9 @@
 	<footer class="text-center">
 		<p>nottrivago todos los derechos recervados 2017</p>
 	</footer>
+
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/admin/controlador-login.js"></script>
 </body>
 </html>
