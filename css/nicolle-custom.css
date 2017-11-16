@@ -700,7 +700,6 @@ a:focus, a:hover {
     margin-top: 8px;
     margin-right: 0;
     margin-left: 0;
-    text-align: right;
 }
 
 .nombres{
@@ -709,28 +708,53 @@ a:focus, a:hover {
 
 .nombre-hotel{
     font-size: 20px;
-    /*margin-left: 180px;*/
     font-weight: bold;
-    margin-top: 0;
+    margin-top: 8px;
+    text-align: left;
 }
 
 .ubicacion{
-    padding-top: 5px;
-    /*margin-left: 180px;*/
+    margin-top: 8px;
     font-size: 14px;
+    text-align: left;
+}
+
+.detalles-calificacion{
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    margin-top: 8px;
+    text-align: left;
+    float: left;
+    width: 100%;
+}
+
+.servicios-del-hotel{
+    margin-top: 8px;
+    float: left;
+    display:block;
+    float:left;
+    position:relative;
+}
+
+.btn-corregido{
+    border-radius: 15px;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: 12px;
+    background-color: #EBECED;
 }
 
 .boton-excelente{
-    /*margin-left: 180px;*/
     font-size: 14px;
     font-weight: bold;
     color: white;
     background-color: #007400; 
-    /*width: 24px;*/
-    /*height: 24px; */ 
+
     border-radius: 2px;
-    text-align: center;
-    padding: 2px 0;
+    text-align: left;
+    padding: 2px 4px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
@@ -742,15 +766,6 @@ a:focus, a:hover {
     background-color: #007400;
 }
 
-.detalles-boton{
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 0;
-    vertical-align: middle;
-    margin-top: 8px;
-
-}
-
 .calidad{
     font-weight: bold;
     font-size: 14px;
@@ -758,19 +773,6 @@ a:focus, a:hover {
 
 .opiniones{
     font-size: 14px;
-}
-
-.btn-alberca{
-    margin-left: 180px;
-    margin-top: 10px;
-    /*height: 25px;*/
-    /*width: 100px;*/
-    border-radius: 15px;
-    text-align: center;
-    padding: 2px 0;
-    font-size: 12px;
-    background-color: #EBECED;
-    margin-bottom: 20px;
 }
 
 .btn-pag{
