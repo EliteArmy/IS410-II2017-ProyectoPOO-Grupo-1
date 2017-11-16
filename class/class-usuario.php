@@ -30,7 +30,6 @@
 			$this->fechaNacimiento = $fechaNacimiento;
 			$this->ciudad = $ciudad;
 			$this->pais = $pais;
-			echo "Instancia creada!";
 		}
 
 		// Sets y Gets
@@ -107,6 +106,7 @@
 			$resultado = $conexion->ejecutarConsulta($sql);
 
 			if ($fila = $conexion->obtenerFila($resultado)) {
+				$fila['status'] = 1;
 				echo json_encode($fila);
 			}
 		}
@@ -136,9 +136,25 @@
 							$conexion->antiInyeccion($this->password)
 						);
 
+			if ($this->validarUsuario($conexion, $this->email)) {
+				$resultado = $conexion->ejecutarConsulta($sql);
+				return $conexion->ultimoId();	
+			} else {
+				$status['status'] = 0;
+				echo json_encode($status);
+			}
+
+			return false;
+		}
+
+		public function validarUsuario($conexion, $email)
+		{
+			$sql = "SELECT cod_usuario, cod_tipo_usuario, nombre, apellido, email, password, fecha_nacimiento, ciudad, pais FROM tbl_usuario WHERE email = '" . $email . "'";
 			$resultado = $conexion->ejecutarConsulta($sql);
 
-			return $conexion->ultimoId();
+			$cantidadRegistros = $conexion->cantidadRegistros($resultado);
+
+			return $cantidadRegistros == 0;	
 		}
 
 		public function insertarUsuarioNuevo($conexion){
@@ -150,8 +166,15 @@
 							$conexion->antiInyeccion($this->password)
 						);
 
-			echo "<b>Usuario almacenado con exito</b>";
-			$resultado = $conexion->ejecutarConsulta($sql);
+			if ($this->validarUsuario($conexion, $this->email)) {
+				$resultado = $conexion->ejecutarConsulta($sql);
+				$status['status'] = 1;	
+			} else {
+				$status['status'] = 0;
+			}
+			
+			echo json_encode($status);
+			
 		}
 
 		public function eliminarUsuario($conexion, $codigoUsuario){

@@ -15,7 +15,8 @@
 			$usuario = new Usuario(null, $_POST['tipo-usuario'],$_POST['email'],
 					$_POST['password']);
 			$id =$usuario->insertarUsuario($conexion);
-			Usuario::obtenerUsuario($conexion, $id);
+			if ($id)
+				Usuario::obtenerUsuario($conexion, $id);
 			break;
 		case 'eliminar-usuario':
 			include '../class/class-usuario.php';
