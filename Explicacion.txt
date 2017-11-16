@@ -1,0 +1,6 @@
+Buenas Ingeniero Erick
+Tuvimos un problema con la base de datos, luego de ingresarle información, creemos que algo cambio o debido a algún carácter, dejo de funcionar correctamente. 
+Le mandamos la base de datos vieja con poca información para que pruebe en el archivo, IS410-II2017-ProyectoPOO-Grupo-1/admin/index. 
+Ahí puede ingresar con el correo: nottrivago@admin.com y la password: asd.456 y luego ir a la pestaña de hoteles y ver que imprime 3 hoteles (usando la base vieja).
+
+- El grupo triste de Trivago :(
