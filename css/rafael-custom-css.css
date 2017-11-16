@@ -320,3 +320,21 @@ input:valid {
 input:focus:invalid {
   border-color: red;
 }
+
+.parrafo-fix{
+	margin-bottom: 10px;
+}
+
+.titulo-caja-registro-exitoso{
+	box-sizing:border-box;
+	color:rgb(55, 69, 77);
+	display:block;
+	font-size:20px;
+	font-weight:normal;
+	line-height:25px;
+	text-align:center;
+}
+
+.parrafo-fix{
+	margin-bottom: 30px;
+}
