@@ -114,4 +114,18 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
-
+/*
+.foto {
+  display: inline-block;
+  margin: 15px auto;
+  margin-left: 0px;
+  width: 152px;
+}
+*/
+.foto{
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}

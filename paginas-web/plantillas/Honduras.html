@@ -52,7 +52,7 @@
   <!-- CONTAINER TOTAL DEL CUERPO -->
   <div class="container-fluid container-fluid-padding-fix">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ">
       	
         <div class="fondo-pantalla-barra-superior">
           <div class="container-fluid">
@@ -78,13 +78,13 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 ">
                       <div class="input-group input-group-lg">
                         
-                        <button class="btn btn-default sincronizar"><input class="form-control sin-borde" type="date" name="txt-fecha" value="Seleccione">
+                        <button class="btn btn-default sincronizar"><input class="form-control sin-borde" type="date" name="txt-fecha">
                         </button>
 
-                        <button class="btn btn-default sincronizar"><input class="form-control sin-borde" type="date" name="txt-fecha" value="Seleccione">
+                        <button class="btn btn-default sincronizar"><input class="form-control sin-borde" type="date" name="txt-fecha">
                         </button>
 
                         <select class="btn btn-hab sin-borde" name="slc-habitacion" id="slc-habitacion" >
@@ -111,10 +111,10 @@
           <div class="row">
             
             <!-- Envoltorio Barra Lateral -->
-            <div class="col-xs-4 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
+            <div class="col-xs-4 col-sm-4 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-1 col-padding-fix2">
               
               <!-- MAPA LATERAL -->
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-padding-fix">
                 <div class="bordes-mapa-busqueda">
                   <button class="btn btn-default btn-mapa" id="map" style="background-image: url(../../img/hoteles-iconos/map-access.jpg);">
                     <div class="boton-interno-mapa">
@@ -126,7 +126,7 @@
               <!-- FIN MAPA LATERAL -->
 
               <!-- BARRA LATERAL DE BUSQUEDA --> 
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-padding-fix">
               	<div class="caja-mapa" align="center">
                   <table>
 
@@ -288,15 +288,15 @@
             <!-- FIN Envoltorio Barra Lateral -->
 
             <!-- SUB BARRA DE BUSQUEDA SUPERIOR -->
-            <div class="col-xs-8 col-sm-7 col-md-7 col-lg-7">
+            <div class="col-xs-8 col-sm-8 col-md-7 col-lg-8 col-padding-fix">
               
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left col-padding-fix3">
                 <h5 class="titulo-numero-hoteles">
                   <span id=""><b> 242 </b> de 792 hoteles</span>
                 </h5>
               </div>
 
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right">
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 float-right col-padding-fix3">
                 <select class="btn btn-lg btn-ordenar" name="slc-ordenar" id="slc-ordenar">
                   <option value="1"> Ordenar por popularidad </option>
                   <option value="2"> Priorizar la valoración </option>
@@ -306,7 +306,73 @@
                 </select>
               </div>
 
-            </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 float-left col-padding-fix3">
+                
+                <div class="envoltura-lista-hoteles"> 
+
+                  <section class="primer-cuadro form-inline form-group">
+                    <img class="borde-imagen" src="../../img/hoteles/hotel1.jpg">
+                  </section>
+                  
+                  <section class="segundo-cuadro form-inline form-group">
+                    <h3 class="nombre-hotel">
+                      Grand Roatan Caribbean Res...
+                    </h3>
+
+                    <h5 class="ubicacion">
+                      Roatán,Islas de la Bahía, Honduras
+                    </h5>
+                    
+                    <button class="btn boton-excelente">
+                      87
+                    </button>
+                    
+                    <p class="detalles-boton">
+                      <span class="calidad">Excelente</span>
+                      <span class="opiniones">(151 opiniones)</span>
+                    </p>
+
+                    <button class="btn btn-alberca" title="A los huéspedes les gustó el servicio de Alberca en este hotel.">
+                      Alberca genial
+                    </button>
+                  </section>
+
+                  <section class="tercer-cuadro form-inline form-group">
+                    <button class="btn btn-pag">Expedia<br>
+                      <strong>$240</strong>
+                    </button> 
+
+                    <button class="btn btn-pag">Hotels.com<br>
+                      <strong>$240</strong>
+                    </button>
+
+                    <button class="btn btn-pag">Cancelon<br>
+                      <strong style="color: #CC4A30;">$283</strong>
+                    </button>
+
+                    <hr class="hr1">
+
+                    <button class="btn btn-pag" style="color: #333;">
+                      <strong>Más ofertas: 20</strong>
+                    </button>
+                  </section>
+
+                  <section class="ultimo-cuadro form-inline form-group">
+                    <button class="btn btn-pag" style="color: #333;">Expedia
+                      <strong class="precio-rojo"><strike>$140</strike></strong><br>
+                      <strong class="precio-verde">$103</strong>
+                    </button>
+                    <button class="btn btn-desayuno">
+                      Desayuno gratis
+                    </button>
+                    <button class="btn btn-lg btn-oferta">
+                      Ver oferta
+                    </button>
+                  </section>
+
+                </div>
+
+              </div>
             <!-- FIN SUB BARRA DE BUSQUEDA SUPERIOR -->
           
           </div>
@@ -320,46 +386,6 @@
       <div>
 
         <!--
-           <section class="lista-hoteles"> 
-            <div>
-              <div class="imagenes-hoteles">
-                <img class="imagen borde-imagen" src="img/hotel1.jpg">
-              </div>
-            </div>
-
-            <div class="detalles-hotel form-inline">
-              
-              <div style="width: 57%;" class="form-inline form-group">
-                <h3 class="nombre-hotel">Grand Roatan Caribbean Res...</h3>
-                <h5 class="ubicacion">Roatán,Islas de la Bahía, Honduras</h5>
-                
-                <button class="btn boton-excelente">87</button>
-                
-                <p class="detalles-boton">
-                  <span class="calidad">Excelente</span>
-                  <span class="opiniones">(151 opiniones)</span>
-                </p>
-
-                <button class="btn btn-alberca" title="A los huéspedes les gustó el servicio de Alberca en este hotel.">Alberca genial</button>
-              </div>
-
-              <section class="paginas form-inline form-group">
-                <button class="btn btn-pag">Expedia<br>
-                  <strong>$240</strong>
-                </button> 
-
-                <button class="btn btn-pag">Hotels.com<br>
-                  <strong>$240</strong>
-                </button>
-                <button class="btn btn-pag">Cancelon<br>
-                  <strong style="color: #CC4A30;">$283</strong>
-                </button>
-                <hr class="hr1">
-                <button class="btn btn-pag" style="color: #333;">
-                  <strong>Más ofertas: 20</strong>
-                </button>
-              </section>
-
               <section class="ultimo-cuadro form-inline form-group">
                 <button class="btn btn-pag" style="color: #333;">Brooking.com
                   <strong class="precio-rojo"><strike>$265</strike></strong>
