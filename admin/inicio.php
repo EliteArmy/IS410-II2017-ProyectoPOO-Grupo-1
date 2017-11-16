@@ -37,9 +37,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../img/notTrivago.png"><span style="color: #293339;">Not</span><span style="color: #0073CF;">Tri</span><span style="color: #F48F00;">va</span><span style="color: #C94A38;">go</span>: admin</a>
+          <!-- <a class="navbar-brand" href="#">
             <img src="../img/notTrivago.png" alt="NotTrivago" height="25" width="87">: admin
-          </a>
+          </a> -->
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
