@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-11-2017 a las 23:05:55
+-- Tiempo de generación: 16-11-2017 a las 02:55:19
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `tbl_cuidad` (
   `ciudad` varchar(80) NOT NULL,
   PRIMARY KEY (`cod_ciudad`),
   KEY `fk_tbl_cuidad_tbl_pais1_idx` (`cod_pais`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_cuidad`
@@ -86,7 +86,8 @@ INSERT INTO `tbl_cuidad` (`cod_ciudad`, `cod_pais`, `ciudad`) VALUES
 (2, 1, 'San Pedro Sula'),
 (3, 1, 'Tela'),
 (4, 1, 'Copan'),
-(5, 1, 'Roatán');
+(5, 1, 'Roatán'),
+(6, 1, 'La Ceiba');
 
 -- --------------------------------------------------------
 
@@ -127,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `tbl_hotel` (
   UNIQUE KEY `cod_ubicacion_UNIQUE` (`cod_ubicacion`),
   UNIQUE KEY `cod_hotel_UNIQUE` (`cod_hotel`),
   KEY `fk_tbl_hotel_tbl_ubicacion1_idx` (`cod_ubicacion`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_hotel`
@@ -143,7 +144,11 @@ INSERT INTO `tbl_hotel` (`cod_hotel`, `cod_ubicacion`, `nombre`, `email`, `telef
 (7, 7, 'Hyatt Place Tegucigalpa', 'hyattplace@mail.hn', '+504 2202 6000', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 70),
 (8, 8, 'Intercontinental Real San Pedro Sula', 'real.intercontinental@hotel.hn', '2545-2500', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 50),
 (9, 9, 'Crowne Plaza San Pedro Sula', 'crowneplaza@mail.hn', '2550-8080', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 80),
-(10, 10, 'Hilton Princess San Pedro Sula', 'hotel-rez@mail.com', '2545-6900', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 120, 30);
+(10, 10, 'Hilton Princess San Pedro Sula', 'hotel-rez@mail.com', '2545-6900', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 120, 30),
+(11, 11, 'Infinity Bay Spa & Beach Resort', ' reservations@infinitybay.com', '+1 833-588-4229', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 40),
+(12, 12, 'LQ Hotel Tegucigalpa', 'lqhotel@mail.hn', '2202-5000', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 120, 50),
+(13, 13, 'Copantl Hotel y Suites', 'reservaciones@copantl.com', '+504 2561-8900', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 30),
+(14, 14, 'Quinta Real', 'INFO@QUINTAREALHOTEL.COM', '2440-3311', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 140, 25);
 
 -- --------------------------------------------------------
 
@@ -336,7 +341,7 @@ CREATE TABLE IF NOT EXISTS `tbl_ubicacion` (
   `longitud` double NOT NULL,
   PRIMARY KEY (`cod_ubicacion`),
   KEY `fk_tbl_ubicacion_tbl_cuidad1_idx` (`cod_ciudad`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_ubicacion`
@@ -352,7 +357,11 @@ INSERT INTO `tbl_ubicacion` (`cod_ubicacion`, `cod_ciudad`, `latidud`, `longitud
 (7, 1, 14.1022642, -87.1892126),
 (8, 2, 15.4947569, -88.0368973),
 (9, 2, 15.5066138, -88.0328036),
-(10, 2, 15.4990365, -88.0401786);
+(10, 2, 15.4990365, -88.0401786),
+(11, 5, 16.2725531, -86.6006567),
+(12, 1, 14.0759296, -87.2015853),
+(13, 2, 15.4951683, -88.0377805),
+(14, 6, 15.7925178, -86.7905339);
 
 -- --------------------------------------------------------
 
