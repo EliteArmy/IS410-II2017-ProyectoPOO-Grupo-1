@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 16-11-2017 a las 06:39:32
+-- Tiempo de generación: 16-11-2017 a las 14:08:55
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `tbl_habitacion` (
   PRIMARY KEY (`cod_habitacion`),
   KEY `fk_tbl_habitacion_tbt_hotel_idx` (`tbt_hotel_cod_hotel`),
   KEY `fk_tbl_habitacion_tbl_tipo_habitacion1_idx` (`cod_tipo_habitacion`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_habitacion`
@@ -127,7 +127,43 @@ INSERT INTO `tbl_habitacion` (`cod_habitacion`, `tbt_hotel_cod_hotel`, `cod_tipo
 (13, 5, 9, 2, '198'),
 (14, 5, 10, 1, '205'),
 (15, 6, 11, 1, '121'),
-(16, 6, 12, 1, '130');
+(16, 6, 12, 1, '130'),
+(17, 7, 8, 1, '109'),
+(18, 8, 7, 2, '137'),
+(19, 8, 8, 1, '137'),
+(20, 9, 7, 1, '85'),
+(21, 9, 4, 2, '85'),
+(22, 10, 13, 2, '99'),
+(23, 10, 3, 1, '99'),
+(24, 11, 14, 1, '197'),
+(25, 12, 3, 1, '72'),
+(26, 12, 8, 1, '84'),
+(27, 12, 4, 2, '72'),
+(28, 13, 8, 1, '120'),
+(29, 13, 7, 2, '120'),
+(30, 14, 1, 2, '120'),
+(31, 14, 7, 1, '90'),
+(32, 15, 15, 1, '398'),
+(33, 15, 16, 2, '716'),
+(34, 16, 9, 2, '129'),
+(35, 16, 17, 2, '129'),
+(36, 17, 18, 1, '116'),
+(37, 17, 19, 1, '90'),
+(38, 18, 8, 1, '86'),
+(39, 18, 2, 1, '86'),
+(40, 18, 5, 1, '86'),
+(41, 19, 1, 2, '70'),
+(42, 19, 17, 2, '70'),
+(43, 20, 7, 1, '193'),
+(44, 21, 20, 2, '139'),
+(45, 21, 21, 2, '160'),
+(46, 22, 22, 1, '169'),
+(47, 22, 10, 1, '145'),
+(48, 23, 4, 2, '170'),
+(49, 23, 23, 2, '219'),
+(50, 24, 22, 1, '219'),
+(51, 25, 19, 1, '209'),
+(52, 25, 25, 2, '238');
 
 -- --------------------------------------------------------
 
@@ -197,7 +233,26 @@ CREATE TABLE IF NOT EXISTS `tbl_img_habitacion` (
   `url_img_habitacion` varchar(100) NOT NULL,
   PRIMARY KEY (`cod_img_habitacion`),
   KEY `fk_tbl_img_habitacion_tbl_habitacion1_idx` (`cod_habitacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tbl_img_habitacion`
+--
+
+INSERT INTO `tbl_img_habitacion` (`cod_img_habitacion`, `cod_habitacion`, `url_img_habitacion`) VALUES
+(1, 1, '..//img//habitaciones-hoteles//hotel-clarion-1.jpg'),
+(2, 2, '..//img//habitaciones-hoteles//hotel-clarion-2.jpg'),
+(3, 4, '..//img//habitaciones-hoteles//hotel-clarion-3.jpg'),
+(4, 5, '..//img//habitaciones-hoteles//hotel-clarion-4.jpg'),
+(5, 7, '..//img//habitaciones-hoteles//hotel-holiday-inn-1.jpg'),
+(6, 8, '..//img//habitaciones-hoteles//hotel-holiday-inn-2.jpg'),
+(7, 9, '..//img//habitaciones-hoteles//hotel-intercontinental-1.jpg'),
+(8, 10, '..//img//habitaciones-hoteles//hotel-intercontinental-2.jpg'),
+(9, 11, '..//img//habitaciones-hoteles//hotel-florencia-1.jpg'),
+(10, 13, '..//img//habitaciones-hoteles//hotel-grand-c-1.jpg'),
+(11, 14, '..//img//habitaciones-hoteles//hotel-grand-c-2.jpg'),
+(12, 15, '..//img//habitaciones-hoteles//hotel-marriott-1.jpg'),
+(13, 16, '..//img//habitaciones-hoteles//hotel-marriott-2.jpg');
 
 -- --------------------------------------------------------
 
@@ -384,7 +439,7 @@ CREATE TABLE IF NOT EXISTS `tbl_tipo_habitacion` (
   `cod_tipo_habitacion` int(11) NOT NULL AUTO_INCREMENT,
   `tipo_habitacion` varchar(45) NOT NULL,
   PRIMARY KEY (`cod_tipo_habitacion`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_tipo_habitacion`
@@ -402,7 +457,19 @@ INSERT INTO `tbl_tipo_habitacion` (`cod_tipo_habitacion`, `tipo_habitacion`) VAL
 (9, 'Suite junior, 2 camas dobles'),
 (10, 'Suite junior, 1 cama de matrimonio grande'),
 (11, 'De lujo, Habitación, Camas: 1 King o 2 Doble'),
-(12, 'Habitación del nivel Ejecutivo,1 King o Queen');
+(12, 'Habitación del nivel Ejecutivo,1 King o Queen'),
+(13, 'Habitación Doble, con 2 camas dobles'),
+(14, 'Estudio Premier con cama grande'),
+(15, 'One Bedroom Beach Front'),
+(16, 'Two Bedroom Jr. Suite Pool View'),
+(17, 'Suite junior, 2 camas matrimoniales'),
+(18, 'Estudio estándar, cocina básica'),
+(19, 'Estudio con vistas al jardín'),
+(20, 'Habitación Deluxe, vistas al campo de golf '),
+(21, 'Habitación Deluxe, vistas parcial al mar'),
+(22, 'Villa de 1 dormitorio'),
+(23, 'Apartamento'),
+(25, 'Habitación Doble con vista al jardín');
 
 -- --------------------------------------------------------
 
