@@ -376,39 +376,39 @@
                   <div>
 
                   <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" id="myTabs">
-                    <li class="active">
-                      <a href="#home" aria-controls="home" data-toggle="tab" aria-expanded="true">Home</a>
-                    </li>
-                    <li>
-                      <a href="#profile" aria-controls="profile" data-toggle="tab" aria-expanded="false">Profile</a>
-                    </li>
-                    <li>
-                      <a href="#messages" aria-controls="messages" data-toggle="tab" aria-expanded="false">Messages</a>
-                    </li>
-                    <li>
-                      <a href="#settings" aria-controls="settings" data-toggle="tab" aria-expanded="false">Settings</a>
-                    </li>
-                  </ul>
+                  <div class="navbar" role="navigation">
+
+                    <ul class="nav nav-tabs" id="myTabs">
+                      
+                      <li class="active"><a href="#fotos-hotel" data-toggle="tab">Fotos</a></li>
+                      
+                      <li><a href="#informacion-hotel" data-toggle="tab">Información</a></li>
+                      
+                      <li><a href="#opiniones-hotel" data-toggle="tab">Opiniones</a></li>
+                      
+                      <li><a href="#ofertas-hotel" data-toggle="tab">Ofertas</a></li>
+                    </ul>
+                  </div>
 
                   <!-- Tab panes -->
                   <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade active" id="home">
-                      <p>LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes</p>
+
+                    <div class="tab-pane fade in active" id="fotos-hotel">
+                      <p>El LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes</p>
                     </div>
                     
-                    <div class="tab-pane" id="profile">
+                    <div class="tab-pane fade" id="informacion-hotel">
                       <p>
                         Por la mañana, deléitate con un delicioso desayuno tradicional en cortesía. Entre las demás comodidades de la habitación, se incluyen plancha y tabla de planchar, secador de pelo y caja fuerte, Si deseas hacer ejercicio visita el moderno gimnasio en el último piso, que ofrece pista para trotar y una magnífica vista a la ciudad que puedes contemplar mientras realizas tu rutina.
                       </p>
                     </div>
                     
-                    <div class="tab-pane" id="messages">
+                    <div class="tab-pane fade" id="opiniones-hotel">
                       <p>
                         Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente
                       </p>
                     </div>
-                    <div class="tab-pane" id="settings">
+                    <div class="tab-pane fade" id="ofertas-hotel">
                       <p>
                         
                       </p>
@@ -417,10 +417,11 @@
 
                 </div>
                   <div id="mostrar-informacion">
+                    <!--
                     LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes
 
                     Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente 
-
+                    -->
                   </div>
                 </div>
 
@@ -1846,21 +1847,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="../../js/funcionalidades.js"></script>
-    
-    <script type="text/javascript"> 
 
-      $('#myTabs a').click(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-      })
-
-    </script>
-    <script type="text/javascript">
-      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        e.target // newly activated tab
-        e.relatedTarget // previous active tab
-      })
-    </script>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 
 </body>
 </html>
