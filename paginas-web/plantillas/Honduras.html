@@ -323,18 +323,18 @@
                       Roatán,Islas de la Bahía, Honduras
                     </h5>
                     
-                    <button class="btn boton-excelente">
-                      87
-                    </button>
-                    
-                    <p class="detalles-boton">
-                      <span class="calidad">Excelente</span>
-                      <span class="opiniones">(151 opiniones)</span>
+                    <p class="detalles-calificacion">
+                      <button id="boton-calificacion" class="btn boton-excelente"> 87 </button>
+                      <span id="calidad-hotel" class="calidad">Excelente</span>
+                      <span id="numero-opiniones" class="opiniones">(151 opiniones)</span>
                     </p>
 
-                    <button class="btn btn-alberca" title="A los huéspedes les gustó el servicio de Alberca en este hotel.">
-                      Alberca genial
-                    </button>
+                    <div id="servicios-hotel" class="servicios-del-hotel">
+                      <button class="btn btn-corregido">
+                        Alberca genial
+                      </button>
+                    </div>
+
                   </section>
 
                   <section class="tercer-cuadro form-inline form-group">
@@ -370,6 +370,58 @@
                     </button>
                   </section>
 
+                </div>
+
+                <div id="informacion-extra" class="envoltura-lista-hoteles">
+                  <div>
+
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" id="myTabs">
+                    <li class="active">
+                      <a href="#home" aria-controls="home" data-toggle="tab" aria-expanded="true">Home</a>
+                    </li>
+                    <li>
+                      <a href="#profile" aria-controls="profile" data-toggle="tab" aria-expanded="false">Profile</a>
+                    </li>
+                    <li>
+                      <a href="#messages" aria-controls="messages" data-toggle="tab" aria-expanded="false">Messages</a>
+                    </li>
+                    <li>
+                      <a href="#settings" aria-controls="settings" data-toggle="tab" aria-expanded="false">Settings</a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active" id="home">
+                      <p>LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes</p>
+                    </div>
+                    
+                    <div class="tab-pane" id="profile">
+                      <p>
+                        Por la mañana, deléitate con un delicioso desayuno tradicional en cortesía. Entre las demás comodidades de la habitación, se incluyen plancha y tabla de planchar, secador de pelo y caja fuerte, Si deseas hacer ejercicio visita el moderno gimnasio en el último piso, que ofrece pista para trotar y una magnífica vista a la ciudad que puedes contemplar mientras realizas tu rutina.
+                      </p>
+                    </div>
+                    
+                    <div class="tab-pane" id="messages">
+                      <p>
+                        Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente
+                      </p>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                      <p>
+                        
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+                  <div id="mostrar-informacion">
+                    LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes
+
+                    Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente 
+
+                  </div>
                 </div>
 
               </div>
@@ -1794,6 +1846,21 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script type="text/javascript" src="../../js/funcionalidades.js"></script>
+    
+    <script type="text/javascript"> 
+
+      $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+
+    </script>
+    <script type="text/javascript">
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        e.target // newly activated tab
+        e.relatedTarget // previous active tab
+      })
+    </script>
 
 </body>
 </html>

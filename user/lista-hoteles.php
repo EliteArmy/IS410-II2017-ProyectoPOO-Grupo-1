@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["codigo_usuario"])){
+        header("Location: ../login/index.html");
+    } else if (!($_SESSION["tipo_usuario"] == 1))
+        header("Location: ../login/index.html");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +16,11 @@
   <title> Zona para miembros </title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../../css/dashboard.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="../../css/ariel-custom-css.css">
+  <link href="../css/dashboard.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/ariel-custom-css.css">
 
 </head>
 
@@ -34,7 +41,7 @@
         <a onclick="abrirMenu();" href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
 
         <a class="foto" href="../index.html">
-            <img src="../img/logo.png" alt="Nottrivago" height="44" width="152">
+            <img src="../img/notTrivago.png" alt="Nottrivago" height="44" width="152">
         </a>
         
       </div>
@@ -69,64 +76,74 @@
             <li class="active"><a class="lista " href="../index.html"> < Volver a la Búsqueda <span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar borde-dos">
-            <li class="active"><a class="lista" href="../perfil-cuenta/dashboard.html">Panel de Control</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/ajustes.html">Ajustes</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/reservas.html">Reservas</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/lista-hoteles.html">Listas de Hoteles</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/alerta-precios.html">Alerta de Precios</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/busqueda-reciente.html">Busquedas Recientes</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/suscripciones.html">Suscripciones</a></li>
+            <li class="active"><a class="lista" href="dashboard.php">Panel de Control</a></li>
+            <li class="active"><a class="lista" href="ajustes.php">Ajustes</a></li>
+            <li class="active"><a class="lista" href="reservas.php">Reservas</a></li>
+            <li class="active"><a class="lista" href="lista-hoteles.php">Listas de hoteles</a></li>
+            <li class="active"><a class="lista" href="alerta-precios.php">Alerta de Precios</a></li>
+            <li class="active"><a class="lista" href="busqueda-reciente.php">Busquedas Recientes</a></li>
+            <li class="active"><a class="lista" href="suscripciones.php">Suscripciones</a></li>
           </ul>
           <ul class="nav nav-sidebar borde-tres">
-            <li class="active"><a class="lista" href="../log-in.html">Cerrar Sesión</a></li>
+            <li class="active"><a class="lista" href="cerrar_sesion.php">Cerrar Sesión</a></li>
           </ul>
         </div>
         <!-- /#Barra de Menu Izquierdo-->
 
         <!-- Contenido de la Pagina-->
         <div id="contenido-pagina" class="col-sm-9 col-md-10 col-lg-10 main">
-          <h1 class="titulo-cuenta page-header">Búsquedas recientes</h1>
+          <h1 class="titulo-cuenta page-header">Listas de hoteles</h1>
+
+          <section class="envoltura-titulo-lista-hoteles">
+            <h2 class="sub-titulo-lista-hoteles">Listas con actividad reciente</h2>
+          </section>
 
           <div class="row placeholders">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
 
-              <div class="envoltura-cuerpo-busqueda-reciente">
-              
-              <!--Tabla 1 -->
-              <div class="cuerpo-busqueda-reciente">
+              <div class="envoltura-cuerpo-ajustes">
 
-                <div class="tabla-busqueda-reciente">
+                <!--Tabla 1 -->
+                <details class="cuerpo-ajustes">
 
-                  <img class="busqueda-reciente-imagen" src="../img/perfil-cuenta/honduras-copan-ruinas.jpeg" alt="Honduras Copan Ruinas" height="168" width="240">
-                  
-                  <div class="busqueda-reciente-top">
-                    <a href="">Honduras</a>
-                    <p>Domingo, 16/07/17 Lunes, 17/07/17 Doble</p>
+                  <summary class="titulo-tabla-ajustes">
+
+                    Mi próximo viaje
+                  </summary>
+
+                  <div class="tabla-ajustes">
+                    <form>
+                      
+                      <div class="form-group form-inline text-center">
+
+                        <div class="form-group form-inline lista-hotel-div">
+                          <p class="lista-hotel-infomacion">¡Genial! Has creado una lista de hoteles, pero todavía está vacía.</p>
+                          <img src="../img/perfil-cuenta/lista-hoteles.png" alt="lista de hoteles vacia" height="70" width="131">
+                          <p class="lista-hotel-infomacion">Haz clic en el corazón sobre la imagen de un hotel para añadirlo a la lista.</p>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group form-inline text-right correccion">
+                        <a class="text-primary" href="">Prueba Ahora</a>
+                      </div>
+
+                    </form>
                   </div>
 
-                  <a style="float:right;" href=""><img src="../img/perfil-cuenta/busqueda-reciente-remover.png" alt="Remover lista" height="20" width="20"></a>
-
-                  <div class="busqueda-reciente-div-vacio">
-                    <!-- Div vacio solo para completar un espacio-->
-                 </div> 
-
-                  <div class="busqueda-reciente-bottom">
-                    <p>Fecha de Hoy</p>
-                  </div>
-
-                  <div class="busqueda-reciente-bottom-right">
-                    <a href="">Volver a buscar</a>
-                  </div>
-
-                </div>
-
-              </div>
-              <!-- /#Tabla 1 -->
+                </details>
+                <!-- /#Tabla 1 -->
 
               </div>
 
             </div>
           </div>
+
+          <section>
+            <div>
+              <a onclick="guardarRegistro();" href="">Crear nueva lista de hoteles</a>
+            </div>
+          </section>
 
         </div>
         <!-- /#Contenido de la Pagina -->

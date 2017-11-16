@@ -28,13 +28,20 @@
 	 		break;
 	 	
 	 	case "actualizar":
-	 		include("../class/class-.php");			
+	 		//include("../class/class-.php");			
 	 		break;
 
 	 	case "eliminar":
-	 		include("../class/class-.php");			
+	 		//include("../class/class-.php");			
 	 		break;
-
+	 	case 'login': 
+	 		session_start();
+			include_once("../class/class-conexion.php");
+			include_once("../class/class-usuario.php");
+			$conexion = new Conexion();
+			Usuario::verificarUsuario($conexion,$_POST["email"],
+			$_POST["password"], 1);
+			break;
 	 	default:
 	 		echo "Accion invalida";
 	 		break;

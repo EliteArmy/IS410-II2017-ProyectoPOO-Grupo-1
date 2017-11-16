@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["codigo_usuario"])){
+        header("Location: ../login/index.html");
+    } else if (!($_SESSION["tipo_usuario"] == 1))
+        header("Location: ../login/index.html");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +16,11 @@
   <title> Zona para miembros </title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../../css/dashboard.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="../../css/ariel-custom-css.css">
+  <link href="../css/dashboard.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/ariel-custom-css.css">
 
 </head>
 
@@ -34,7 +41,7 @@
         <a onclick="abrirMenu();" href="#menu-toggle" class="btn btn-default boton-barra-menu navbar-toggle collapsed glyphicon glyphicon-align-justify" id="menu-toggle"> Abrir Menú </a>
 
         <a class="foto" href="../index.html">
-            <img src="../img/logo.png" alt="Nottrivago" height="44" width="152">
+            <img src="../img/notTrivago.png" alt="Nottrivago" height="44" width="152">
         </a>
         
       </div>
@@ -69,16 +76,16 @@
             <li class="active"><a class="lista " href="../index.html"> < Volver a la Búsqueda <span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar borde-dos">
-            <li class="active"><a class="lista" href="../perfil-cuenta/dashboard.html">Panel de Control</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/ajustes.html">Ajustes</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/reservas.html">Reservas</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/lista-hoteles.html">Listas de Hoteles</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/alerta-precios.html">Alerta de Precios</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/busqueda-reciente.html">Busquedas Recientes</a></li>
-            <li class="active"><a class="lista" href="../perfil-cuenta/suscripciones.html">Suscripciones</a></li>
+            <li class="active"><a class="lista" href="dashboard.php">Panel de Control</a></li>
+            <li class="active"><a class="lista" href="ajustes.php">Ajustes</a></li>
+            <li class="active"><a class="lista" href="reservas.php">Reservas</a></li>
+            <li class="active"><a class="lista" href="lista-hoteles.php">Listas de Hoteles</a></li>
+            <li class="active"><a class="lista" href="alerta-precios.php">Alerta de Precios</a></li>
+            <li class="active"><a class="lista" href="busqueda-reciente.php">Busquedas Recientes</a></li>
+            <li class="active"><a class="lista" href="suscripciones.php">Suscripciones</a></li>
           </ul>
           <ul class="nav nav-sidebar borde-tres">
-            <li class="active"><a class="lista" href="../log-in.html">Cerrar Sesión</a></li>
+            <li class="active"><a class="lista" href="cerrar_sesion.php">Cerrar Sesión</a></li>
           </ul>
         </div>
         <!-- /#Barra de Menu Izquierdo-->
@@ -252,14 +259,14 @@
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 
   <!-- jQuery -->
-  <script src="../../js/jquery.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 
   <!-- Custom JavaScript -->
-  <script src="../../js/controlador.js"></script>
-  <script src="../../js/funcionalidades.js"></script>
+  <script src="../js/controlador.js"></script>
+  <script src="../js/funcionalidades.js"></script>
 
 </body>
 </html>
