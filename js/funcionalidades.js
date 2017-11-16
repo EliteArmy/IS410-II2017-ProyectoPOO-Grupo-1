@@ -27,7 +27,11 @@ $("#menu-toggle").click(function(e){
     $("#btn-close").toggleClass("hidden");
 });
 
-$("#ver-mas-informacion").click(function(e){
+/*$("#ver-mas-informacion").click(function(e){
     e.preventDefault();
     $("#mostrar-informacion-extra").toggleClass("hidden");
-});
+});*/
+
+function verMas() {
+    $("#mostrar-informacion-extra").toggleClass("hidden");
+}

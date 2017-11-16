@@ -20,7 +20,7 @@
   		
   		<div class="navbar-header text-center">
 				
-				<a class="foto" href="index.html">
+				<a class="foto" href="..">
 					<img src="../img/notTrivago.png" alt="NotTrivago" height="44" width="152">
 				</a>
 				
