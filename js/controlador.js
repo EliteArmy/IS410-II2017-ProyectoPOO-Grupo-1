@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#btn-buscar").click(function () {
+	$("#btn-iniciar").click(function () {
 		window.location = "buscar/index.html?buscar=tegucigalpa";
 	});
 });

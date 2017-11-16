@@ -1,18 +1,20 @@
 $(document).ready(function () {
+	$("#txt-correo").focus();
 	$("#btn-iniciar").click(function () {
 		var parametros = "email=" +$("#txt-correo").val() + 
 						"&password="+$("#txt-contrasena").val();
 		 //alert(parametros);
 		$.ajax({
-				url:"../ajax/admin-login.php?accion=login",
+				url:"../ajax/gestion-usuario.php?accion=login",
 				method: "POST",
 				data: parametros,
 				dataType: 'json',
 				success:function(respuesta){
 					if (respuesta.status == 1) {
-						window.location = "inicio.php";
+						window.location = "../user/index.php";
 					} else {
-						$("#lbl-info").show();
+						alert('fallo');
+						//$("#lbl-info").show();
 					}
 				},
 				error:function(){
