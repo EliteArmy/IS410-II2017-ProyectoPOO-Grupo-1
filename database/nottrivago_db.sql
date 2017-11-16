@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 16-11-2017 a las 04:15:08
+-- Tiempo de generación: 16-11-2017 a las 05:03:18
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -197,7 +197,32 @@ CREATE TABLE IF NOT EXISTS `tbl_img_hotel` (
 --
 
 INSERT INTO `tbl_img_hotel` (`cod_img`, `cod_hotel`, `url_img_hotel`) VALUES
-(2, 2, '..//img//hoteles//hotel19.jpg');
+(1, 1, '..//img//hoteles//hotel11.jpg'),
+(2, 2, '..//img//hoteles//hotel19.jpg'),
+(3, 3, '..//img//hoteles//hotel21.jpg'),
+(4, 4, '..//img//hoteles//hotel27.jpg'),
+(5, 5, '..//img//hoteles//hotel1.jpg'),
+(6, 6, '..//img//hoteles//hotel14.jpg'),
+(7, 7, '..//img//hoteles//hotel2.jpg'),
+(8, 8, '..//img//hoteles//hotel20.jpg'),
+(9, 9, '..//img//hoteles//hotel12.jpg'),
+(10, 10, '..//img//hoteles//hotel10.jpg'),
+(11, 11, '..//img//hoteles//hotel3.jpg'),
+(12, 12, '..//img//hoteles//hotel9.jpg'),
+(13, 13, '..//img//hoteles//hotel4.jpg'),
+(14, 14, '..//img//hoteles//hotel28.jpg'),
+(15, 15, '..//img//hoteles//hotel29.jpg'),
+(16, 16, '..//img//hoteles//hotel16.jpg'),
+(17, 17, '..//img//hoteles//hotel30.jpg'),
+(18, 18, '..//img//hoteles//hotel5.jpg'),
+(19, 19, '..//img//hoteles//hotel8.jpg'),
+(20, 20, '..//img//hoteles//hotel31.jpg'),
+(21, 21, '..//img//hoteles//hotel32.jpg'),
+(22, 22, '..//img//hoteles//hotel33.jpg'),
+(23, 23, '..//img//hoteles//hotel34.jpg'),
+(24, 24, '..//img//hoteles//hotel35.jpg'),
+(25, 25, '..//img//hoteles//hotel36.jpg'),
+(26, 26, '..//img//hoteles//hotel25.jpg');
 
 -- --------------------------------------------------------
 
