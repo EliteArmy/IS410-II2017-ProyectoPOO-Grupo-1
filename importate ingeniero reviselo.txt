@@ -1,0 +1,5 @@
+Para ver la pagina de los administradores use el enlace
+http://localhost/IS410-II2017-ProyectoPOO-Grupo-1/admin/
+
+usuario: nottrivago@admin.com
+password: asd.456
