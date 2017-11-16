@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 16-11-2017 a las 05:30:38
+-- Tiempo de generación: 16-11-2017 a las 06:24:49
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -101,11 +101,29 @@ CREATE TABLE IF NOT EXISTS `tbl_habitacion` (
   `tbt_hotel_cod_hotel` int(11) NOT NULL,
   `cod_tipo_habitacion` int(11) NOT NULL,
   `numero_camas` int(11) NOT NULL,
-  `precio` decimal(2,0) NOT NULL,
+  `precio` decimal(4,0) NOT NULL,
   PRIMARY KEY (`cod_habitacion`),
   KEY `fk_tbl_habitacion_tbt_hotel_idx` (`tbt_hotel_cod_hotel`),
   KEY `fk_tbl_habitacion_tbl_tipo_habitacion1_idx` (`cod_tipo_habitacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tbl_habitacion`
+--
+
+INSERT INTO `tbl_habitacion` (`cod_habitacion`, `tbt_hotel_cod_hotel`, `cod_tipo_habitacion`, `numero_camas`, `precio`) VALUES
+(1, 1, 1, 2, '75'),
+(2, 1, 2, 2, '75'),
+(3, 1, 3, 1, '75'),
+(4, 1, 4, 2, '75'),
+(5, 1, 5, 1, '79'),
+(6, 1, 6, 2, '80'),
+(7, 2, 7, 1, '85'),
+(8, 2, 8, 1, '85'),
+(9, 3, 7, 1, '148'),
+(10, 3, 8, 1, '148'),
+(11, 4, 4, 2, '81'),
+(12, 4, 7, 1, '71');
 
 -- --------------------------------------------------------
 
@@ -362,7 +380,21 @@ CREATE TABLE IF NOT EXISTS `tbl_tipo_habitacion` (
   `cod_tipo_habitacion` int(11) NOT NULL AUTO_INCREMENT,
   `tipo_habitacion` varchar(45) NOT NULL,
   PRIMARY KEY (`cod_tipo_habitacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tbl_tipo_habitacion`
+--
+
+INSERT INTO `tbl_tipo_habitacion` (`cod_tipo_habitacion`, `tipo_habitacion`) VALUES
+(1, 'Habitación Doble Estándar para no fumadores'),
+(2, 'Habitación Estándar con cama extragrande'),
+(3, 'Habitación con King Bed'),
+(4, 'Habitación Doble'),
+(5, 'Habitación Estándar con cama King'),
+(6, 'Habitación Cuádruple con dos Camas Dobles'),
+(7, 'Habitación estándar'),
+(8, 'Habitación, 1 cama de matrimonio');
 
 -- --------------------------------------------------------
 
