@@ -707,9 +707,26 @@ a:focus, a:hover {
     margin-left: 0;
 }
 
+.carousel{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .informacion-extra{
     display: inline-block;
     margin-top: -10px;
+    width: 100%;
+    border-top: 1px solid #cdd0d2;
+}
+
+.descripcion-hotel{
+    padding: 10px;
+}
+
+.opiniones-hotel{
+    padding: 10px;
+    text-align: left;
 }
 
 .nombres{
