@@ -18,13 +18,13 @@ $("#btn-registrar-usuario").click(function () {
 			method: "POST",
       dataType: "html",
 			success: function(respuesta){
-				$("#error").html(respuesta);
+				//$("#error").html(respuesta);
 				//alert("EXITO!");
-				//location.href = "../paginas-web/acceso-cuenta/registro-exitoso.html"
+				location.href = "../acceso-cuenta/registro-exitoso.html"
 			},
 			error:function(err){
 				alert("Error: " + err);
-        $("#error").html(err);
+        //$("#error").html(err);
 			}
 		});
 

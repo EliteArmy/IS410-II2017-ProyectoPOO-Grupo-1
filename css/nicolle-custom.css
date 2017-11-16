@@ -17,6 +17,22 @@ body {
     margin-left: auto;
 }
 
+.col-padding-fix{
+    padding-right: 0px; 
+    padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-padding-fix2 {
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+
+.col-padding-fix3{
+    padding-right: 0px;
+}
+
 .fondo-pantalla-barra-superior{
     background-color: #37454D;
 }
@@ -625,30 +641,57 @@ a:focus, a:hover {
     margin-bottom: 8px;
 }
 
-.lista-hoteles{
-    max-width: 850px;
+.envoltura-lista-hoteles{
     margin: 0 auto;
     position: relative; 
     background-color:#fff;
     background-color: #fff;
-    margin-right: 140px;
     margin-top: 10px;
     box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    overflow: hidden;
 }
 
-.imagenes-hoteles{
-    position: relative;
-}
-
-.imagen{
-    position: absolute;
-    top: 0;
-    border-radius: 2px;
-    height:170px;
+.primer-cuadro{
+    /*position: relative;*/
+    display: inline-block;
+    width: 25%;
+    overflow: hidden;
+    float: left;
 }
 
 .borde-imagen{
-    padding: 8px 8px 8px 8px;
+    border-radius: 2px;
+    padding-bottom: 8px; 
+    padding-top: 8px;
+    padding-right: 8px; 
+    padding-left: 8px;
+
+    width: 100%;
+    height: auto;
+}
+
+.segundo-cuadro{
+    width: 35%;
+    float: left;
+}
+
+.tercer-cuadro{
+    width: 15%;
+    text-align: center;
+    color: #697379;
+    border-right: 1px solid #cdd0d2;
+    border-left: 1px solid #cdd0d2;
+    margin-left: 0px;
+    margin-top: 8px;
+    float: left;
+}
+
+.ultimo-cuadro{
+    /*display: flex;*/
+    width: 25%;
+    padding: 2px;
+    text-align: center;
+    float: left;
 }
 
 .detalles.hotel{
@@ -658,7 +701,6 @@ a:focus, a:hover {
     margin-right: 0;
     margin-left: 0;
     text-align: right;
-
 }
 
 .nombres{
@@ -667,19 +709,19 @@ a:focus, a:hover {
 
 .nombre-hotel{
     font-size: 20px;
-    margin-left: 180px;
+    /*margin-left: 180px;*/
     font-weight: bold;
     margin-top: 0;
 }
 
 .ubicacion{
     padding-top: 5px;
-    margin-left: 180px;
+    /*margin-left: 180px;*/
     font-size: 14px;
 }
 
 .boton-excelente{
-    margin-left: 180px;
+    /*margin-left: 180px;*/
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -731,17 +773,6 @@ a:focus, a:hover {
     margin-bottom: 20px;
 }
 
-.paginas{
-    width: 17%;
-    text-align: center;
-    color: #697379;
-    border-right: 1px solid #cdd0d2;
-    border-left: 1px solid #cdd0d2;
-    margin-left: 0px;
-    margin-top: 8px;
-
-}
-
 .btn-pag{
     border-color: #fff;
     background-color: #fff;
@@ -760,14 +791,6 @@ a:focus, a:hover {
     margin-top: 0;
     margin-bottom: 1px;
     width: 90px;
-}
-
-.ultimo-cuadro{
-    display: flex;
-    width: 25%;
-    padding: 8px;
-    text-align: center;
-
 }
 
 .precio-rojo{
