@@ -105,7 +105,7 @@
 
             </div>
           </div>
-       </div>
+        </div>
 
         <div class="container-fluid container-fluid-margin">
           <div class="row">
@@ -311,7 +311,7 @@
                 <div class="envoltura-lista-hoteles"> 
 
                   <section class="primer-cuadro form-inline form-group">
-                    <img class="borde-imagen" src="../../img/hoteles/hotel1.jpg">
+                    <img id="ver-mas-informacion" class="borde-imagen" src="../../img/hoteles/hotel1.jpg">
                   </section>
                   
                   <section class="segundo-cuadro form-inline form-group">
@@ -370,62 +370,57 @@
                     </button>
                   </section>
 
-                </div>
+                  <section id="mostrar-informacion-extra" class="hidden informacion-extra">
 
-                <div id="informacion-extra" class="envoltura-lista-hoteles">
-                  <div>
+                      <!-- Nav tabs style="display: none;" -->
+                      <div class="navbar" role="navigation">
+                        <ul class="nav nav-tabs" id="myTabs">
+                          
+                          <li class="active"><a href="#fotos-hotel" data-toggle="tab">Fotos</a></li>
+                          
+                          <li><a href="#informacion-hotel" data-toggle="tab">Información</a></li>
+                          
+                          <li><a href="#opiniones-hotel" data-toggle="tab">Opiniones</a></li>
+                          
+                          <li><a href="#ofertas-hotel" data-toggle="tab">Ofertas</a></li>
 
-                  <!-- Nav tabs -->
-                  <div class="navbar" role="navigation">
+                        </ul>
+                      </div>
 
-                    <ul class="nav nav-tabs" id="myTabs">
-                      
-                      <li class="active"><a href="#fotos-hotel" data-toggle="tab">Fotos</a></li>
-                      
-                      <li><a href="#informacion-hotel" data-toggle="tab">Información</a></li>
-                      
-                      <li><a href="#opiniones-hotel" data-toggle="tab">Opiniones</a></li>
-                      
-                      <li><a href="#ofertas-hotel" data-toggle="tab">Ofertas</a></li>
-                    </ul>
-                  </div>
+                      <!-- Tab panes -->
+                      <div class="tab-content" id="myTabContent">
 
-                  <!-- Tab panes -->
-                  <div class="tab-content" id="myTabContent">
-
-                    <div class="tab-pane fade in active" id="fotos-hotel">
-                      <p>El LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes</p>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="informacion-hotel">
-                      <p>
-                        Por la mañana, deléitate con un delicioso desayuno tradicional en cortesía. Entre las demás comodidades de la habitación, se incluyen plancha y tabla de planchar, secador de pelo y caja fuerte, Si deseas hacer ejercicio visita el moderno gimnasio en el último piso, que ofrece pista para trotar y una magnífica vista a la ciudad que puedes contemplar mientras realizas tu rutina.
-                      </p>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="opiniones-hotel">
-                      <p>
-                        Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente
-                      </p>
-                    </div>
-                    <div class="tab-pane fade" id="ofertas-hotel">
-                      <p>
+                        <div class="tab-pane fade in active" id="fotos-hotel">
+                          <p>El LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes</p>
+                        </div>
                         
-                      </p>
-                    </div>
-                  </div>
+                        <div class="tab-pane fade" id="informacion-hotel">
+                          <p>
+                            Por la mañana, deléitate con un delicioso desayuno tradicional en cortesía. Entre las demás comodidades de la habitación, se incluyen plancha y tabla de planchar, secador de pelo y caja fuerte, Si deseas hacer ejercicio visita el moderno gimnasio en el último piso, que ofrece pista para trotar y una magnífica vista a la ciudad que puedes contemplar mientras realizas tu rutina.
+                          </p>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="opiniones-hotel">
+                          <p>
+                            Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente
+                          </p>
+                        </div>
 
-                </div>
-                  <div id="mostrar-informacion">
-                    <!--
-                    LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes
+                        <div class="tab-pane fade" id="ofertas-hotel">
+                          <p>
+                            Después de hacer ejercicio, refréscate en la piscina al aire libre, Tambien cuenta con centro de negocios, una cafetería, estacionamiento subterráneo y acceso directo al centro comercial Las Cascadas.
+                          </p>
+                        </div>
 
-                    Las habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente 
-                    -->
-                  </div>
+                      </div>
+
+                  </section>
+
                 </div>
 
               </div>
+
+            </div>
             <!-- FIN SUB BARRA DE BUSQUEDA SUPERIOR -->
           
           </div>
@@ -1846,8 +1841,8 @@
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" src="../../js/funcionalidades.js"></script>
-
+    
+    <script src="../../js/funcionalidades.js"></script>
     <script src="../../js/jquery-3.2.1.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
 

@@ -27,3 +27,7 @@ $("#menu-toggle").click(function(e){
     $("#btn-close").toggleClass("hidden");
 });
 
+$("#ver-mas-informacion").click(function(e){
+    e.preventDefault();
+    $("#mostrar-informacion-extra").toggleClass("hidden");
+});
