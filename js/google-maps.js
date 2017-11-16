@@ -13,7 +13,7 @@ function initMap() {
   	});
 
   	var informacion = new google.maps.InfoWindow({
-  		content: 'UNAH'
+  		content: '<h1>UNAH</h1>'
   	});
 
   	var marker = new google.maps.Marker({
