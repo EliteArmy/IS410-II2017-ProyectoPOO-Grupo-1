@@ -125,28 +125,21 @@
 		//funcio para la busqueda de hoteles desde el buscador
 		public static function buscarHoteles($conexion, $ciudad)
 		{
-		  $sql = 'SELECT a.cod_hotel, a.nombre, a.email, a.telefono, a.n_estrellas, a.descripcion, a.n_habitaciones, a.habitaciones_diponibles, b.cod_ubicacion, b.latidud, b.latidud, c.ciudad, d.pais
-		    FROM tbl_hotel a
-		    INNER JOIN tbl_ubicacion b
-		    ON a.cod_ubicacion = b.cod_ubicacion
-		    INNER JOIN tbl_cuidad c
-		    ON b.cod_ciudad = c.cod_ciudad
-		    INNER JOIN tbl_pais d
-		    ON c.cod_pais = d.cod_pais
-		    WHERE c.ciudad = ' . $ciudad;
+		  	$sql = "SELECT a.cod_hotel, a.nombre, a.email, a.telefono, a.n_estrellas, a.descripcion, a.n_habitaciones, a.habitaciones_diponibles, b.cod_ubicacion, b.latidud, b.latidud, c.ciudad, d.pais FROM tbl_hotel a INNER JOIN tbl_ubicacion b ON a.cod_ubicacion = b.cod_ubicacion INNER JOIN tbl_cuidad c ON b.cod_ciudad = c.cod_ciudad INNER JOIN tbl_pais d ON c.cod_pais = d.cod_pais WHERE c.ciudad = 'Tegucigalpa'";
 
-		  $resultado = $conexion->ejecutarConsulta($sql);
-
-		  $hoteles = [];
+		  	$resultado = $conexion->ejecutarConsulta($sql);
+	
+		  	$hoteles['status'] = 0;
 
 
-		  while ($fila = $conexion->obtenerFila($resultado)) {
-		    $fila['comentarios'] = Comentario::obtenerComentarios($conexion, $fila['cod_hotel']);
-		    $fila['servicios'] = Servicio::obtenerServicios($conexion, $fila['cod_hotel']);
-		    $hoteles[] = $fila;
-		  }
+		  	while ($fila = $conexion->obtenerFila($resultado)) {
+		    	$fila['comentarios'] = Comentario::obtenerComentarios($conexion, $fila['cod_hotel']);
+		    	$fila['servicios'] = Servicio::obtenerServicios($conexion, $fila['cod_hotel']);
+		    	$hoteles[] = $fila;
+		  	}
 
-		  echo json_encode($hoteles);
+		  	echo json_encode($hoteles[0]);
 		}
+
 	}
 ?>
