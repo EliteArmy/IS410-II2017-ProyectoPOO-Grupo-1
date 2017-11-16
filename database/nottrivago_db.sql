@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 16-11-2017 a las 04:15:08
+-- Tiempo de generación: 16-11-2017 a las 06:39:32
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -101,11 +101,33 @@ CREATE TABLE IF NOT EXISTS `tbl_habitacion` (
   `tbt_hotel_cod_hotel` int(11) NOT NULL,
   `cod_tipo_habitacion` int(11) NOT NULL,
   `numero_camas` int(11) NOT NULL,
-  `precio` decimal(2,0) NOT NULL,
+  `precio` decimal(4,0) NOT NULL,
   PRIMARY KEY (`cod_habitacion`),
   KEY `fk_tbl_habitacion_tbt_hotel_idx` (`tbt_hotel_cod_hotel`),
   KEY `fk_tbl_habitacion_tbl_tipo_habitacion1_idx` (`cod_tipo_habitacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tbl_habitacion`
+--
+
+INSERT INTO `tbl_habitacion` (`cod_habitacion`, `tbt_hotel_cod_hotel`, `cod_tipo_habitacion`, `numero_camas`, `precio`) VALUES
+(1, 1, 1, 2, '75'),
+(2, 1, 2, 2, '75'),
+(3, 1, 3, 1, '75'),
+(4, 1, 4, 2, '75'),
+(5, 1, 5, 1, '79'),
+(6, 1, 6, 2, '80'),
+(7, 2, 7, 1, '85'),
+(8, 2, 8, 1, '85'),
+(9, 3, 7, 1, '148'),
+(10, 3, 8, 1, '148'),
+(11, 4, 4, 2, '81'),
+(12, 4, 7, 1, '71'),
+(13, 5, 9, 2, '198'),
+(14, 5, 10, 1, '205'),
+(15, 6, 11, 1, '121'),
+(16, 6, 12, 1, '130');
 
 -- --------------------------------------------------------
 
@@ -136,27 +158,27 @@ CREATE TABLE IF NOT EXISTS `tbl_hotel` (
 
 INSERT INTO `tbl_hotel` (`cod_hotel`, `cod_ubicacion`, `nombre`, `email`, `telefono`, `n_estrellas`, `descripcion`, `n_habitaciones`, `habitaciones_diponibles`) VALUES
 (1, 1, 'Clarion', 'clarion@mail.hn', '99997777', 4, 'disfruta y diviertete con nuestros sevicios ', 100, 80),
-(2, 4, 'Holiday Inn Express San Pedro Sula', 'hiexpress@mhotelsgroup.com', '504 25403000', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 50),
+(2, 4, 'Holiday Inn Express San Pedro Sula', 'hiexpress@mhotelsgroup.com', '504 25403000', 2, 'Holiday Inn Express San Pedro Sula este convenabil amplasatîn zona populară San Pedro Sula. Acest hotel are totul ce v-ați dori pentru un sejur cât mai comfortabi. Toate facilitățile necesare, inclusiv facilităţi pentru turişti cu handicap, parcare auto, seif, servicii spălătorie, Wi-Fi în zone publice, sunt la dispoziția dvs.', 100, 50),
 (3, 2, 'Real Intercontinental', 'real.intercontinental@hotel.hn', '97971212', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 100),
 (4, 3, 'Florencia Plaza', 'frorencia@plaza.hn', '22227020', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 20),
 (5, 5, 'Grand Roatan Caribbean Resort', 'Reservations@GrandRoatanResort.com', '011-504-2433-9034', 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 30),
-(6, 6, 'Tegucigalpa Marriott', 'marriott@mail.hn', '2232-0033', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 200, 100),
+(6, 6, 'Tegucigalpa Marriott', 'marriott@mail.hn', '2232-0033', 5, 'El hotel Marriott de Tegucigalpa, Honduras, se encuentra ubicado en el nuevo centro urbano, a corta distancia del centro comercial Multiplaza, y ofrece transporte gratis al mismo con un horario programado que comienza a las 11:00 y finaliza a las 19:00 h. El aeropuerto internacional Toncontín se encuentra a tan solo 10 km del hotel. El hotel Marriott de Tegucigalpa ofrece 153 espaciosas habitaciones totalmente equipadas con acceso a Internet de alta velocidad. Disfrute del estupendo servicio del lounge Ejecutivo y de las 8 salas de reuniones con la tecnología más moderna.', 200, 100),
 (7, 7, 'Hyatt Place Tegucigalpa', 'hyattplace@mail.hn', '+504 2202 6000', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 70),
-(8, 8, 'Intercontinental Real San Pedro Sula', 'real.intercontinental@hotel.hn', '2545-2500', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 50),
+(8, 8, 'Intercontinental Real San Pedro Sula', 'real.intercontinental@hotel.hn', '2545-2500', 5, 'Intercontinental Real San Pedro de Sula tiene una categoría de cinco estrellas y dispone de servicios acordes a esta distinción hotelera. Se encuentra cerca de la zona financiera de la ciudad y muy próximo al centro de la ciudad, cerca del mismo se pueden encontrar diversas alternativas de ocio como restaurantes, tiendas o locales nocturnos, y se encuentra cercano al transporte urbano.', 150, 50),
 (9, 9, 'Crowne Plaza San Pedro Sula', 'crowneplaza@mail.hn', '2550-8080', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 80),
-(10, 10, 'Hilton Princess San Pedro Sula', 'hotel-rez@mail.com', '2545-6900', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 120, 30),
-(11, 11, 'Infinity Bay Spa & Beach Resort', ' reservations@infinitybay.com', '+1 833-588-4229', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 40),
-(12, 12, 'LQ Hotel Tegucigalpa', 'lqhotel@mail.hn', '2202-5000', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 120, 50),
-(13, 13, 'Copantl Hotel y Suites', 'reservaciones@copantl.com', '+504 2561-8900', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 30),
-(14, 14, 'Quinta Real', 'INFO@QUINTAREALHOTEL.COM', '2440-3311', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 140, 25),
+(10, 10, 'Hilton Princess San Pedro Sula', 'hotel-rez@mail.com', '2545-6900', 3, 'Hilton Princess San Pedro Sula se encuentra en esta zona de Honduras, tiene una categoría de tres estrellas. Se encuentra muy próximo al centro de la ciudad y a la zona histórica y monumental del lugar.\r\nAdemás muy cerca del hotel puedes encontrar diversas alternativas de ocio como restaurantes, pubs, locales nocturnos o boutiques y locales de compras.', 120, 30),
+(11, 11, 'Infinity Bay Spa & Beach Resort', ' reservations@infinitybay.com', '+1 833-588-4229', 3, 'El Infinity Bay Spa & Beach Resort está situado en Honduras. Destinado para quienes quieran disfrutar de sol, playa y desconexión total.\r\n\r\nLas habitaciones están equipadas con todas las comodidades necesarias como aire acondicionado, plancha para la ropa, ventilador y baño completo. Además, cuentan con televisor de pantalla plana y cocina equipada con frigorífico y microondas', 100, 40),
+(12, 12, 'LQ Hotel Tegucigalpa', 'lqhotel@mail.hn', '2202-5000', 4, 'LQ Hotel Tegucigalpa ofrece 110 habitaciones completamente equipadas con televisores de 40 pulgadas con canales Premium, Internet inalámbrico de 40 MB gratuito para huéspedes\r\n\r\nLas habitaciones cuentan con amplio escritorio de trabajo, teléfono con altavoz y correo de voz para tu comodidad. Sus excelentes colchones tipo Pillow top, te permitirán descansar para estar como nuevo al día siguiente.', 120, 50),
+(13, 13, 'Copantl Hotel y Suites', 'reservaciones@copantl.com', '+504 2561-8900', 5, 'Copantl Hotel & Convention Center, situado en San Pedro Sula, es único, confortable, con estilo y con historia; posee todas las instalaciones y facilidades requeridas por el ejecutivo y turista moderno.\r\nAtención y servicios de primera con acceso a internet inalámbrico (wifi) gratis, amplio estacionamiento, seguridad permanente las 24 horas para su completa satisfacción.', 100, 30),
+(14, 14, 'Quinta Real', 'INFO@QUINTAREALHOTEL.COM', '2440-3311', 4, 'Quinta Real es un hotel de 3 estrellas ubicado estratégicamente a la orilla del Mar Caribe, en el puerto de La Ceiba, Honduras; el Hotel y Centro de Convenciones Quinta Real fue diseñado para ofrecerle todas las comodidades que le harán disfrutar su estadía al máximo. Pase los más inolvidables días en la ciudad más alegre y festiva de Honduras, Ceibita La Bella', 140, 25),
 (15, 15, 'Mayan Princess Beach & Dive Resort', 'reservations@mayanprincess.com', '+504 2445-5050', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 200, 40),
-(16, 16, 'Indura Beach & Golf Resort', ' reservations@induraresort.com', ' (504) 2437-0012', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 170, 80),
+(16, 16, 'Indura Beach & Golf Resort', ' reservations@induraresort.com', ' (504) 2437-0012', 5, 'Enclavada entre la selva tropical y las cristalinas y cálidas aguas del Caribe que bañan la costa norte hondureña, este nuevo complejo turístico redefine la experiencia del resort con un toque mágico. Un spa de clase mundial, un espectacular campo de golf de 18 hoyos y una inigualable playa que se extiende por kilómetros que resaltan la belleza natural de Centro América. Con un brillante tramo de 26 millas de la pintoresca Bahía de Tela, este nuevo complejo de lujo refleja la belleza fascinante de los arrecifes de coral y la selva tropical de los alrededores. En medio de las palmeras y las fragantes flores tropicales, los huéspedes disfrutan de suites elegantes y seductoras, una cocina insuperable y incomparables experiencias en la naturaleza que capturan la belleza de este paraíso centroamericano.', 170, 80),
 (17, 17, 'Posada Seremein', 'posadaseremeinroatan@gmail.com', '+504 9769-6862', 3, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 130, 60),
 (18, 18, 'Holiday Inn Express Tegucigalpa', 'reservas.tguex@agrisal.com', '504 22753400', 5, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 150, 20),
 (19, 19, 'Las Cascadas', 'reservaciones@lascascadas.com', '9985-6568', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 40),
-(20, 20, 'Henry Morgan Resort', 'reservaciones@hmresorts.com', ' 2445-5009', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 180, 60),
+(20, 20, 'Henry Morgan Resort', 'reservaciones@hmresorts.com', ' 2445-5009', 4, 'Henry Morgan Resort, hotel de cuatro estrellas situado en pleno Caribe, en la localidad de Roatán, ofrece a sus clientes una combinación de arena fina y blanca, mar azul turquesa, bancos de corales y aterdeceres caribeños.\r\n\r\nSe encuentra a 15 km. del aeropuerto internacional de Roatán, y a 14 km. de la ciudad más importante de Honduras, Coxen Hole.', 180, 60),
 (21, 21, 'Las Verandas Hotel and Villas', ' info@las-verandas.com', '+504-2407-2040', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 190, 70),
-(22, 22, 'Parrot Tree Beach Resort', 'reservations@parrotree.com', '504-2449-0108', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 130, 50),
+(22, 22, 'Parrot Tree Beach Resort', 'reservations@parrotree.com', '504-2449-0108', 4, 'El hotel está situado justo en frente de la playa, lejos del ruido de la isla en el area de First Bight, el lugar perfecto para practicar el buceo, snorkel y las principales actividades acuáticas. Este hotel ofrece disfrutar del ritmo relajado y tranquilo. Dispone de playa privada donde los huéspedes pueden sumergir sus pies en las cálidas aguas tropicales o echar un siesta bien merecida en la sombra de una palapa en la playa. Las villas de este hotel de playa se han diseñado con elegantes y confortables habitaciones y confortables, disponen de cocina gourmet completamente equipada, sala de estar y comedor, terrazas que capturan la fresca brisa y vistas relajantes al mar. El elagante uso de granito y exoticas maderas, cerámica importada y finos detalles arquitectónicos crean un ambiente cálido y acogedor.', 130, 50),
 (23, 23, 'Tranquil Seas Boutique Cabanas Roatan', 'tranquilseashotel@gmail.com', '+504 2407.2070', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 180, 40),
 (24, 24, 'Pristine Bay Resort', 'info@pristinebayresort.com', ' +504-2407-2050', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 170, 30),
 (25, 25, 'Media Luna Resort & Spa', 'reservaciones@hmresorts.com', ' 2407-2231', 4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 100, 60),
@@ -197,7 +219,32 @@ CREATE TABLE IF NOT EXISTS `tbl_img_hotel` (
 --
 
 INSERT INTO `tbl_img_hotel` (`cod_img`, `cod_hotel`, `url_img_hotel`) VALUES
-(2, 2, '..//img//hoteles//hotel19.jpg');
+(1, 1, '..//img//hoteles//hotel11.jpg'),
+(2, 2, '..//img//hoteles//hotel19.jpg'),
+(3, 3, '..//img//hoteles//hotel21.jpg'),
+(4, 4, '..//img//hoteles//hotel27.jpg'),
+(5, 5, '..//img//hoteles//hotel1.jpg'),
+(6, 6, '..//img//hoteles//hotel14.jpg'),
+(7, 7, '..//img//hoteles//hotel2.jpg'),
+(8, 8, '..//img//hoteles//hotel20.jpg'),
+(9, 9, '..//img//hoteles//hotel12.jpg'),
+(10, 10, '..//img//hoteles//hotel10.jpg'),
+(11, 11, '..//img//hoteles//hotel3.jpg'),
+(12, 12, '..//img//hoteles//hotel9.jpg'),
+(13, 13, '..//img//hoteles//hotel4.jpg'),
+(14, 14, '..//img//hoteles//hotel28.jpg'),
+(15, 15, '..//img//hoteles//hotel29.jpg'),
+(16, 16, '..//img//hoteles//hotel16.jpg'),
+(17, 17, '..//img//hoteles//hotel30.jpg'),
+(18, 18, '..//img//hoteles//hotel5.jpg'),
+(19, 19, '..//img//hoteles//hotel8.jpg'),
+(20, 20, '..//img//hoteles//hotel31.jpg'),
+(21, 21, '..//img//hoteles//hotel32.jpg'),
+(22, 22, '..//img//hoteles//hotel33.jpg'),
+(23, 23, '..//img//hoteles//hotel34.jpg'),
+(24, 24, '..//img//hoteles//hotel35.jpg'),
+(25, 25, '..//img//hoteles//hotel36.jpg'),
+(26, 26, '..//img//hoteles//hotel25.jpg');
 
 -- --------------------------------------------------------
 
@@ -337,7 +384,25 @@ CREATE TABLE IF NOT EXISTS `tbl_tipo_habitacion` (
   `cod_tipo_habitacion` int(11) NOT NULL AUTO_INCREMENT,
   `tipo_habitacion` varchar(45) NOT NULL,
   PRIMARY KEY (`cod_tipo_habitacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `tbl_tipo_habitacion`
+--
+
+INSERT INTO `tbl_tipo_habitacion` (`cod_tipo_habitacion`, `tipo_habitacion`) VALUES
+(1, 'Habitación Doble Estándar para no fumadores'),
+(2, 'Habitación Estándar con cama extragrande'),
+(3, 'Habitación con King Bed'),
+(4, 'Habitación Doble'),
+(5, 'Habitación Estándar con cama King'),
+(6, 'Habitación Cuádruple con dos Camas Dobles'),
+(7, 'Habitación estándar'),
+(8, 'Habitación, 1 cama de matrimonio'),
+(9, 'Suite junior, 2 camas dobles'),
+(10, 'Suite junior, 1 cama de matrimonio grande'),
+(11, 'De lujo, Habitación, Camas: 1 King o 2 Doble'),
+(12, 'Habitación del nivel Ejecutivo,1 King o Queen');
 
 -- --------------------------------------------------------
 
