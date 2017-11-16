@@ -13,8 +13,11 @@ $(document).ready(function () {
 					if (respuesta.status == 1) {
 						window.location = "../user/index.php";
 					} else {
-						alert('fallo');
+						//alert('fallo');
 						//$("#lbl-info").show();
+						$("#txt-correo").focus();
+						$("#txt-correo").val('');
+
 					}
 				},
 				error:function(){

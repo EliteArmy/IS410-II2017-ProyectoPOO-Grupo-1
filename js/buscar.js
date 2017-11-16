@@ -25,7 +25,7 @@ $(document).ready(function () {
 			method: 'POST',
 			dataType:"html",
 			success: function(resultado){
-				alert(resultado);
+				//alert(resultado);
 	
 						$('#div-resultados').append(
 		'<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 float-left col-padding-fix3">' +

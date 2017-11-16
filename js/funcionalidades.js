@@ -1,6 +1,6 @@
 
 function guardarRegistro(){
-	alert("Creacion de una nueva seccion");
+	//alert("Creacion de una nueva seccion");
 }
 
 // Slider en pagina honduras.html
