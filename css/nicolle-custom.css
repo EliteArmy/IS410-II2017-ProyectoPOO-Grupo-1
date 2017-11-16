@@ -725,8 +725,23 @@ a:focus, a:hover {
 }
 
 .opiniones-hotel{
+    padding: 15px;
+    text-align: left;
+}
+
+.ofertas-hotel{
     padding: 10px;
     text-align: left;
+}
+
+.ofertas-hotel-inner{
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #cdd0d2;
+}
+
+.ofertas-hotel-inner-texto{
+    margin-left: 10px;
 }
 
 .nombres{
