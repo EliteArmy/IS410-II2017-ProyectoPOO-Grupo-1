@@ -1,29 +1,29 @@
 <html lang="es">
-  
+
   <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="Coffee Icon" href="../img/trivago.png">
 
     <title>Registrarse en NotTrivago</title>
-    
+
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/rafael-custom-css.css">
     <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
 
   </head>
-  
+
   <body>
 
   	<nav class="navbar navbar-default" id="barra-menu">
-  		
+
   		<div class="navbar-header text-center">
-				
-				<a class="foto" href="..">
+
+				<a class="foto" href="../index.html">
 					<img src="../img/notTrivago.png" alt="NotTrivago" height="44" width="152">
 				</a>
-				
+
 	  		<div class="collapse navbar-collapse float-derecha">
 	  			<div class="nav navbar-nav navbar-right">
 	  				<p class="navbar-text">
@@ -51,13 +51,13 @@
 					  		<strong>Crea una cuenta para tener más opciones en trivago. ¡Es gratis!</strong>
 					  		</h3>
 			  			</div>
-			  			
+
 			  			<div class="container-fluid">
 	          		<div class="row">
-							  	
+
 							  	<div class="envoltura-caja-registro col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							  		<div class="caja-registro">
-							  			
+
 							  			<h2 class="titulo-caja-registro">
 												Regístrate con una red social
 											</h2>
@@ -90,7 +90,7 @@
 											<p class="text-left">
 												* No publicaremos nada en tu Facebook o Google+ sin consultarte primero.
 											</p>
-										</div>	
+										</div>
 									</div>
 
 									<div class="envoltura-caja-registro col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -122,7 +122,7 @@
 									  			<!--
 								  				<tr>
 							        			<td colspan="2">
-							        				<input class="form-control" type="password" name="validar-contrasena" 
+							        				<input class="form-control" type="password" name="validar-contrasena"
 							        			id="validar-contrasena">
 							        			</td>
 							      			</tr>
@@ -164,7 +164,7 @@
 
 									  		</table>
 									  	</form>
-										</div>  		
+										</div>
 									</div>
 
 								</div>
