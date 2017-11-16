@@ -10,6 +10,10 @@ function gup( name ){
 }
 
 $(document).ready(function () {
+  $("#btn-map").click(function () {
+    window.location = "mapa.html";
+  });
+
 	var parametro = gup('buscar');
 
 	$('#txt-buscar').val(parametro);

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="../img/trivago.png">
+
+	<title>Hoteles en Honduras</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/nicolle-custom.css">
+  <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body style="height: 100%;">
+
+  <nav class="navbar navbar-default" id="barra-menu">
+
+  	<div class="navbar-header">
+  		<button type="button" class="navbar-toggle"></button>
+  		 <center>
+          <a class="foto" href="../index.html">
+            <img src="../img/notTrivago.png" alt="Nottrivago" height="44" width="152">
+          </a>
+      </center>	
+  	</div>
+
+  	<div class="collapse navbar-collapse navbar-ex1-collapse">
+  		<ul class="nav navbar-nav navbar-right">
+  			<li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a>
+        </li>
+  			<li><a href="#">USD</a></li>
+  			<li><a href="#">ES</a></li>
+  			<li class="dropdown">
+        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          	Mi Perfil <b class="caret"></b>
+        	</a>
+      		<ul class="dropdown-menu">
+      			<li><a href="../login">Iniciar Sesion</a></li>
+      			<li><a href="../signup">Regístrate</a></li>
+        	</ul>
+        </li>
+      </ul>
+  	</div>
+
+  </nav> 
+
+  <!-- CONTAINER TOTAL DEL CUERPO -->
+  <div class="container-fluid container-fluid-padding-fix">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ">
+      	
+        <div class="fondo-pantalla-barra-superior">
+          <div class="container-fluid">
+            <div class="row">
+
+              <!-- BARRA DE BUSQUEDA SUPERIOR-->
+              <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+               	
+                <form class="barra">
+      			      
+                  <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+                      <div class="input-group input-group-lg">
+                        
+                        <input type="text" id="txt-buscar" class="form-control" placeholder="Ej. Tegucigalpa">
+                        <span class="input-group-btn">
+                          <button id="boton-buscar" class="btn btn-primary" type="button">Buscar</button>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 ">
+                      <div class="input-group input-group-lg">
+                        
+                        <button class="btn btn-default sincronizar"><input class="form-control sin-borde" type="date" name="txt-fecha">
+                        </button>
+
+                        <button class="btn btn-default sincronizar"><input class="form-control sin-borde" type="date" name="txt-fecha">
+                        </button>
+
+                        <select class="btn btn-hab sin-borde" name="slc-habitacion" id="slc-habitacion" >
+                          <option value="1">Individual</option>
+                          <option value="2">Doble</option>
+                          <option value="3">Familiar</option>
+                          <option value="4">Multiple</option>
+                        </select>
+
+                      </div>
+                    </div>
+                  </div>
+
+      					</form>
+
+              </div>
+              
+
+            </div>
+          </div>
+        </div> -->
+        <div style="height: 100%:; width:100%">
+          <div id="map" style="height: 550px">
+          </div>
+        </div>  
+
+
+        
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeTmmaekUxq2C-JQj3yAHRt1pQg91Nv2k&callback=initMap" async defer></script>
+     <script src="../js/google-maps.js"></script>
+
+</body>
+</html>
