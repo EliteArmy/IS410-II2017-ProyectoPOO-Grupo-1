@@ -175,7 +175,7 @@
 								</p>
 
 								<p class="barrita-top">
-									¿Ya tienes cuenta? <a href="log-in.html">Inicia sesión </a>
+									¿Ya tienes cuenta? <a href="../login/index.html">Inicia sesión </a>
 								</p>
 							</div>
 

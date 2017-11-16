@@ -76,7 +76,7 @@
             <li class="active"><a class="lista " href="../index.html"> < Volver a la Búsqueda <span class="sr-only">(current)</span></a></li>
           </ul>
           <ul class="nav nav-sidebar borde-dos">
-            <li class="active"><a class="lista" href="dashboard.php">Panel de Control</a></li>
+            <li class="active"><a class="lista" href="index.php">Panel de Control</a></li>
             <li class="active"><a class="lista" href="ajustes.php">Ajustes</a></li>
             <li class="active"><a class="lista" href="reservas.php">Reservas</a></li>
             <li class="active"><a class="lista" href="lista-hoteles.php">Listas de hoteles</a></li>
