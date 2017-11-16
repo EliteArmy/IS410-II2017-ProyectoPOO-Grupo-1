@@ -7,13 +7,12 @@
 	switch ($_GET["accion"]) {
 
 	 	case "registrar-usuario-nuevo":
-	 		echo "CADENA!!!";
 	 		include "../class/class-usuario.php";
 	 		//$usuario = new Usuario(null, $_POST['tipo-usuario'],$_POST['email'],
 			//		$_POST['password']);
 
 			$usuario = new Usuario(null, 
-					$_POST["tipo-usuario"], 
+					1, 
 					$_POST["txt-correo"],
 					$_POST["txt-contrasena"], 
 					null, 

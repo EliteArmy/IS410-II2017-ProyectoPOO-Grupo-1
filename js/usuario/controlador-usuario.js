@@ -4,8 +4,6 @@ $("#btn-registrar-usuario").click(function () {
 	//alert("Se guardara la informacion");
   var temporal = validacionCampos();
 
-  alert("Temporal: " + temporal);
-
   if(temporal){	
 		var parametros = 'txt-correo=' + $("#txt-correo").val() + '&' +
 		'txt-contrasena=' + $("#txt-contrasena").val() + '&' +
@@ -13,14 +11,21 @@ $("#btn-registrar-usuario").click(function () {
 		//alert(parametros);
 
 		$.ajax({
-			url: "../../ajax/gestion-usuario.php?accion=registrar-usuario-nuevo",
+			url: "../ajax/gestion-usuario.php?accion=registrar-usuario-nuevo",
 			data: parametros,
 			method: "POST",
-      dataType: "html",
+      dataType: "json",
 			success: function(respuesta){
-				//$("#error").html(respuesta);
+        if (respuesta.status == 1) {
+          window.location = "registro-exitoso.html"
+        } else {
+				  $("#error").html("*usuario ya existe*");
+          $("#txt-correo").val('');
+          $("#txt-correo").focus();
+        }
+          
 				//alert("EXITO!");
-				location.href = "../acceso-cuenta/registro-exitoso.html"
+				//location.href = "../acceso-cuenta/registro-exitoso.html"
 			},
 			error:function(err){
 				alert("Error: " + err);

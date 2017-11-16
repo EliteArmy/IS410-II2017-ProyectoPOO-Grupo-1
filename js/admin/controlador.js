@@ -71,8 +71,7 @@ $(document).ready(function() {
                         '</tr>'
 					);
 				}
-			} else 
-				alert("No exite");
+			} 
 		},
 		error:function(e){
 			
@@ -110,7 +109,7 @@ $(document).ready(function() {
 				$("#txt-email").val('');
 				$("#txt-password").val('');
 
-				if (resultado) {
+				if (resultado.status == 1) {
 					$("#tbl-usuarios").append(
 						'<tr>' +
                             '<td><input type="checkbox" onclick="temp('+resultado.cod_usuario+')" name="checkbox[]" value="'+resultado.cod_usuario+'" class="checkbox"></td>' +
@@ -130,6 +129,8 @@ $(document).ready(function() {
                             '<td>'+resultado.password+'</td>' +
                         '</tr>'
 					);
+				} else {
+					alert('el usuario ya exite');
 				}
 			},
 			error:function(e){

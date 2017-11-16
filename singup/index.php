@@ -109,7 +109,7 @@
 									  			</tr>
 
 									  			<tr>
-										  			<td colspan="2">
+										  			<td colspan="2" id="div-correo" class="">
 										  				<input id="txt-correo" name="txt-correo" class="form-control" type="email" minlength="5"  placeholder="Ingrese su correo electronico" required><label class="letras-rojas" id="txt-correo-error"></label>
 										  			</td>
 									  			</tr>
